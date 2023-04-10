@@ -10,3 +10,4 @@ Week5/* linguist-documentation=false
 Week5/* linguist-vendored=false
 Week6/* linguist-documentation=false
 Week6/* linguist-vendored=false
+*.c linguist-language=C
