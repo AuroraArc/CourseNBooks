@@ -7,3 +7,4 @@
 * [Programming Languages, Part C](https://www.coursera.org/learn/programming-languages-part-c) (UW Coursera)
 ## Books
 * Concrete Mathematics: A Foundation for Computer Science 2nd ed. by Ronald Graham, Donald Knuth, and Oren Patashnik
+<a href="https://cs50.harvard.edu/x/2023/" target="_blank">CS50x</a>
