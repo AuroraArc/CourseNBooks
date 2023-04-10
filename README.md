@@ -6,4 +6,4 @@
 * [Programming Languages, Part B](https://www.coursera.org/learn/programming-languages-part-b) (UW Coursera)
 * [Programming Languages, Part C](https://www.coursera.org/learn/programming-languages-part-c) (UW Coursera)
 ## Books
-* Concrete Mathematics: A Foundation for Computer Science 2nd ed. by Ronald Graham, Donald Knuth, and Oren Patashnik
+* ***Concrete Mathematics: A Foundation for Computer Science 2nd ed.*** by Ronald Graham, Donald Knuth, and Oren Patashnik
