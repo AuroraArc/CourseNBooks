@@ -6,6 +6,10 @@
 **Week 4**: Memory \
 **Week 5**: Data Structures \
 **Week 6**: Python \
+**Week 7**: SQL \
+**Week 8**: HTML, CSS, and JavaScript \
+**Week 9**: Flask \
+**Week 10**: Emoji \
 \
 **Week 0**: used the Scratch website to introduce basic computer programming concepts. \
 **Week 1 - 5**: the C programming language was used. \
