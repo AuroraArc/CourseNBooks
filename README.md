@@ -1,17 +1,9 @@
-# CS50x
-**Week 0**: Scratch \
-**Week 1**: C \
-**Week 2**: Arrays \
-**Week 3**: Algorithms \
-**Week 4**: Memory \
-**Week 5**: Data Structures \
-**Week 6**: Python \
-**Week 7**: SQL \
-**Week 8**: HTML, CSS, and JavaScript \
-**Week 9**: Flask \
-**Week 10**: Emoji \
-\
-**Week 0**: used the Scratch website to introduce basic computer programming concepts. \
-**Week 1 - 5**: the C programming language was used. \
-**Week 6**: the course switched to the Python programming language. \
-**Week 7 - 10**: didn't continue on with completing the course because it didn't seem necessary for me at the time.
+# List of online courses and books
+## Courses
+* [CS50x](https://cs50.harvard.edu/x/2023/) (Harvard OCW)
+* [Intro to CS and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (Fall 2016 MIT OCW)
+* [Programming Languages, Part A](https://www.coursera.org/learn/programming-languages) (UW Coursera)
+* [Programming Languages, Part B](https://www.coursera.org/learn/programming-languages-part-b) (UW Coursera)
+* [Programming Languages, Part C](https://www.coursera.org/learn/programming-languages-part-c) (UW Coursera)
+## Books
+* ***Concrete Mathematics: A Foundation for Computer Science 2nd ed.*** by Ronald Graham, Donald Knuth, and Oren Patashnik
