@@ -1,8 +1,11 @@
 
 public class Dog {
-	public int weightInPounds;
+	public int weightInPounds; //instance variable
 
-	public void makeNoise() {
+	public Dog(int startingWeight) { //constructor: determines how to instntiate the class
+		weightInPounds = startingWeight;
+	}
+	public void makeNoise() { //non-static mathod
 		if (weightInPounds < 10) {
 			System.out.println("yip!");
 		}
