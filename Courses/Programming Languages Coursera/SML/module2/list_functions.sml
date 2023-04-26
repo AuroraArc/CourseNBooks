@@ -6,7 +6,7 @@ fun sum_list (xs : int list) =
 fun list_product (xs: int list) =
     if null xs
     then 1
-    else hd xs * list_product(tl xs)
+    else hd xs * list_product(tl xs) (* hd: returns the first element of list | tl: returns all but the first element of list *)
 
 fun countdown (x : int) = (* [7,6,5,4,3,2,1] *)
     if x=0
