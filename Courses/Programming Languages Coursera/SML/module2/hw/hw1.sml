@@ -78,4 +78,3 @@ fun oldest (dates : (int * int * int) list) =
          in
             maxdates(dates)
          end
-            
