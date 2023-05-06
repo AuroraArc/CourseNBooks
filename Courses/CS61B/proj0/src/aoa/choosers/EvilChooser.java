@@ -1,8 +1,6 @@
 package aoa.choosers;
 
 import java.util.List;
-import edu.princeton.cs.algs4.StdRandom;
-import aoa.utils.FileUtils;
 
 public class EvilChooser implements Chooser {
     private String pattern;
