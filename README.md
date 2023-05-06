@@ -7,7 +7,7 @@
 * [Programming Languages, Part C](https://www.coursera.org/learn/programming-languages-part-c) (UW Coursera)
 * [ML Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization/) (DeepLearning.ai)
 * [CS 61B](https://sp23.datastructur.es/) (UC Berkeley)
-* [The Odin Project](https://www.theodinproject.com/dashboard)
+* [The Odin Project](https://www.theodinproject.com/)
 * [Full Stack Open](https://fullstackopen.com/en/)
 * [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/)
 ## Books
