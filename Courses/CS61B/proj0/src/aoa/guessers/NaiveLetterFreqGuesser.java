@@ -38,9 +38,34 @@ public class NaiveLetterFreqGuesser implements Guesser {
      *  (and therefore isn't present in GUESSES). */
     public char getGuess(List<Character> guesses) {
         Map<Character, Integer> map = getFrequencyMap();
-        List<Character> list = new ArrayList<>();
+        if (map.isEmpty()) { // checks if there are any keys in the frequency map
+            return '?';
+        }
+        for (char c : guesses) { // removes all the characters that have been guessed from the frequency map
+            map.remove(c);
+        }
+
+
+        List<Character> keyArray = new ArrayList<>();
+        for (int i = 0; i < map.size(); i++) {
+            keyArray.add((Character)map.keySet().toArray()[i]); // converts the keys in the map into an array
+        }
+        List<Character> duplicates = new ArrayList<>();
+        int answer = map.get(keyArray.get(0));
+        duplicates.add(keyArray.get(0));
+        for (int i = 1; i < keyArray.size(); i++) {
+            if (map.get(keyArray.get(i)) == answer) {
+                duplicates.add(keyArray.get(i));
+            }
+            if (map.get(keyArray.get(i)) > answer) {
+                duplicates.clear();
+                answer = map.get(keyArray.get(i));
+                duplicates.add(keyArray.get(i));
+            }
+        }
+        Collections.sort(duplicates);
+        return duplicates.get(0);
         // TODO: Fill in this method.
-        return '?';
     }
 
     public static void main(String[] args) {
