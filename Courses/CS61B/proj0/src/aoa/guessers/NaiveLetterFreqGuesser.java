@@ -65,7 +65,6 @@ public class NaiveLetterFreqGuesser implements Guesser {
         }
         Collections.sort(duplicates);
         return duplicates.get(0);
-        // TODO: Fill in this method.
     }
 
     public static void main(String[] args) {
