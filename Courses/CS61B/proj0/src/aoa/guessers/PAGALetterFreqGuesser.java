@@ -15,6 +15,7 @@ public class PAGALetterFreqGuesser implements Guesser {
     /** Returns the most common letter in the set of valid words based on the current
      *  PATTERN and the GUESSES that have been made. */
     public char getGuess(String pattern, List<Character> guesses) {
+
         // TODO: Fill in this method.
         return '?';
     }

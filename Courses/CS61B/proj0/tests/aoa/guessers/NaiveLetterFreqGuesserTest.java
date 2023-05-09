@@ -16,7 +16,7 @@ public class NaiveLetterFreqGuesserTest {
     @Test
     public void testFreqMapSmallFile() {
         NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("data/example.txt");
-        Map<Character, Integer> freqMap = nlfg.getFrequencyMap();
+        Map<Character, Integer> freqMap = GuessHelper.getFrequencyMap(nlfg.words);
 
         // y should occur once.
         assertThat(freqMap.get('y')).isEqualTo(1);
@@ -33,7 +33,7 @@ public class NaiveLetterFreqGuesserTest {
     @Test
     public void testFreqMapLargeFile() {
         NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("data/sorted_scrabble.txt");
-        Map<Character, Integer> freqMap = nlfg.getFrequencyMap();
+        Map<Character, Integer> freqMap = GuessHelper.getFrequencyMap(nlfg.words);
 
         // y should occur 17,313 times.
         assertThat(freqMap.get('y')).isEqualTo(17313);
