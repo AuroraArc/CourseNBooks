@@ -63,7 +63,6 @@ public class NaiveLetterFreqGuesser implements Guesser {
                 duplicates.add(keyArray.get(i));
             }
         }
-        Collections.sort(duplicates);
         return duplicates.get(0);
     }
 
