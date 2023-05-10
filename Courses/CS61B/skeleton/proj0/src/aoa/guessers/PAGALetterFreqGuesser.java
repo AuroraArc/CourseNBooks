@@ -138,7 +138,6 @@ public class PAGALetterFreqGuesser implements Guesser {
         }
 
         return GuessHelper.getGuess(guesses, finalList);
-        // TODO: Fill in this method.
     }
 
 
