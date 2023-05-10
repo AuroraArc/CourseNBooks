@@ -41,7 +41,7 @@ public class GuessHelper {
             keyArray.add((Character)map.keySet().toArray()[i]); // converts the keys in the map into an array
         }
         List<Character> duplicates = new ArrayList<>();
-        int answer = map.get(keyArray.get(0));
+        int answer = map.get(keyArray.get(0)); // looks for the key that has the highest value
         duplicates.add(keyArray.get(0));
         for (int i = 1; i < keyArray.size(); i++) {
             if (map.get(keyArray.get(i)) == answer) {
@@ -53,7 +53,7 @@ public class GuessHelper {
                 duplicates.add(keyArray.get(i));
             }
         }
-        return duplicates.get(0);
+        return duplicates.get(0); // since it is a TreeMap, it is already sorted in alphabetical order
     }
 
 }

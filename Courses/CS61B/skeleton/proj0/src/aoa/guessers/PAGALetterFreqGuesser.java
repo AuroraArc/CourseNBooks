@@ -18,11 +18,18 @@ public class PAGALetterFreqGuesser implements Guesser {
         List<String> temp = new ArrayList<>();
         List<String> temp2 = new ArrayList<>();
         char[] patternArray = pattern.toCharArray();
-
-        if (guesses.size() != 0 && pattern.equals("----")) {
+        boolean allDash = false;
+        for (int i = 0; i < pattern.length(); i++) {
+            if (pattern.charAt(i) != '-') {
+                allDash = false;
+                break;
+            }
+            allDash = true;
+        }
+        if (guesses.size() != 0 && allDash) {
             for (int j = 0; j < words.size(); j++) {
                 boolean found = false;
-                for (int i = 0; i < words.get(j).length() && !found; i++) {
+                for (int i = 0; i < words.get(j).length(); i++) {
                     for (char c : guesses) {
                         if (words.get(j).charAt(i) == c) {
                             words.remove(j);
@@ -30,6 +37,9 @@ public class PAGALetterFreqGuesser implements Guesser {
                             j--;
                             break;
                         }
+                    }
+                    if (found) {
+                        break;
                     }
                 }
             }
@@ -40,7 +50,7 @@ public class PAGALetterFreqGuesser implements Guesser {
             }
             if (temp.size() == 0) {
                 for (String s : words) {
-                    if (s.charAt(i) == patternArray[i] && s.length() == pattern.length()) {
+                    if (s.length() == pattern.length() && s.charAt(i) == patternArray[i]) {
                         temp.add(s);
                     }
                 }
@@ -58,28 +68,72 @@ public class PAGALetterFreqGuesser implements Guesser {
 
         List<String> finalList = new ArrayList<>(temp);
 
-        /* for (int k = 0; k < finalList.size(); k++) {
-            boolean found = false;
-            for (int i = 0; i < pattern.length() && !found; i++) {
-                if (pattern.charAt(i) == '-') {
-                    continue;
-                }
-                for (int j = 0; j < pattern.length(); j++) {
-                    if (i == j) {
-                        continue;
+        for (int k = 0; k < finalList.size(); k++) {
+            remove:
+            {
+                String test = finalList.get(k);
+                char[] stringToChar = test.toCharArray();
+                List<Character> patternChar = new ArrayList<>();
+                for (int i = 0; i < patternArray.length; i++) { // adds all characters in the pattern to a char array
+                    if (patternArray[i] != '-') {
+                        patternChar.add(patternArray[i]);
+                        stringToChar[i] = '-';
                     }
-                    if (pattern.charAt(i) == finalList.get(k).charAt(j)) {
-                        finalList.remove(k);
-                        k--;
-                        found = true;
-                        break;
+                }
+                test = String.valueOf(stringToChar);
+
+                for (int i = 0; i < patternChar.size(); i++) { // remove duplicates from the patternChar array
+                    for (int j = i + 1; j < patternChar.size(); j++) {
+                        if (patternChar.get(i) == patternChar.get(j)) {
+                            patternChar.remove(i);
+                            i--;
+                            break;
+                        }
+                    }
+                }
+
+                for (int i = 0; i < test.length(); i++) { // if there is another appearance of a pattern letter in the wrong place, remove word
+                    for (char c : patternChar) {
+                        if (test.charAt(i) == c) {
+                            finalList.remove(k);
+                            k--;
+                            break remove;
+                        }
                     }
                 }
             }
         }
-         */
 
-        if (pattern.equals("----")) {
+        List<Character> noGuess = new ArrayList<>(guesses);
+        for (int i = 0; i < noGuess.size(); i++) {
+            for (char cc : patternArray) {
+                if (noGuess.get(i) == cc) {
+                    noGuess.remove(i);
+                    i--;
+                    break;
+                }
+            }
+        }
+
+        for (int j = 0; j < finalList.size() && noGuess.size() != 0; j++) { // removes any word that contains a guess that is not found in the pattern
+            for (int i = 0; i < finalList.get(j).length(); i++) {
+                boolean found = false;
+                for (char c : noGuess) {
+                    if (c == finalList.get(j).charAt(i)) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found) {
+                    finalList.remove(j);
+                    j--;
+                    break;
+                }
+            }
+        }
+
+
+        if (allDash) {
             finalList = words;
         }
 
