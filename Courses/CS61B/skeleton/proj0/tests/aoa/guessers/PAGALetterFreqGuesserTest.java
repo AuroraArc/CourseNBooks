@@ -12,7 +12,7 @@ public class PAGALetterFreqGuesserTest {
     @DisplayName("PAGALetterFreqGuesser correctly eliminates letters")
     @Test
     public void testGetGuessBlankThen_o__Pattern() {
-        PAGALetterFreqGuesser nlfg = new PAGALetterFreqGuesser("data/example.txt");
+        PAGALetterFreqGuesser nlfg = new PAGALetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the first guess is e, the most common letter in the dictionary.
         char guess = nlfg.getGuess("----", List.of());
@@ -31,7 +31,7 @@ public class PAGALetterFreqGuesserTest {
     @DisplayName("PAGALetterFreqGuesser correctly guesses -o-- pattern")
     @Test
     public void testGetGuess_o__Pattern() {
-        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("data/example.txt");
+        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the first guess is e, the most common letter in the dictionary if the 2nd letter is o.
         char guess = palfg.getGuess("-o--", List.of('o'));
@@ -42,7 +42,7 @@ public class PAGALetterFreqGuesserTest {
     @DisplayName("PAGALetterFreqGuesser eliminates letters for -e-- and ---l patterns")
     @Test
     public void testGetGuess_e__PatternUntilCool() {
-        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("data/example.txt");
+        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the next guess is a if the pattern is currently -e-- and only e has been guessed.
         // this is because there are 2 as and 2 os, but a comes earlier in the alphabet
@@ -62,7 +62,7 @@ public class PAGALetterFreqGuesserTest {
     @DisplayName("PAGALetterFreqGuesser handles -o--a- pattern on large file")
     @Test
     public void testGetGuess_o__a_PatternLargeFile() {
-        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("data/sorted_scrabble.txt");
+        PAGALetterFreqGuesser palfg = new PAGALetterFreqGuesser("skeleton/proj0/data/sorted_scrabble.txt");
 
         // check that the next guess is s, if the previous guesses were o and a
         char guess = palfg.getGuess("-o--a-", List.of('o', 'a'));

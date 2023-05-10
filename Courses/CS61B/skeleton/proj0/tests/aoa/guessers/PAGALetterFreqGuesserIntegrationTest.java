@@ -46,7 +46,7 @@ public class PAGALetterFreqGuesserIntegrationTest {
     @ParameterizedTest(name = "PAGALetterFreqGuesser: pattern = {1}; guesses = {2}; expected = {3}")
     @MethodSource("getGuessProvider")
     public void testGetGuess(String msg, String pattern, List<Character> guesses, char expected) throws FileNotFoundException {
-        PAGALetterFreqGuesser guesser = new PAGALetterFreqGuesser("data/sorted_scrabble.txt");
+        PAGALetterFreqGuesser guesser = new PAGALetterFreqGuesser("skeleton/proj0/data/sorted_scrabble.txt");
 
         assertWithMessage("Not " + msg)
                 .that(guesser.getGuess(pattern, guesses))

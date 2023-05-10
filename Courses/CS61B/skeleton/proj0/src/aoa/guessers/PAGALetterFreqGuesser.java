@@ -17,14 +17,18 @@ public class PAGALetterFreqGuesser implements Guesser {
     public char getGuess(String pattern, List<Character> guesses) {
         List<String> temp = new ArrayList<>();
         List<String> temp2 = new ArrayList<>();
-        List<String> finalList;
         char[] patternArray = pattern.toCharArray();
+
         if (guesses.size() != 0 && pattern.equals("----")) {
-            for (String s : words) {
-                for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j < words.size(); j++) {
+                boolean found = false;
+                for (int i = 0; i < words.get(j).length() && !found; i++) {
                     for (char c : guesses) {
-                        if (s.charAt(i) == c) {
-                            words.remove(s);
+                        if (words.get(j).charAt(i) == c) {
+                            words.remove(j);
+                            found = true;
+                            j--;
+                            break;
                         }
                     }
                 }
@@ -51,7 +55,29 @@ public class PAGALetterFreqGuesser implements Guesser {
                 temp2.clear();
             }
         }
-        finalList = List.copyOf(temp);
+
+        List<String> finalList = new ArrayList<>(temp);
+
+        /* for (int k = 0; k < finalList.size(); k++) {
+            boolean found = false;
+            for (int i = 0; i < pattern.length() && !found; i++) {
+                if (pattern.charAt(i) == '-') {
+                    continue;
+                }
+                for (int j = 0; j < pattern.length(); j++) {
+                    if (i == j) {
+                        continue;
+                    }
+                    if (pattern.charAt(i) == finalList.get(k).charAt(j)) {
+                        finalList.remove(k);
+                        k--;
+                        found = true;
+                        break;
+                    }
+                }
+            }
+        }
+         */
 
         if (pattern.equals("----")) {
             finalList = words;
@@ -64,7 +90,7 @@ public class PAGALetterFreqGuesser implements Guesser {
 
 
     public static void main(String[] args) {
-        PAGALetterFreqGuesser pagalfg = new PAGALetterFreqGuesser("proj0/data/example.txt");
+        PAGALetterFreqGuesser pagalfg = new PAGALetterFreqGuesser("skeleton/proj0/data/example.txt");
         System.out.println(pagalfg.getGuess("----", List.of('e')));
     }
 }
