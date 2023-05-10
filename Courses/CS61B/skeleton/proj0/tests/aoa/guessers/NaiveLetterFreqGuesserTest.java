@@ -15,7 +15,7 @@ public class NaiveLetterFreqGuesserTest {
     @DisplayName("NaiveLetterFreqGuesser returns correct frequency map (small input)")
     @Test
     public void testFreqMapSmallFile() {
-        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("data/example.txt");
+        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("skeleton/proj0/data/example.txt");
         Map<Character, Integer> freqMap = GuessHelper.getFrequencyMap(nlfg.words);
 
         // y should occur once.
@@ -32,7 +32,7 @@ public class NaiveLetterFreqGuesserTest {
     @DisplayName("NaiveLetterFreqGuesser returns correct frequency map (large input)")
     @Test
     public void testFreqMapLargeFile() {
-        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("data/sorted_scrabble.txt");
+        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("skeleton/proj0/data/sorted_scrabble.txt");
         Map<Character, Integer> freqMap = GuessHelper.getFrequencyMap(nlfg.words);
 
         // y should occur 17,313 times.
@@ -46,7 +46,7 @@ public class NaiveLetterFreqGuesserTest {
     @DisplayName("NaiveLetterFreqGuesser returns correct guess based on previous guesses")
     @Test
     public void testGetGuess() {
-        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("data/example.txt");
+        NaiveLetterFreqGuesser nlfg = new NaiveLetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the first guess is e, the most common letter in the dictionary.
         char guess = nlfg.getGuess(List.of());

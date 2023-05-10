@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class RandomChooserTest {
 
-    public static final String DICTIONARY_FILE = "data/sorted_scrabble.txt";
-    public static final String EXAMPLE_FILE = "data/example.txt";
+    public static final String DICTIONARY_FILE = "skeleton/proj0/data/sorted_scrabble.txt";
+    public static final String EXAMPLE_FILE = "skeleton/proj0/data/example.txt";
 
     @Order(1)
     @DisplayName("RandomChooser has the correct initial pattern")
@@ -91,7 +91,7 @@ public class RandomChooserTest {
     @DisplayName("RandomChooser returns correct number of occurrences of characters")
     @Test
     public void testReturnedOccurrences() {
-        RandomChooser rc = new RandomChooser(4, "data/example-ea.txt");
+        RandomChooser rc = new RandomChooser(4, "skeleton/proj0/data/example-ea.txt");
 
         // Check occurrences and pattern after guessing e
         int occurencesOfE = rc.makeGuess('e');

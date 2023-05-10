@@ -14,7 +14,7 @@ public class PatternAwareLetterFreqGuesserTest {
     @DisplayName("PatternAwareLetterFreqGuesser returns correct guesses for blank pattern")
     @Test
     public void testGetGuessBlankPattern() {
-        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("data/example.txt");
+        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the first guess is e, the most common letter in the dictionary.
         char guess = palfg.getGuess("----", List.of());
@@ -33,7 +33,7 @@ public class PatternAwareLetterFreqGuesserTest {
     @DisplayName("PatternAwareLetterFreqGuesser returns correct guesses for -o-- pattern")
     @Test
     public void testGetGuess_o__Pattern() {
-        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("data/example.txt");
+        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the first guess is c, the most common letter in the dictionary if the 2nd letter is o.
         char guess = palfg.getGuess("-o--", List.of('o'));
@@ -52,7 +52,7 @@ public class PatternAwareLetterFreqGuesserTest {
     @DisplayName("PatternAwareLetterFreqGuesser handles -e-- and ---l patterns")
     @Test
     public void testGetGuess_e__PatternUntilCool() {
-        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("data/example.txt");
+        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the next guess is a if the pattern is currently -e-- and only e has been guessed.
         // this is because there are 2 as and 2 os, but a comes earlier in the alphabet
@@ -76,7 +76,7 @@ public class PatternAwareLetterFreqGuesserTest {
     @DisplayName("PatternAwareLetterFreqGuesser handles -e-- pattern after multiple guesses")
     @Test
     public void testGetGuess_e__PatternIfLACDGuessed() {
-        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("data/example.txt");
+        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("skeleton/proj0/data/example.txt");
 
         // check that the next guess is o, if the previous guess were l, a, c, d and the pattern is ---l
         char guess = palfg.getGuess("---l", List.of('l', 'a', 'c', 'd'));
@@ -87,7 +87,7 @@ public class PatternAwareLetterFreqGuesserTest {
     @DisplayName("PatternAwareLetterFreqGuesser handles -o--a- pattern on large file")
     @Test
     public void testGetGuess_o__a_PatternLargeFile() {
-        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("data/sorted_scrabble.txt");
+        PatternAwareLetterFreqGuesser palfg = new PatternAwareLetterFreqGuesser("skeleton/proj0/data/sorted_scrabble.txt");
 
         // check that the next guess is s, if the previous guesses were o and a
         char guess = palfg.getGuess("-o--a-", List.of('o', 'a'));

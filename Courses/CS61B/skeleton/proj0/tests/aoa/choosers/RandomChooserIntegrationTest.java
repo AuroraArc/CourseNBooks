@@ -58,7 +58,7 @@ public class RandomChooserIntegrationTest {
                     "{seed = 2019, word length = 8, max wrong guesses = 7, guesses = redfqin}",
                     "{seed = 2019, word length = 8, max wrong guesses = 2, guesses = redfqin}",
             },
-            outputRoot = "tests/data/randomTraces",
+            outputRoot = "skeleton/proj0/tests/data/randomTraces",
             outputFiles = {
                     "trace0.txt",
                     "trace1.txt",
@@ -88,7 +88,7 @@ public class RandomChooserIntegrationTest {
         StdRandom.setSeed(seed);
 
         // Run the actual game
-        runTestGame(RandomChooser.class, length, wrongAllowed, "data/sorted_scrabble.txt", guesses);
+        runTestGame(RandomChooser.class, length, wrongAllowed, "skeleton/proj0/data/sorted_scrabble.txt", guesses);
 
         assertWithMessage("Game output was incorrect")
                 .that(capture.toString().replace("\r\n", "\n").strip())
