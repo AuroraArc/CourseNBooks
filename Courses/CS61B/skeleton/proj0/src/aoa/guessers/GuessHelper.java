@@ -56,13 +56,4 @@ public class GuessHelper {
         return duplicates.get(0);
     }
 
-    public static char[][] getWordsArray(List<String> words) {
-        char[][] wordsArray = new char[words.size()][1];
-        int i = 0;
-        for (String word : words) {
-            wordsArray[i] = word.toCharArray();
-            i++;
-        }
-        return wordsArray;
-    }
 }
