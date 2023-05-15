@@ -35,5 +35,6 @@ public class IntList {
         IntList l = new IntList(15, null);
         l = new IntList(10, l);
         l = new IntList(5, l);
+        System.out.println(l.size());
     }
 }
