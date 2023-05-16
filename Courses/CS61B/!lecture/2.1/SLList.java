@@ -15,29 +15,36 @@ public class SLList {
         }
     }
 
-    private IntNode first;
+    private IntNode sentinel;
     private int size;
 
+    public SLList() {
+        sentinel = new IntNode(0, null);
+        size = 0;
+    }
+
     public SLList(int x) {
-        first = new IntNode(x, null);
+        sentinel = new IntNode(0, null);
+        sentinel.next = new IntNode(x, null);
         size = 1;
     }
 
     // Adds x to the front of the list.
     public void addFirst(int x) {
-        first = new IntNode(x, first);
+        sentinel.next = new IntNode(x, sentinel.next);
         size++;
     }
 
     // Returns the first item in the list.
     public int getFirst() {
-        return first.item;
+        return sentinel.next.item;
     }
 
     // Adds an item to the end of the list. (iteratively)
     public void addLast(int x) {
-        IntNode p = first;
         size++;
+
+        IntNode p = sentinel;
 
         // Move p until it reaches the end of the list.
         while (p.next != null) {
