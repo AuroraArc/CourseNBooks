@@ -110,6 +110,89 @@ $A$: $B\setminus A=\{x\in B \mid x \notin A\}$.
 
 \bigbreak
 
-If $B=\{1, 2, 3\}$ and $A=\{3, 4, 5\}$, then $B\setminus A=\{1,2\}$.
+If $B=\{1, 2, 3\}$ and $A=\{3, 4, 5\}$, then $B\setminus A=\{1,2\}$. \\
+If $\mathbb{R}$ is the set of real numbers and $\mathbb{Q}$ is the set of rational numbers, then $\mathbb{R}\setminus\mathbb{Q}$ is the set of irrational numbers.
 
+\bigbreak
+
+Properties of complements:
+\begin{itemize}
+	\item $A\setminus A=\emptyset$
+	\item $A\setminus \emptyset=A$
+	\item $\emptyset\setminus A=\emptyset$
+\end{itemize}
+
+\newpage
+
+\subsection*{Significant Sets}
+In mathematics, some sets are referred to so commonly that they are denoted by special symbols. These include:
+\begin{itemize}
+	\item $\mathbb{N}$ denotes the set of all natural numbers: $\{0, 1, 2, 3, \dots\}$
+	\item $\mathbb{Z}$ denotes the set of all integer numbers: $\{\dots, -2, -1, 0, 1, 2, \dots\}$
+	\item $\mathbb{Q}$ denotes the set of all rational numbers: $\{\dfrac{a}{b}\mid a, b \in \mathbb{Z}, b \neq 0\}$
+	\item $\mathbb{R}$ denotes the set of all real numbers
+	\item $\mathbb{C}$ denotes the set of all complex numbers
+\end{itemize}
+
+\subsection*{Products and Power Sets}
+The \textbf{Cartesian product} (also called the \textbf{cross product}) of two sets $A$ and $B$, written as $A\times B$, is the set of all pairs whose first component is an element of $A$ and whose second component is an element of $B$.
+
+\bigbreak
+
+In set notation, $A\times B=\{(a, b)\mid a\in A, b\in B\}$.
+
+\bigbreak
+
+If $A=\{1, 2, 3\}$ and $B=\{u, v\}$, then $A\times B=\{(1, u),\, (1, v),\, (2, u),\, (2, v),\, (3, u),\, (3, v)\}$. \\
+$\mathbb{N}\times \mathbb{N}=\{(0, 0),\, (1, 0),\, (0, 1),\, (1, 1),\, (2, 0),\, \dots\}$ is the set of all pairs of natural numbers.
+
+\bigbreak
+
+Given a set $S$, the \textbf{power set} of $S$, denotes by $\mathcal{P}(S)$, is the set of all subsets of $S$: $\{T\mid T\subseteq S\}$.
+
+\bigbreak
+
+If $\lvert S \rvert = k$, then $\lvert \mathcal{P}(S)\rvert=2^k$.
+
+\section*{Mathematical Notation}
+\subsection*{Sums and Products}
+There is a compact notation for writing sums or products of large numbers of items.
+
+\bigbreak
+
+To write $1+2+\dots+n$, we write $\sum_{i=1}^{n}i$. More generally we can write the sum $f(m)+f(m+1)+\dots+f(n)$ as $\sum_{i=m}^{n}f(i)$. For example $\sum_{i=5}^{n}i^2=5^2+6^2+\dots+n^2$.
+
+\bigbreak
+
+To write the product $f(m)f(m+1)+\dots+f(n)$, we use the notation $\prod_{i=m}^{n}f(i)$. For example, $\prod_{i=1}^{n}i=1\cdot 2\cdots n$ is the product of the first $n$ positive integers.
+
+\subsection*{Universal and Existential Quantifiers}
+$\forall$: universal quantifier ("for all") \\
+$\exists$: existential quantifier ("there exists")
+
+\bigbreak
+
+Consider the statement: For all natural numbers $n$, $n^2+n+41$ is prime. Here, $n$ is quantified to any element of the set $\mathbb{N}$ of natural numbers. \\
+In notation, we write $(\forall n \in \mathbb{N})(n^2+n+41$ is prime).
+
+\bigbreak
+
+$n^2+n+41$ is indeed prime for small values of $n$, but there are values that make it not prime ($n=41$). Therefore, this statement is not true.
+
+\bigbreak
+
+Consider this new statement: $(\exists x \in \mathbb{Z})(x<2 \text{ and } x^2=4)$. The statement says that there is an integer $x$ which is less than 2, but its square is equal to 4. This statement is true ($x=-2$).
+
+\bigbreak
+
+Statements an be written using both kinds of quantifiers:
+\begin{itemize}
+	\item[1.] $(\forall x \in \mathbb{Z})(\exists y \in \mathbb{Z})(y>x)$
+\end{itemize}
+For all $x$ in the set of integers, there exists a $y$ in the set of integers where $y$ is greater than $x$ (true).
+
+\begin{itemize}
+	\item[2.] $(\exists y \in \mathbb{Z})(\forall x \in \mathbb{Z})(y>x)$
+\end{itemize}
+There exists a $y$ in the set of integers which is greater than $x$ for all $x$ in the set of integers (false).
 \end{document}
