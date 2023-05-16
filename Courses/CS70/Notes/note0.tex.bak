@@ -175,5 +175,24 @@ $\exists$: existential quantifier ("there exists")
 Consider the statement: For all natural numbers $n$, $n^2+n+41$ is prime. Here, $n$ is quantified to any element of the set $\mathbb{N}$ of natural numbers. \\
 In notation, we write $(\forall n \in \mathbb{N})(n^2+n+41$ is prime).
 
+\bigbreak
 
+$n^2+n+41$ is indeed prime for small values of $n$, but there are values that make it not prime ($n=41$). Therefore, this statement is not true.
+
+\bigbreak
+
+Consider this new statement: $(\exists x \in \mathbb{Z})(x<2 \text{ and } x^2=4)$. The statement says that there is an integer $x$ which is less than 2, but its square is equal to 4. This statement is true ($x=-2$).
+
+\bigbreak
+
+Statements an be written using both kinds of quantifiers:
+\begin{itemize}
+	\item[1.] $(\forall x \in \mathbb{Z})(\exists y \in \mathbb{Z})(y>x)$
+\end{itemize}
+For all $x$ in the set of integers, there exists a $y$ in the set of integers where $y$ is greater than $x$ (true).
+
+\begin{itemize}
+	\item[2.] $(\exists y \in \mathbb{Z})(\forall x \in \mathbb{Z})(y>x)$
+\end{itemize}
+There exists a $y$ in the set of integers which is greater than $x$ for all $x$ in the set of integers (false).
 \end{document}
