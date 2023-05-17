@@ -8,4 +8,5 @@
 * [CS 70](https://www.eecs70.org/) (UC Berkeley)
 * [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/)
 ## Books
-* ***Concrete Mathematics: A Foundation for Computer Science 2nd ed.*** by Ronald Graham, Donald Knuth, and Oren Patashnik
+* ***Deep Learning with Python, 2nd ed.*** by François Chollet
+* ***Python for Data Analysis, 3rd ed.*** by Wes McKinney
