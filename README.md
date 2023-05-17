@@ -1,7 +1,7 @@
 # List of online courses and books
 ## Courses
 * [CS50x](https://cs50.harvard.edu/x/2023/) (Harvard OCW)
-* [Intro to CS and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (Fall 2016 MIT OCW)
+* [Intro to CS and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (MIT OCW)
 * [Programming Languages, Part A](https://www.coursera.org/learn/programming-languages) (UW Coursera)
 * [ML Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization/) (DeepLearning.ai)
 * [CS 61B](https://sp23.datastructur.es/) (UC Berkeley)
