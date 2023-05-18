@@ -6,5 +6,5 @@ def fib_efficient(n, d):
         d[n] = ans
         return ans
 
-d = {1:1, 2:2}
+d = {1:1, 2:2} # d is a dictionary with key 1 and value 1, key 2 and value 2
 print(fib_efficient(6, d))
