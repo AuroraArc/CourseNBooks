@@ -8,7 +8,7 @@
 * [CS 70](https://www.eecs70.org/) (UC Berkeley)
 * [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/)
 * [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) (MIT OCW)
-* [Introduction to Probability](https://www.edx.org/course/introduction-to-probability) (Harvard EdX)
+* [Introduction to Probability](https://www.edx.org/course/introduction-to-probability) (Harvard edX)
 ## Books
 * ***Deep Learning with Python, 2nd ed.*** by François Chollet
 * ***Python for Data Analysis, 3rd ed.*** by Wes McKinney
