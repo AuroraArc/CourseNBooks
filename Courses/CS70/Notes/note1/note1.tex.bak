@@ -1,0 +1,62 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Henry Yu}
+\begin{document}
+
+\raggedright
+
+\begin{center}
+	\huge{Note 1}
+\end{center}
+
+\section*{Propositional Logic}
+
+To become fluent in working with mathematical statements, you need to understand the basic framework of the language of mathematics.
+
+\bigbreak
+
+\textbf{Proposition}: a statement which is either true or false
+
+\bigbreak
+
+These statements are propositions:
+\begin{itemize}
+	\item[1.] $\sqrt{3}$ is irrational.
+	\item[2.]$1+1=5$.
+\end{itemize}
+
+These statements are not propositions:
+\begin{itemize}
+	\item[1.] $2+2$.
+	\item[2.]$x^2+3x=5$. (since x is unknown)
+\end{itemize}
+
+Propositions should not include fuzzy terms, so these statements aren't propositions either (although some sources may say they are):
+\begin{itemize}
+	\item[1.] Arnold Schwarzenegger often eats broccoli. ("often" is fuzzy)
+	\item[2.] Henry VIII was unpopular. ("unpopular" is fuzzy)
+\end{itemize}
+
+Propositions may be joined together to form more complex statements. Let $P$, $Q$, \text{and } $R$ be variables representing propositions. The simplest way of joining these propositions together is to use the connectives "and," "or," and "not."
+\begin{itemize}
+	\item[1.] \textbf{Conjunction}: $P\wedge Q$ ("$P$ and $Q$"). True only when both $P$ and $Q$ are true.
+	\item[2.] \textbf{Disjunction}: $P\vee Q$ ("$P$ or $Q$"). True when at least one of $P$ and $Q$ is true.
+	\item[3.] \textbf{Negation}: $\neg P$ ("not $P$"). True when $P$ is false.
+\end{itemize}
+
+Statements with variables (like these) are called \textbf{propositional forms}.
+
+\bigbreak
+
+A fundamental principle known as the \textbf{law of the excluded middle} says that, for any proposition $P$, either $P$ is true or $\neg P$ is true (but not both). Thus $P\vee\neg P$ is always true, regardless of the truth value of $P$. A propositional form is always true regardless of its truth values is called a \textbf{tautology}. Conversely, a statement such as $P\wedge\neg P$, which is always false, is called a \textbf{contradiction}.
+
+\bigbreak
+
+A
+\end{document}
