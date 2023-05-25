@@ -58,5 +58,205 @@ A fundamental principle known as the \textbf{law of the excluded middle} says th
 
 \bigbreak
 
-A
+A \textbf{truth table} is used to describe the possible values of a propositional form. Truth tables are the same as function tables: you list all possible input values for the variables, and then list the outputs given for those inputs.
+
+\bigbreak
+
+Here are the truth tables for conjunction, disjunction, and negation:
+\begin{center}
+	\begin{tabular}{ |c|c| }
+		\hline
+		$P$ & $Q$ \\
+		\hline
+		T & T \\
+		\hline
+		T & F \\ 
+		\hline
+		F & T \\ 
+		\hline
+		F & F \\
+		\hline
+	\end{tabular}
+	\begin{tabular}{ |c| }
+		\hline
+		$P\wedge Q$ \\
+		\hline
+		T \\
+		\hline
+		F \\
+		\hline
+		F \\
+		\hline
+		F \\
+		\hline
+	\end{tabular}
+	\begin{tabular}{ |c| }
+		\hline
+		$P\vee Q$ \\
+		\hline
+		T \\
+		\hline
+		T \\
+		\hline
+		T \\
+		\hline
+		F \\
+		\hline
+	\end{tabular}
+	\begin{tabular}{ |c|c| }
+		\hline
+		$P$ & $\neg P$ \\
+		\hline
+		T & F \\
+		\hline
+		F & T \\
+		\hline		
+	\end{tabular}
+\end{center}
+
+\newpage
+
+The most important and subtle propositional form is an \textbf{implication}:
+\begin{itemize}
+	\item[4.] \textbf{Implication}: $P\Rightarrow Q$ ("$P$ implies $Q$"). This is the same as "if $P$, then $Q$."
+\end{itemize}
+
+Here, $P$ is called the \textbf{hypothesis} of the implication, and $Q$ is the \textbf{conclusion}.
+
+\bigbreak
+
+Here are some examples:
+\begin{itemize}
+	\item If you stand in the rain, then you'll get wet.
+	\item If you passed the class, you received a certificate.
+\end{itemize}
+
+An implication $P\Rightarrow Q$ is false only when $P$ is true and $Q$ is false.
+
+\bigbreak
+
+Here is the truth table for $P\Rightarrow Q$ (along with an additional column):
+\begin{center}
+	\begin{tabular}{ |c|c|c|c| }
+		\hline
+		$P$ & $Q$ & $P\Rightarrow Q$ & $\neg P \vee Q$ \\
+		\hline
+		T & T & T & T \\
+		\hline
+		T & F & F & F \\
+		\hline
+		F & T & T & T \\
+		\hline
+		F & F & T & T \\ 
+		\hline
+	\end{tabular}
+\end{center}
+
+Note the $P\Rightarrow Q$ is always true when $P$ is false. When an implication is stupidly true because the hypothesis is false, we say that it is \textbf{vacuously true}.
+
+\bigbreak
+
+Note also that $P\Rightarrow Q$ is \textbf{logically equivalent} to $\neg P \vee Q$. We write this as $(P\Rightarrow Q)\equiv(\neg P \vee Q)$.
+
+\bigbreak
+
+Here are some different ways of meaning $P\Rightarrow Q$:
+\begin{itemize}
+	\item[1.] if $P$, then $Q$
+	\item[2.] $Q$ if $P$
+	\item[3.] $P$ only if $Q$
+	\item[4.] $P$ is sufficient for $Q$
+	\item[5.] $Q$ is necessary for $P$
+	\item[6.] $Q$ unless not $P$
+\end{itemize}
+
+If both $P\Rightarrow Q$ and $Q\Rightarrow P$ are true, then we say "$P$ if and only if $Q$" (abbreviated "$P$ iff $Q$"). Formally, we write $P\Leftrightarrow Q$. Note that $P\Leftrightarrow Q$ is true when $P$ and $Q$ have the same truth values (both true or false).
+
+\bigbreak
+
+Given an implication $P\Rightarrow Q$, we can also define its
+\begin{itemize}
+	\item[1.] \textbf{Contrapositive}: $\neg Q\Rightarrow \neg P$
+	\item[2.] \textbf{Converse}: $Q\Rightarrow P$
+\end{itemize}
+
+\newpage
+
+Here are some truth tables:
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c||c|c|c|c| }
+		\hline
+		$P$ & $Q$ & $\neg P$ & $\neg Q$ & $P\Rightarrow Q$ & $Q\Rightarrow P$ & $\neg Q\Rightarrow \neg P$ & $P\Leftrightarrow Q$ \\
+		\hline
+		T & T & F & F & T & T & T & T \\
+		\hline
+		T & F & F & T & F & T & F & F \\
+		\hline
+		F & T & T & F & T & F & T & F \\
+		\hline
+		F & F & T & T & T & T & T & T \\
+		\hline
+	\end{tabular}
+\end{center}
+
+Note that $P\Rightarrow Q$ and its contrapositive have the same truth values, so they are logically equivalent: $(P\Rightarrow Q)\equiv(\neg Q\Rightarrow\neg P)$.
+
+\bigbreak
+
+Also note that $P\Rightarrow Q$ and $Q\Rightarrow P$ are not logically equivalent.
+
+\section*{Quantifiers}
+
+The mathematical statements you'll see in practice will look something like this:
+\begin{itemize}
+	\item[1.] For all natural numbers $n$, $n^2+n+41$ is prime.
+	\item[2.] If $n$ is an odd integer, so is $n^3$.
+	\item[3.] There is an integer $k$ that is both even and odd.
+\end{itemize}
+
+These statements assert something about lots of simple propositions all at once. For instance, the first statement is asserting that $0^2+0+41$ is prime, $1^2+1+41$ is prime, and so on.
+
+\bigbreak
+
+The last statement says that as $k$ ranges over all possible integers, we will find at least one value of $k$ for which the statement is satisfied.
+
+\bigbreak
+
+Compared to the previous statement "$x^2+3x=5$," these examples are quantified over a "universe." To express these statements mathematically, we need two \textbf{quantifiers}:
+\begin{itemize}
+	\item[1.] the universal quantifier $\forall$ ("for all")
+	\item[2.] the existential quantifier $\exists$ ("there exists")
+\end{itemize}
+
+Examples:
+\begin{itemize}
+	\item[1.] "Some mammals lay eggs."
+\end{itemize}
+
+Mathematically, "some" means "at least one," so the statement is actually saying "There exists a mammal $x$ such that $x$ lays eggs." If we let our universe $U$ to be the set of mammals, then we can write: $(\exists x\in U)(x \text{ lays eggs})$.
+
+\begin{itemize}
+	\item[2.] "For all natural numbers $n$, $n^2+n+41$ is prime."
+\end{itemize}
+
+In this case, our universe becomes the set of natural numbers, denoted as $\mathbb{N}$: $(\forall n \in \mathbb{N})(n^2+n+41\text{ is prime})$.
+
+\bigbreak
+
+We refer to a statement which refers to a variable as a \textbf{predicate} or as a \textbf{propositional formula} when replacing the variable with a value makes the statement true or false.
+
+\newpage
+
+Note that in a finite universe, we can express existentially and universally quantified propositions without quantifiers, using disjunctions and conjunctions respectively.
+
+\bigbreak
+
+For example, if our universe $U$ is $\{1,2,3,4\}$, then \\
+ $(\exists x \in U)P(x)$ is logically equivalent to $P(1)\vee P(2)\vee P(3)\vee P(4)$, and \\
+ $(\forall x \in U)P(x)$ is logically equivalent to $P(1)\wedge P(2) \wedge P(3) \wedge P(4)$.
+ 
+ \bigbreak
+ 
+ However, in an infinite universe, this is not possible.
 \end{document}
