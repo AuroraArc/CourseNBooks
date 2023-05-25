@@ -259,4 +259,12 @@ For example, if our universe $U$ is $\{1,2,3,4\}$, then \\
  \bigbreak
  
  However, in an infinite universe, this is not possible.
+ 
+ \section*{Negation}
+ 
+ Let's look at how to negate conjunctions and disjunctions:
+ \begin{center}
+ 	$\neg(P\wedge Q)\equiv(\neg P\vee\neg Q)$ \\
+ 	$\neg(
+ \end{center}
 \end{document}

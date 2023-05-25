@@ -253,10 +253,30 @@ Note that in a finite universe, we can express existentially and universally qua
 \bigbreak
 
 For example, if our universe $U$ is $\{1,2,3,4\}$, then \\
- $(\exists x \in U)P(x)$ is logically equivalent to $P(1)\vee P(2)\vee P(3)\vee P(4)$, and \\
- $(\forall x \in U)P(x)$ is logically equivalent to $P(1)\wedge P(2) \wedge P(3) \wedge P(4)$.
+$(\exists x \in U)P(x)$ is logically equivalent to $P(1)\vee P(2)\vee P(3)\vee P(4)$, and \\
+$(\forall x \in U)P(x)$ is logically equivalent to $P(1)\wedge P(2) \wedge P(3) \wedge P(4)$.
  
- \bigbreak
+\bigbreak
  
- However, in an infinite universe, this is not possible.
+However, in an infinite universe, this is not possible.
+
+\section*{Negation}
+
+Let's look at how to negate conjunctions and disjunctions:
+\begin{center}
+ 	$\neg(P\wedge Q)\equiv(\neg P\vee\neg Q)$ \\
+ 	$\neg(P\vee Q)\equiv(\neg P\wedge\neg Q)$
+\end{center}
+
+These two equivalences are known as \textbf{De Morgan's Laws}, and they are quite intuitive: for example, if it is not the case that $P\wedge Q$ is true, then either $P$ or $Q$ is false (and vice versa).
+
+\bigbreak
+
+Negating propositions involving quantifiers actually follows analogous laws.
+
+\bigbreak
+Assume that the universe is $\{1,2,3,4\}$ and let $P(x)$ denote the propositional formula "$x^2>10$". \\
+Check that $\exists xP(x)$ is true but $\forall xP(x)$ is false. \\
+Observe that both $\neg(\forall xP(x))$ and $\exists x\neg P(x)$ are true because $P(1)$ is false. \\
+Also note that both $\forall x\neg P(x)$ and $\neg(\exists xP(x))$ are false, because $P(4)$ is true.
 \end{document}
