@@ -253,18 +253,61 @@ Note that in a finite universe, we can express existentially and universally qua
 \bigbreak
 
 For example, if our universe $U$ is $\{1,2,3,4\}$, then \\
- $(\exists x \in U)P(x)$ is logically equivalent to $P(1)\vee P(2)\vee P(3)\vee P(4)$, and \\
- $(\forall x \in U)P(x)$ is logically equivalent to $P(1)\wedge P(2) \wedge P(3) \wedge P(4)$.
+$(\exists x \in U)P(x)$ is logically equivalent to $P(1)\vee P(2)\vee P(3)\vee P(4)$, and \\
+$(\forall x \in U)P(x)$ is logically equivalent to $P(1)\wedge P(2) \wedge P(3) \wedge P(4)$.
  
- \bigbreak
+\bigbreak
  
- However, in an infinite universe, this is not possible.
- 
- \section*{Negation}
- 
- Let's look at how to negate conjunctions and disjunctions:
- \begin{center}
+However, in an infinite universe, this is not possible.
+
+\section*{Negation}
+
+Let's look at how to negate conjunctions and disjunctions:
+\begin{center}
  	$\neg(P\wedge Q)\equiv(\neg P\vee\neg Q)$ \\
- 	$\neg(
- \end{center}
+ 	$\neg(P\vee Q)\equiv(\neg P\wedge\neg Q)$
+\end{center}
+
+These two equivalences are known as \textbf{De Morgan's Laws}, and they are quite intuitive: for example, if it is not the case that $P\wedge Q$ is true, then either $P$ or $Q$ is false (and vice versa).
+
+\bigbreak
+
+Negating propositions involving quantifiers actually follows analogous laws.
+
+\bigbreak
+
+Assume that the universe is $\{1,2,3,4\}$ and let $P(x)$ denote the propositional formula "$x^2>10$". \\
+Check that $\exists xP(x)$ is true but $\forall xP(x)$ is false. \\
+Observe that both $\neg(\forall xP(x))$ and $\exists x\neg P(x)$ are true because $P(1)$ is false. \\
+Also note that both $\forall x\neg P(x)$ and $\neg(\exists xP(x))$ are false, because $P(4)$ is true.
+
+\bigbreak
+
+The fact that each pair of statements had the same truth value, as the equivalences
+\begin{center}
+	$\neg(\forall xP(x))\equiv\exists x\neg P(x)$ \\
+	$\neg(\exists xP(x))\equiv \forall x\neg P(x)$
+\end{center}
+are laws that hold for any proposition $P$ quantified over any universe (including infinite ones).
+
+\bigbreak
+
+It is helpful to think of English sentences to convince yourself (informally) that these laws are true.
+
+\bigbreak
+
+For example, assume that we are working within the universe $\mathbb{Z}$ (the set of all integers), and that $P(x)$ is the proposition "$x$ is odd." We know that the statement $(\forall xP(x))$ is false, since not every integer is odd.
+
+\bigbreak
+
+Therefore, we expect its negation, $\neg(\forall xP(x))$, to be true. How would you say the negation in English? If it is not true that every integer is odd, then there must exist some integer which is not odd (i.e., even). $(\exists x\neg P(x))$
+
+\bigbreak
+
+To see a more complex example, fix some universe and propositional formula $P(x,y)$. Assume we have the proposition $\neg(\forall x\exists yP(x,y))$ and we want to push the negation operator inside the quantifiers. By the above laws, we can do so:
+\begin{center}
+	$\neg(\forall x\exists yP(x,y))\equiv\exists x\neg(\exists yP(x,y))\equiv\exists x\forall y\neg P(x,y)$
+\end{center}
+
+Notice that we broke the complex negation into a smaller, easier problem as the negation p
 \end{document}
