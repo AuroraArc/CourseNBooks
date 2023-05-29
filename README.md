@@ -6,7 +6,7 @@
 * [ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction#about) (DeepLearning.ai & Coursera)
 * [CS 61B](https://sp23.datastructur.es/) (UC Berkeley)
 * [CS 70](https://www.eecs70.org/) (UC Berkeley)
-* [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/)
+* [fast.ai Deep Learning](https://course.fast.ai/) (fast.ai)
 * [Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) (MIT OCW)
 * [Introduction to Probability](https://www.edx.org/course/introduction-to-probability) (Harvard edX)
 ## Books
