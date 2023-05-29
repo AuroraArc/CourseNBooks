@@ -3,7 +3,7 @@
 * [CS50x](https://cs50.harvard.edu/x/2023/) (Harvard OCW)
 * [Intro to CS and Programming in Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) (MIT OCW)
 * [Programming Languages, Part A](https://www.coursera.org/learn/programming-languages) (UW Coursera)
-* [ML Specialization](https://www.deeplearning.ai/courses/machine-learning-specialization/) (DeepLearning.ai)
+* [ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction#about) (DeepLearning.ai & Coursera)
 * [CS 61B](https://sp23.datastructur.es/) (UC Berkeley)
 * [CS 70](https://www.eecs70.org/) (UC Berkeley)
 * [Full Stack Deep Learning](https://fullstackdeeplearning.com/course/2022/)
