@@ -14,6 +14,58 @@
 	\huge{Note 2}
 \end{center}
 
+\section*{Important Things}
+
+\subsection*{Theorems}
+
+\textbf{Theorem 2.1.} $\textit{For any } a,b,c \in \mathbb{Z}, \textit{if } a\mid b \textit{ and } a\mid c, \textit{then } a\mid (b+c)$.
+
+\bigbreak
+
+\textbf{Theorem 2.2.} \textit{Let} $0<n<1000$ \textit{be an integer. If the sum of the digits of n is divisible by 9, then n is divisible by 9}.
+
+\bigbreak
+
+\textbf{Theorem 2.3} (Converse of Theorem 2.2)\textbf{.} \textit{Let} $0<n<1000$ \textit{be an integer. If $n$ is divisible by 9, then the sum of the digits of $n$ is divisible by 9}.
+
+\bigbreak
+
+\textbf{Theorem 2.4.} \textit{Let $n$ be a positive integer and let $d$ divide $n$. If $n$ is odd, then $d$ is odd}.
+
+\bigbreak
+
+\textbf{Theorem 2.5} (Pigeonhole principle)\textit{.} \textit{Let $n$ and $k$ be positive integers. Place $n$ objects into $k$ boxes. If $n>k$, the at least one box must contain multiple objects}.
+
+\bigbreak
+
+\textbf{Theorem 2.6.} \textit{There are infinitely many prime numbers}.
+
+\bigbreak
+
+\textbf{Theorem 2.7.} \textit{$\sqrt{2}$ is irrational}.
+
+\subsection*{Lemmas}
+
+\textbf{Lemma 2.1.} \textit{Every natural number greater than one is either prime or has a prime divisor}.
+
+\bigbreak
+
+\textbf{Lemma 2.2.} \textit{If $a^2$ is even, then $a$ is even}.
+
+\newpage
+
+\section*{When to Use What}
+
+\subsection*{Direct Proof}
+
+\subsection*{Proof by Contraposition}
+
+\subsection*{Proof by Contradiction}
+
+\subsection*{Proof by Cases}
+
+\newpage
+
 \section*{Proofs}
 
 A mathematical proof provides a means for guaranteeing that a statement is true. 
@@ -147,4 +199,82 @@ Note that the proof technique was stated as the first line. This is generally go
 
 \section*{Proof by Contradiction}
 The idea in a proof by contradiction relies crucially on the fact that if a proposition is not false, then it must be true.
+
+\begin{center}
+\begin{tabular}{|c|}
+\hline 
+\textbf{Proof by Contradiction} \\ 
+Goal: To prove $P$. \\ 
+Approach: Assume $\neg P$ \\ 
+\vdots \\ 
+$R$ \\ 
+\vdots \\ 
+$\neg R$ \\ 
+Conclusion: $\neg P\Rightarrow\neg R\wedge R$, which is a contradiction. Thus, $P$. \\ 
+\hline 
+\end{tabular} 
+\end{center}
+
+A proof by contradiction shows that $\neg P\Rightarrow\neg R\wedge R\equiv$ False. The contrapositive of this statement is hence True $\Rightarrow P$.
+
+\newpage
+
+\textbf{Theorem 2.6.} \textit{There are infinitely many prime numbers}.
+
+\bigbreak
+
+Using a proof technique like direct proof seems to be very difficult. How would you construct infinitely many prime numbers? If we use contradiction instead by assuming the statement is false, i.e., there are only finitely many primes, bad things will happen.
+
+\bigbreak
+
+\textbf{Lemma 2.1.} \textit{Every natural number greater than one is either prime or has a prime divisor}.
+
+\bigbreak
+
+\textit{Proof of Theorem 2.6.} We proceed by contradiction. Suppose that Theorem 2.6 is false, i.e., there are only finitely many primes, say $k$ of them. Then, we can enumerate them: $p_1,p_2,p_3,\dots,p_k$.
+
+\bigbreak
+
+Define number $q:=p_1p_2p_3\dots p_k+1$, which is the product of all primes plus one. We can then claim that $q$ cannot be prime because by definition, it is larger than all the primes $p_1$ through $p_k$. By Lemma 2.1, we therefore conclude that $q$ has a prime divisor $p$. This will be our statement $R$.
+
+\bigbreak
+
+Next, because $p_1,p_2,p_3,\dots,p_k$ are all the primes, $p$ must be equal to one of them: thus, $p$ divides $r:=p_1p_2p_3\dots p_k$. Hence, $p\mid q$ and $p\mid r$, implying $p\mid(q-r)$. But $q-r=1$, implying $p\leq 1$, and hence $p$ is not prime; this is the statement $\neg R$. We thus have $R\wedge\neg R$, which is a contradiction, as desired.
+
+\bigbreak
+
+\textbf{Theorem 2.7.} \textit{$\sqrt{2}$ is irrational}.
+
+\bigbreak
+
+Why should contradiction be a good candidate proof technique to try here? Consider this: Theorem 2.6 and Theorem 2.7 share something fundamental -- in both cases, we wish to show something doesn't exist.
+
+\bigbreak
+
+For Theorem 2.6, we wished to show that a largest prime doesn't exist. \\
+For Theorem 2.7, we wish to show that integers $a$ and $b$ satisfying $\sqrt{2}=a/b$ don't exist.
+
+\bigbreak
+
+\textbf{Lemma 2.2.} \textit{If $a^2$ is even, then $a$ is even}.
+
+\bigbreak
+
+\textit{Proof of Theorem 2.7.} We proceed y contradiction. Assume that $\sqrt{2}$ is rational. By the definition of rational numbers, there are integers $a$ and $b$ with no common factor other than 1, such that $\sqrt{2}=a/b$. Let our assertion $R$ state that $a$ and $b$ share no common factors.
+
+\bigbreak
+
+For any numbers $x$ and $y$, we know that $x=y\Rightarrow x^2=y^2$, hence $2=a^2/b^2$. Multiplying both sides by $b^2$, we have $a^2=2b^2$. Since $b$ is an integer, it follows that $b^2$ is an integer, and thus $a^2$ is even. Plugging in Lemma 2.2, we hence have that $a$ is even. In other words, there exists an integer $c$ such that $a=2c$.
+
+\bigbreak
+
+Combining all facts together, we have that $2b^2=4c^2$, or $b^2=2c^2$. Since $c$ is an integer, $c^2$ is an integer, and hence $b^2$ is even. Thus, again applying Lemma 2.2, we conclude that $b$ is even.
+
+\bigbreak
+
+But we have just shown that both $a$ and $b$ are even. In particular, this means they share the common factor 2. This implies $\neg R$. We conclude that $R\wedge\neg R$ holds; thus, we have a contradiction, as desired.
+
+\newpage
+
+\section*{Proof by Cases} 
 \end{document}

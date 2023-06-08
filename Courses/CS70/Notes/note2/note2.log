@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  6 JUN 2023 22:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  8 JUN 2023 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,14 +288,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
 ts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
@@ -304,30 +304,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
-ftex.map}] [2] [3] (note2.aux) ) 
+ftex.map}] [2] [3] [4] [5] [6] [7] (note2.aux) ) 
 Here is how much of TeX's memory you used:
- 4207 strings out of 478345
- 68775 string characters out of 5838822
+ 4209 strings out of 478345
+ 68808 string characters out of 5838822
  1863851 words of memory out of 5000000
- 24283 multiletter control sequences out of 15000+600000
- 519192 words of font info for 57 fonts, out of 8000000 for 9000
+ 24285 multiletter control sequences out of 15000+600000
+ 519797 words of font info for 59 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,10n,62p,357b,190s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/home/Library/Application Support/MiKTeX
-/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/
-Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></Users/home/Library/Application Support/MiKTeX/t
-exmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/App
-lication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></Users/home/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/home/Library/Applic
-ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on note2.pdf (3 pages, 104400 bytes).
+ 57i,10n,62p,383b,190s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/home/Library/Applicatio
+n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Use
+rs/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/home/Library/Application 
+Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/
+home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/home/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/home
+/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmti12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on note2.pdf (7 pages, 125075 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
