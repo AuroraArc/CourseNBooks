@@ -11,3 +11,4 @@
 ## Books
 * ***Deep Learning with Python, 2nd ed.*** by François Chollet
 * ***Python for Data Analysis, 3rd ed.*** by Wes McKinney
+* ***C Programming: A Modern Approach, 2nd ed.*** by K. N. King
