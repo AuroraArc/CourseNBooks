@@ -12,25 +12,26 @@
 
 \section*{Questionnaire}
 
-1. Do you need these for deep learning?
+\begin{enumerate}
+\item Do you need these for deep learning?
 \begin{itemize}
-	\item Lots of math T / F
-	\item Lots of data T / F
-	\item Lots of expensive computers T / F
-	\item A PhD T / F
+	\item Lots of math T / \textbf{F}
+	\item Lots of data T / \textbf{F}
+	\item Lots of expensive computers T / \textbf{F}
+	\item A PhD T / \textbf{F}
 \end{itemize}
 
-2. Name five areas where deep learning is now the best in the world. \\
+\item Name five areas where deep learning is now the best in the world. \\
 
-\begin{itemize}
-	\item[1.] natural language processing
-	\item[2.] computer vision
-	\item[3.] medicine and biology
-	\item[4.] image generation
-	\item[5.] recommendation systems
-\end{itemize}
+\begin{enumerate}
+	\item natural language processing
+	\item computer vision
+	\item medicine and biology
+	\item image generation
+	\item recommendation systems
+\end{enumerate}
 
-3. What was the name of the first device that was based on the principle of the artificial neuron? \\
+\item What was the name of the first device that was based on the principle of the artificial neuron? \\
 
 \smallbreak
 
@@ -38,7 +39,7 @@ Mark I Perceptron
 
 \bigbreak
 
-4. Based on the book of the same name, what are the requirements for parallel distributed processing (PDP)? \\
+\item Based on the book of the same name, what are the requirements for parallel distributed processing (PDP)? \\
 
 \begin{itemize}
 	\item[1.] a set of \textit{processsing units}
@@ -51,7 +52,7 @@ Mark I Perceptron
 	\item[8.] an \textit{environment} within which the system must operate
 \end{itemize}
 
-5. What were the two theoretical misunderstandings that held back the field of neural networks? \\
+\item What were the two theoretical misunderstandings that held back the field of neural networks? \\
 
 \smallbreak
 
@@ -59,7 +60,7 @@ Marvin Minsky and Seymour Papert wrote a book called \textit{Perceptrons}, where
 
 \bigbreak
 
-6. What is a GPU? \\
+\item What is a GPU? \\
 
 \smallbreak
 
@@ -67,7 +68,7 @@ A graphics processing unit (GPU) is a special kind of processor that can perform
 
 \bigbreak
 
-Open a notebook and execute a cell containing: 1+1. What happens? \\
+\item Open a notebook and execute a cell containing: 1+1. What happens? \\
 
 \smallbreak
 
@@ -75,7 +76,7 @@ In a Jupyter Notebook, executing 1+1 will output 2.
 
 \bigbreak
 
-Why is it hard to use a traditional computer program to recognize images in a photo? \\
+\item Why is it hard to use a traditional computer program to recognize images in a photo? \\
 
 \smallbreak
 
@@ -83,7 +84,7 @@ The computer doesn't know what to look for to recognize what objects are in an i
 
 \bigbreak
 
-What did Samuel mean by "weight assignment"? \\
+\item What did Samuel mean by "weight assignment"? \\
 
 \smallbreak
 
@@ -91,58 +92,88 @@ Weights are just variables, and a weight assignment is a particular choice of va
 
 \bigbreak
 
-What term do we normally use in deep learning for what Samuel called "weights"? \\
+\item What term do we normally use in deep learning for what Samuel called "weights"? \\
 
 \smallbreak
 
 Parameters.
 
-Draw a picture that summarizes Samuel's view of a machine learning model. \\
+\bigbreak
 
-Why is it hard to understand why a deep learning model makes a particular prediction? \\
+\item Draw a picture that summarizes Samuel's view of a machine learning model. \\
 
-What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy? \\
+\smallbreak
 
-What do you need in order to train a model? \\
+\includegraphics[scale=1]{model.jpeg}
 
-How could a feedback loop impact the rollout of a predictive policing model? \\
+\bigbreak
 
-Do we always have to use 224×224-pixel images with the cat recognition model? \\
+\item Why is it hard to understand why a deep learning model makes a particular prediction? \\
 
-What is the difference between classification and regression? \\
+\smallbreak
 
-What is a validation set? What is a test set? Why do we need them? \\
+Think of a deep learning model as a human brain in a way. There are many processes that go into us formulating a thought or classifying an animal as a cat or a dog. Deep neural networks have thousands of layers of neurons. It is hard to determine what factors went into determining the final output and how important each factor was. Each layer of the network interact with each other, with each layer feeding to other layers. Because of the complex nature of deep learning models, it is very difficult why a neural network outputs a given prediction.
 
-What will fastai do if you don't provide a validation set? \\
+\bigbreak
 
-Can we always use a random sample for a validation set? Why or why not? \\
+\item What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy? \\
 
-What is overfitting? Provide an example. \\
+\smallbreak
 
-What is a metric? How does it differ from "loss"? \\
+The \textbf{universal approximation theorem} states that neural networks can theoretically represent any mathematical function. However, because of the limitations of available data and computer hardware, it is practically impossible to do so.
 
-How can pretrained models help? \\
+\newpage
 
-What is the "head" of a model? \\
+\item What do you need in order to train a model? \\
 
-What kinds of features do the early layers of a CNN find? How about the later layers? \\
+\item How could a feedback loop impact the rollout of a predictive policing model? \\
 
-Are image models only useful for photos? \\
+\item Do we always have to use 224×224-pixel images with the cat recognition model? \\
 
-What is an "architecture"? \\
+\item What is the difference between classification and regression? \\
 
-What is segmentation? \\
+\item What is a validation set? What is a test set? Why do we need them? \\
 
-What is y\_range used for? When do we need it? \\
+\item What will fastai do if you don't provide a validation set? \\
 
-What are "hyperparameters"? \\
+\item Can we always use a random sample for a validation set? Why or why not? \\
 
-What's the best way to avoid failures when using AI in an organization?
+\item What is overfitting? Provide an example. \\
+
+\item What is a metric? How does it differ from "loss"? \\
+
+\item How can pretrained models help? \\
+
+\item What is the "head" of a model? \\
+
+\item What kinds of features do the early layers of a CNN find? How about the later layers? \\
+
+\item Are image models only useful for photos? \\
+
+\item What is an "architecture"? \\
+
+\item What is segmentation? \\
+
+\item What is y\_range used for? When do we need it? \\
+
+\item What are "hyperparameters"? \\
+
+\item What's the best way to avoid failures when using AI in an organization?
+
+\end{enumerate}
 
 \section*{Further Research}
 
-Why is a GPU useful for deep learning? How is a CPU different, and why is it less effective for deep learning? \\
+\begin{enumerate}
 
-Try to think of three areas where feedback loops might impact the use of machine learning. See if you can find documented examples of that happening in practice.
+\item Why is a GPU useful for deep learning? How is a CPU different, and why is it less effective for deep learning? \\
+
+\item Try to think of three areas where feedback loops might impact the use of machine learning. See if you can find documented examples of that happening in practice.
+\end{enumerate}
+
+
+
+
+
 
 \end{document}
