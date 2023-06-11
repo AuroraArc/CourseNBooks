@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\begin{document}
+
+\raggedright
+
+\section*{Questionnaire}
+
+1. Do you need these for deep learning?
+\begin{itemize}
+	\item Lots of math T / F
+	\item Lots of data T / F
+	\item Lots of expensive computers T / F
+	\item A PhD T / F
+\end{itemize}
+
+2. Name five areas where deep learning is now the best in the world. \\
+
+\begin{itemize}
+	\item[1.] natural language processing
+	\item[2.] computer vision
+	\item[3.] medicine and biology
+	\item[4.] image generation
+	\item[5.] recommendation systems
+\end{itemize}
+
+3. What was the name of the first device that was based on the principle of the artificial neuron? \\
+
+\smallbreak
+
+Mark I Perceptron
+
+\bigbreak
+
+4. Based on the book of the same name, what are the requirements for parallel distributed processing (PDP)? \\
+
+\begin{itemize}
+	\item[1.] a set of \textit{processsing units}
+	\item[2.] a \textit{state of activation}
+	\item[3.] an \textit{output function} for each unit
+	\item[4.] a \textit{pattern of connectivity} among units
+	\item[5.] a \textit{propagation rule} for propagating patterns of activities through the network of connectivities
+	\item[6.] an \textit{activation rule} for combining the inputs impinging on a unit with the current state of that unit to produce an output for the unit
+	\item[7.] a \textit{learning rule} whereby patterns of connectivity are modified by experience
+	\item[8.] an \textit{environment} within which the system must operate
+\end{itemize}
+
+5. What were the two theoretical misunderstandings that held back the field of neural networks? \\
+
+\smallbreak
+
+Marvin Minsky and Seymour Papert wrote a book called \textit{Perceptrons}, where they showed a single layer of neural nodes were unable to learn some simple but critical mathematical functions (such as XOR). In theory, adding just one extra layer of neurons was enough to allow any mathematical function to be approximated with these neural networks, but in practice (back then) such networks were often too big and too slow to be useful.
+
+\bigbreak
+
+6. What is a GPU? \\
+
+\smallbreak
+
+A graphics processing unit (GPU) is a special kind of processor that can perform multiple (thousands) of tasks at a time, especially designed for displaying 3D environments in video games.
+
+\bigbreak
+
+Open a notebook and execute a cell containing: 1+1. What happens? \\
+
+\smallbreak
+
+In a Jupyter Notebook, executing 1+1 will output 2.
+
+\bigbreak
+
+Why is it hard to use a traditional computer program to recognize images in a photo? \\
+
+\smallbreak
+
+The computer doesn't know what to look for to recognize what objects are in an image. In general, for a computer program, we give it a list of instructions based roughly on how a human would do so, but it is hard to write down instructions for a computer to recognize objects since we ourselves aren't sure of the process; our brain automatically recognizes things.
+
+\bigbreak
+
+What did Samuel mean by "weight assignment"? \\
+
+\smallbreak
+
+Weights are just variables, and a weight assignment is a particular choice of values for those variables.
+
+\bigbreak
+
+What term do we normally use in deep learning for what Samuel called "weights"? \\
+
+\smallbreak
+
+Parameters.
+
+Draw a picture that summarizes Samuel's view of a machine learning model. \\
+
+Why is it hard to understand why a deep learning model makes a particular prediction? \\
+
+What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy? \\
+
+What do you need in order to train a model? \\
+
+How could a feedback loop impact the rollout of a predictive policing model? \\
+
+Do we always have to use 224×224-pixel images with the cat recognition model? \\
+
+What is the difference between classification and regression? \\
+
+What is a validation set? What is a test set? Why do we need them? \\
+
+What will fastai do if you don't provide a validation set? \\
+
+Can we always use a random sample for a validation set? Why or why not? \\
+
+What is overfitting? Provide an example. \\
+
+What is a metric? How does it differ from "loss"? \\
+
+How can pretrained models help? \\
+
+What is the "head" of a model? \\
+
+What kinds of features do the early layers of a CNN find? How about the later layers? \\
+
+Are image models only useful for photos? \\
+
+What is an "architecture"? \\
+
+What is segmentation? \\
+
+What is y\_range used for? When do we need it? \\
+
+What are "hyperparameters"? \\
+
+What's the best way to avoid failures when using AI in an organization?
+
+\section*{Further Research}
+
+Why is a GPU useful for deep learning? How is a CPU different, and why is it less effective for deep learning? \\
+
+Try to think of three areas where feedback loops might impact the use of machine learning. See if you can find documented examples of that happening in practice.
+
+\end{document}
