@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  11 JUN 2023 23:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  13 JUN 2023 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,7 +302,7 @@ Overfull \hbox (41.78004pt too wide) in paragraph at lines 107--108
 [][]  
  []
 
-[2 <./model.jpeg>] [3] (questions.aux) ) 
+[2 <./model.jpeg>] [3] [4] (questions.aux) ) 
 Here is how much of TeX's memory you used:
  4168 strings out of 478345
  68108 string characters out of 5838822
@@ -310,16 +310,16 @@ Here is how much of TeX's memory you used:
  24262 multiletter control sequences out of 15000+600000
  514182 words of font info for 38 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,5n,62p,588b,206s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/home/Library/Application Suppo
-rt/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></Users/ho
-me/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on questions.pdf (3 pages, 66422 bytes).
+ 57i,5n,62p,629b,209s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/home/Library/Application S
+upport/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></User
+s/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library/Application S
+upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on questions.pdf (4 pages, 69706 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

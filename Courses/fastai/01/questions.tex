@@ -10,7 +10,7 @@
 
 \raggedright
 
-\section*{Questionnaire}
+\section*{Questionnaire 1}
 
 \begin{enumerate}
 \item Do you need these for deep learning?
@@ -126,21 +126,75 @@ The \textbf{universal approximation theorem} states that neural networks can the
 
 \item What do you need in order to train a model? \\
 
+\smallbreak
+
+You will need an architecture (the functional form of the model) for your given task or problem along with data to feed in as input. Most cases will require labels for your data so that you can compare your predictions and see how accurate your model is (using a loss function). Using your loss function, you need a way to be able to update your parameters in order to improve its performance.
+
+\bigbreak
+
 \item How could a feedback loop impact the rollout of a predictive policing model? \\
+
+\smallbreak
+
+In a predictive policing model, a positive feedback loop may occur, leading to a highly biased model with little predictive power. The model is created using data on previous arrests. The model is not actually predicting crime, but rather predicting arrests, and is therefore partially biased on current policing policies. Officers may then use that data to determine the areas that need the most enforcement, resulting in more arrests in those locations. Data on those additional arrests are passed into the model for future versions to be trained on, thus creating a positive feedback loop.
+
+\bigbreak
 
 \item Do we always have to use 224×224-pixel images with the cat recognition model? \\
 
+\smallbreak
+
+No. 224x244 was used for historical reasons, but it is not required nowadays. You can increase the size for better performance at the cost of speed and consumption and vice versa.
+
+\bigbreak
+
 \item What is the difference between classification and regression? \\
+
+\smallbreak
+
+Classification is focused on predicting a class or category (ex: a type of pet). Regression is focused on predicting a numeric quantity (ex: price of house).
+
+\bigbreak
 
 \item What is a validation set? What is a test set? Why do we need them? \\
 
+\smallbreak
+
+A validation set is the portion of the dataset that is not used for training and is instead use for evaluating the model during training in order to prevent overfitting. This ensures the model is not just memorizing the dataset. \\
+\smallbreak
+However, it is possible that we overfit the validation set as well. This is the because the human interpreter is also part of the training process, adjusting hyperparameters and training procedures according to the validation performance. Therefore, another unseen portion of the dataset, called the test set, is used for the final evaluation of the model. The splitting of the dataset is necessary to ensure that the model generalizes to unseen data.
+
+\bigbreak
+
 \item What will fastai do if you don't provide a validation set? \\
+
+\smallbreak
+
+It will automatically provide a validation set that is by default set to 20\% of the dataset, randomly chosen.
+
+\bigbreak
 
 \item Can we always use a random sample for a validation set? Why or why not? \\
 
+\smallbreak
+
+Not always. A good validation or test set should be representative of future data that you may encounter, and a random sample might not be the best choice. For example, for time series data, selecting random samples doesn't make sense.
+
+\bigbreak
+
 \item What is overfitting? Provide an example. \\
 
+\smallbreak
+
+Overfitting refers to when a model fits too closely to a limited set of data but does not generalize well to unseen data. This will happen if a neural network trains too much on one set of training data, as it will potentially start to "memorize" the given data and fail to generalize for all unseen data.
+
+\bigbreak
+
 \item What is a metric? How does it differ from "loss"? \\
+
+\smallbreak
+
+
 
 \item How can pretrained models help? \\
 
