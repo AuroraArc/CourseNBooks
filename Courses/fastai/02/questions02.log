@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  21 JUN 2023 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  21 JUN 2023 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -297,26 +297,53 @@ File: drivetrain.png Graphic file (type png)
 <use drivetrain.png>
 Package pdftex.def Info: drivetrain.png  used on input line 79.
 (pdftex.def)             Requested size: 451.6864pt x 105.3935pt.
- [2 <./drivetrain.png (PNG copy)>] [3] (questions02.aux) ) 
+ [2 <./drivetrain.png (PNG copy)>]
+<crop_grizzly.png, id=14, 167.62625pt x 175.65625pt>
+File: crop_grizzly.png Graphic file (type png)
+<use crop_grizzly.png>
+Package pdftex.def Info: crop_grizzly.png  used on input line 145.
+(pdftex.def)             Requested size: 167.62582pt x 175.6558pt.
+<pad_grizzly.png, id=15, 160.6pt x 172.645pt>
+File: pad_grizzly.png Graphic file (type png)
+<use pad_grizzly.png>
+Package pdftex.def Info: pad_grizzly.png  used on input line 153.
+(pdftex.def)             Requested size: 160.5996pt x 172.64456pt.
+<padding.png, id=16, 952.55875pt x 382.42876pt>
+File: padding.png Graphic file (type png)
+<use padding.png>
+Package pdftex.def Info: padding.png  used on input line 159.
+(pdftex.def)             Requested size: 476.27821pt x 191.2139pt.
+
+Overfull \hbox (21.95604pt too wide) in paragraph at lines 159--160
+ [] 
+ []
+
+[3 <./crop_grizzly.png (PNG copy)> <./pad_grizzly.png (PNG copy)>]
+<squish_grizzly.png, id=21, 164.615pt x 172.645pt>
+File: squish_grizzly.png Graphic file (type png)
+<use squish_grizzly.png>
+Package pdftex.def Info: squish_grizzly.png  used on input line 167.
+(pdftex.def)             Requested size: 164.6146pt x 172.64456pt.
+ [4 <./padding.png> <./squish_grizzly.png (PNG copy)>] [5] [6] [7] (questions02
+.aux) ) 
 Here is how much of TeX's memory you used:
- 4170 strings out of 478345
- 68183 string characters out of 5838822
+ 4207 strings out of 478345
+ 68954 string characters out of 5838822
  1860851 words of memory out of 5000000
- 24263 multiletter control sequences out of 15000+600000
+ 24298 multiletter control sequences out of 15000+600000
  514351 words of font info for 39 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,5n,62p,739b,208s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/home/Library
-/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm
-1200.pk></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library
-/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type
-1/public/amsfonts/cm/cmtt12.pfb>
-Output written on questions02.pdf (3 pages, 145872 bytes).
+ 57i,5n,62p,739b,271s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/lj
+four/jknappen/ec/dpi600/tcrm1200.pk></Users/home/Library/Application Support/Mi
+KTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb></Users/home/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on questions02.pdf (7 pages, 254874 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
