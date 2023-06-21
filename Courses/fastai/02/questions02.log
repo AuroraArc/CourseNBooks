@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  20 JUN 2023 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  21 JUN 2023 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,22 +291,32 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 [1
 
 {/Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
-ftex.map}] [2] (questions02.aux) ) 
+ftex.map}]
+<drivetrain.png, id=9, 903.375pt x 210.7875pt>
+File: drivetrain.png Graphic file (type png)
+<use drivetrain.png>
+Package pdftex.def Info: drivetrain.png  used on input line 79.
+(pdftex.def)             Requested size: 451.6864pt x 105.3935pt.
+ [2 <./drivetrain.png (PNG copy)>] [3] (questions02.aux) ) 
 Here is how much of TeX's memory you used:
- 4152 strings out of 478345
- 67921 string characters out of 5838822
- 1862851 words of memory out of 5000000
- 24250 multiletter control sequences out of 15000+600000
- 513191 words of font info for 35 fonts, out of 8000000 for 9000
+ 4170 strings out of 478345
+ 68183 string characters out of 5838822
+ 1860851 words of memory out of 5000000
+ 24263 multiletter control sequences out of 15000+600000
+ 514351 words of font info for 39 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,5n,62p,250b,202s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/home/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb>
-Output written on questions02.pdf (2 pages, 34781 bytes).
+ 57i,5n,62p,739b,208s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/home/Library
+/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm
+1200.pk></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKT
+eX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library
+/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/public/amsfonts/cm/cmtt12.pfb>
+Output written on questions02.pdf (3 pages, 145872 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
