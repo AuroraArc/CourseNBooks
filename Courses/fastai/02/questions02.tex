@@ -289,6 +289,17 @@ This is when the type of data changes gradually over time. For example, an insur
 \begin{enumerate}
 \item Consider how the Drivetrain Approach maps to a project or problem you're interested in. \\
 
+\smallbreak
+
+A project that I'm interested in is classifying song genres from audio (from Datacamp).
+\smallbreak
+\textbf{Defined Objective}: The objective is to take audio data and attempt to interpret what genre the song belongs to.
+\smallbreak
+\textbf{Levers}: The lever is the ranking of the genres.
+\smallbreak
+\textbf{Data}: Data can be collected by visualizing the audio.
+
+\bigbreak
 
 \item When might it be best to avoid certain types of data augmentation? \\
 
@@ -298,37 +309,33 @@ Some common data augmentation techniques for convolutional neural networks (CNN)
 \begin{itemize}
 \item[1.] Cropping \\
 \smallbreak
+Cropping might take out some important details of the image you are trying to input as training data.
 
 \item[2.] Flipping \\
 \smallbreak
+Specific regions of an image may not always be interchangeable (e.g. vertical flipping a CT scan of lungs so that the left lung is on the right side and vice versa).
 
 \item[3.] Scaling \\
 \smallbreak
+Typically, scaling up lowers image quality, which may make the image lose some features.
 
 \item[4.] Brightness \\
 \smallbreak
+Any feature that is dependent on color may be affected negatively. It can cause the model to become confused (e.g. brightening a grizzly bear's fur can cause it to look brown and therefore be confused with a brown bear).
 
 \item[5.] Color Augmentation \\
 \smallbreak
-
-\item[6.] Saturation \\
-\smallbreak
-
-\item[7.] Contrast \\
-\smallbreak
-
-\item[8.] Translation \\
-\smallbreak
-
-\item[9.] Rotation \\
-\smallbreak
+Any feature that is dependent on color may be affected negatively.
 
 \end{itemize}
 
 \bigbreak
 
 \item For a project you're interested in applying deep learning to, consider the thought experiment "What would happen if it went really, really well?" \\
-\item Start a blog, and write your first blog post. For instance, write about what you think deep learning might be useful for in a domain you're interested in. \\
+
+\smallbreak
+
+It would be really hard for a project like this to become really good because of numerous elements that comprise a single genre and the fact that new elements and genres themselves are being added every year. If, hypothetically, it did reach this level of competence, all music could easily be defined just based on this model. This will decrease the amount of genres there are since music would be more easily be categorized.
 \end{enumerate}
 
 \end{document}
