@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  8 JUN 2023 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  24 JUN 2023 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -149,6 +149,19 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls
+/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks28
+)
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
 cs/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -156,7 +169,7 @@ Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
 cs/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
+\KV@toks@=\toks29
 )
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphi
 cs/graphics.sty
@@ -202,47 +215,51 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen158
 \Gm@layouthoffset=\dimen159
 \Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks30
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geomet
 ry/geometry.cfg))
+\c@theorem=\count276
+\c@lemma=\count277
+\c@defn=\count278
+
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3back
 end/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count276
+\l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box53
 ) (note2.aux)
 \openout1 = `note2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/context/base
 /mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count277
+\scratchcounter=\count280
 \scratchdimen=\dimen161
 \scratchbox=\box54
-\nofMPsegments=\count278
-\nofMParguments=\count279
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count280
+\nofMPsegments=\count281
+\nofMParguments=\count282
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count283
 \MPscratchDim=\dimen162
-\MPnumerator=\count281
-\makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count284
+\makeMPintoPDFobject=\count285
+\everyMPtoPDFconversion=\toks32
 )
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstop
 df-pkg/epstopdf-base.sty
@@ -288,14 +305,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
 ts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 
 
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfon
@@ -304,31 +321,38 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
-ftex.map}] [2] [3] [4] [5] [6] [7] (note2.aux) ) 
+ftex.map}] [2] [3] [4] [5] [6] [7] [8] (note2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4209 strings out of 478345
- 68808 string characters out of 5838822
- 1863851 words of memory out of 5000000
- 24285 multiletter control sequences out of 15000+600000
- 519797 words of font info for 59 fonts, out of 8000000 for 9000
+ 4322 strings out of 478345
+ 70431 string characters out of 5838822
+ 1865851 words of memory out of 5000000
+ 24395 multiletter control sequences out of 15000+600000
+ 519265 words of font info for 58 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,10n,62p,383b,190s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/home/Library/Applicatio
-n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Use
-rs/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/home/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/
-home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/home/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/home
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmti12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on note2.pdf (7 pages, 125075 bytes).
+ 57i,10n,62p,460b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/home/Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></Users/home/Library/Application Support/MiKTeX/texmf
+s/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library/Applica
+tion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></U
+sers/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/home/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users
+/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsf
+onts/cm/cmti12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/insta
+ll/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/home/Library/Application S
+upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on note2.pdf (8 pages, 158685 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
