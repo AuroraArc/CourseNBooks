@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  24 JUN 2023 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  24 JUN 2023 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -321,11 +321,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
-ftex.map}] [2] [3] [4] [5] [6] [7] [8] (note2.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ftex.map}] [2] [3] [4] [5] [6] [7] [8] (note2.aux) ) 
 Here is how much of TeX's memory you used:
  4322 strings out of 478345
  70431 string characters out of 5838822
@@ -333,24 +329,25 @@ Here is how much of TeX's memory you used:
  24395 multiletter control sequences out of 15000+600000
  519265 words of font info for 58 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,10n,62p,460b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/tex
-mfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/home/Library/Appl
-ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></Users/home/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/home/Library/Applica
-tion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></U
+ 57i,10n,62p,460b,233s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/home/Library/Applic
+ation Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs
+/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/home/Library/Applica
+tion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></U
 sers/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/home/Library/Application
- Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users
-/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsf
-onts/cm/cmti12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmtt12.pfb></Users/home/Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on note2.pdf (8 pages, 158685 bytes).
+amsfonts/cm/cmr12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/in
+stall/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application
+ Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/
+home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/instal
+l/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/home/Library/Application Sup
+port/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/ho
+me/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on note2.pdf (8 pages, 158749 bytes).
 PDF statistics:
  89 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

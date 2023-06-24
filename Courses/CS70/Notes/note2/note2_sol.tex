@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\setcounter{section}{2}
+\setcounter{theorem}{8}
+\setcounter{lemma}{1}
+
+\begin{document}
+
+\raggedright
+
+\section*{Note 2 Solutions}
+
+1. Generalize the proof of Theorem 2.2 so that it works for any positive integer $n$. (Hint: Suppose $n$ has $k$ digits, and write $a_i$ for the digits of $n$, so that $n=\sum_{i=0}^{k-1}(a_i\cdot 10^i)$.)
+
+\begin{theorem}
+Let $n\in\mathbb{Z}^+$. If the sum of the digits of n is divisible by 9, then $n$ is divisible by 9.
+\end{theorem}
+
+\kern-1em
+\color{red}
+\begin{proof}[Proof of Theorem 2.9]
+We proceed with direct proof. Suppose $n$ has $k$ digits and $n=\sum_{i=0}^{k-1}(a_i\cdot 10^i)$. $i$ goes all the way up to $k-1$ since we start on index 0. We can rewrite $n$ as
+\begin{center}
+$n=10^0\cdot a_0+10^1\cdot a_1+10^2\cdot a_2 + \cdots + 10^{k-2}\cdot a_{k-2} + 10^{k-1}\cdot a_{k-1}$.
+\end{center}
+
+Assume that the sum of the digits of $n$ is divisible by 9, i.e.
+
+\begin{equation}\label{eq1}
+\exists l\in\mathbb{Z} \text{ such that } \sum_{i=0}^{k-1}a_i=9l.
+\end{equation}
+
+Adding $n=\sum_{i=1}^{k-1}(a_i\cdot [10^i-1])$ to both sides of Equation \eqref{eq1}, we have
+
+\begin{align*}
+&a_0+10a_1+100a_2\cdots+10^{k-1}a_{k-1}=n=9l+9a_1+99a_2+\cdots+(10^{k-1}-1)a_{k-1} \\
+&=9(l+a_1+9a_2+\cdots+[10^{k-2}+10^{k-3}+\cdots+1]a_{k-1}).
+\end{align*}
+
+We conclude that $n$ is divisible by 9.
+\end{proof}
+
+\color{black}
+2. Prove Lemma 2.2. (Hint: First try a direct proof. Then, try contraposition. Which proof approach is better suited to proving this lemma?)
+
+\begin{lemma}
+If $a^2$ is even, then $a$ is even.
+\end{lemma}
+
+\end{document}

@@ -28,7 +28,7 @@
 \subsection*{Theorems}
 
 \begin{theorem}
-For any $a$,$b$,$c$ $\in\mathbb{Z}$, if $a \mid b$ and $a \mid c$, then $a$ $\mid(b+c)$.
+For any a,b,c $\in\mathbb{Z}$, if $a \mid b$ and $a \mid c$, then $a$ $\mid(b+c)$.
 \end{theorem}
 
 \begin{theorem}
@@ -44,7 +44,7 @@ Let $n$ be a positive integer and let $d$ divide $n$. If $n$ is odd, then $d$ is
 \end{theorem}
 
 \begin{theorem}[Pigeonhole principle]
-Let $n$ and $k$ be positive integers. Place $n$ objects into $k$ boxes. If $n>k$, the at least one box must contain multiple objects.
+Let $n$ and $k$ be positive integers. Place $n$ objects into $k$ boxes. If $n>k$, then at least one box must contain multiple objects.
 \end{theorem}
 
 \begin{theorem}
@@ -53,6 +53,10 @@ There are infinitely many prime numbers.
 
 \begin{theorem}
 $\sqrt{2}$ is irrational.
+\end{theorem}
+
+\begin{theorem}
+There exist irrational numbers $x$ and $y$ such that $x^y$ is rational.
 \end{theorem}
 
 \begin{theorem}
@@ -100,7 +104,7 @@ A mathematical proof provides a means for guaranteeing that a statement is true.
 
 \bigbreak
 
-So what is a proof? A proof is a finite sequence of steps, called \textbf{logical deductions}, which establishes the truth of a desired statement. In particular, the power of a proof lies in the fact hat using finite means, we can guarantee the truth of a statement with infinitely many cases.
+So what is a proof? A proof is a finite sequence of steps, called \textbf{logical deductions}, which establishes the truth of a desired statement. In particular, the power of a proof lies in the fact that using finite means, we can guarantee the truth of a statement with infinitely many cases.
 
 \bigbreak
 
@@ -111,7 +115,7 @@ A proof is typically structured as follows:
 	\item[3.] Each statement follows the previous one where each successive statement is necessarily true if the previous statement is true.
 \end{itemize}
 
-The rule of logic are a formal distillation of laws that were thought to underlie human thinking. They play a central role in the design of computers, starting with digital logic design or the fundamental principles behind the design of digital circuits.
+The rules of logic are a formal distillation of laws that were thought to underlie human thinking. They play a central role in the design of computers, starting with digital logic design or the fundamental principles behind the design of digital circuits.
 
 \section*{Notation and Basic Facts}
 
@@ -174,7 +178,7 @@ Let $n$ in decimal be written as $n=abc$, i.e. $n=100a+10b+c$. Assume that the s
 \exists k\in\mathbb{Z}\text{ such that }a+b+c=9k.
 \end{equation}
 
-Adding $99a+9b$ to both sides of Equation \eqref{eq1} we have
+Adding $99a+9b$ to both sides of Equation \eqref{eq1}, we have
 
 \begin{center}
 $100a+10b+c=n=9k+99a+9b=9(k+11a+b)$.
@@ -232,7 +236,7 @@ We proceed by contraposition (If $d$ is even, then $n$ is even). If we assume $d
 Note that the proof technique was stated as the first line. This is generally good practice.
 
 \begin{theorem}[Pigeonhole principle]\label{thm2.5}
-Let $n$ and $k$ be positive integers. Place $n$ objects into $k$ boxes. If $n>k$, the at least one box must contain multiple objects.
+Let $n$ and $k$ be positive integers. Place $n$ objects into $k$ boxes. If $n>k$, then at least one box must contain multiple objects.
 \end{theorem}
 
 \begin{proof}[Proof of Theorem 2.5]
@@ -469,16 +473,18 @@ Remember, theorems are propositions that you want to ``export'' from the paper t
 
 \section*{Exercises}
 
-\begin{enumerate}
-\item Generalize the proof of Theorem 2.2 so that it works for any positive integer $n$. (Hint: Suppose $n$ has $k$ digits, and write $a_i$ for the digits of $n$, so that $n=\sum_{i=0}^{k-1}(a_i\cdot 10^i)$.)
+1. Generalize the proof of Theorem 2.2 so that it works for any positive integer $n$. (Hint: Suppose $n$ has $k$ digits, and write $a_i$ for the digits of $n$, so that $n=\sum_{i=0}^{k-1}(a_i\cdot 10^i)$.)
 
 \begin{theorem}
 Let $n\in\mathbb{Z}^+$. If the sum of the digits of n is divisible by 9, then $n$ is divisible by 9.
 \end{theorem}
 
-\item Prove Lemma 2.2. (Hint: First try a direct proof. Then, try contraposition. Which proof approach is better suited to proving this lemma?)
+2. Prove Lemma 2.2. (Hint: First try a direct proof. Then, try contraposition. Which proof approach is better suited to proving this lemma?)
 
-\textbf{Lemma 2.2.} \textit{If $a^2$ is even, then $a$ is even.}
+\setcounter{lemma}{1}
 
-\end{enumerate}
+\begin{lemma}
+If $a^2$ is even, then $a$ is even.
+\end{lemma}
+
 \end{document}
