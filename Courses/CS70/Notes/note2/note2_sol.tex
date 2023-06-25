@@ -65,6 +65,7 @@ If $a^2$ is even, then $a$ is even.
 \color{red}
 \begin{proof}[Proof of Lemma 2.2 using direct proof]
 We proceed with direct proof. One thing to point out is that non-integer numbers cannot be even nor odd, so $a$ and $a^2$ must be whole numbers, therefore meaning that whatever $a^2$ equals must be a perfect square. Assume that $a^2$ is even, i.e., 
+
 \begin{center}
 $\exists k\in\mathbb{Z}^+ \text{ such that } a^2=(2k)^2.$
 \end{center}
@@ -79,7 +80,19 @@ Since $k$ is divisible by 2, it holds that $a$ is even, as desired.
 \end{proof}
 
 \begin{proof}[Proof of Lemma 2.2 using contraposition]
+We proceed by contraposition. This means that if $a$ is not even, then $a^2$ is not even. Assume that $a$ is not even, i.e.,
 
+\begin{center}
+$\exists k\in\mathbb{Z} \text{ such that } a=2k+1.$
+\end{center}
+
+Squaring both sides yields
+
+\begin{center}
+$a^2=4k^2+4k+1=2(2k^2+2k)+1$,
+\end{center}
+
+which is not even since there isn't a factor of two on the entire right side. Therefore $a^2$ is odd, as desired.
 \end{proof}
 
 \end{document}
