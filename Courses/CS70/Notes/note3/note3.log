@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  25 JUN 2023 21:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.6.2)  25 JUN 2023 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -323,13 +323,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {/Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pd
 ftex.map}] (note3.aux) ) 
 Here is how much of TeX's memory you used:
- 4304 strings out of 478345
- 70253 string characters out of 5838822
- 1858851 words of memory out of 5000000
- 24378 multiletter control sequences out of 15000+600000
- 518184 words of font info for 54 fonts, out of 8000000 for 9000
+ 4307 strings out of 478345
+ 70278 string characters out of 5838822
+ 1860851 words of memory out of 5000000
+ 24381 multiletter control sequences out of 15000+600000
+ 518491 words of font info for 55 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 57i,5n,62p,436b,121s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,5n,62p,556b,152s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/home/Library/Application Support/MiKTeX/texmfs/
 install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Applicat
 ion Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></U
@@ -344,7 +344,7 @@ port/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/ho
 me/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on note3.pdf (1 page, 104763 bytes).
+Output written on note3.pdf (1 page, 107597 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

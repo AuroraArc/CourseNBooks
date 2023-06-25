@@ -13,7 +13,7 @@
 \newtheorem{lemma}{Lemma}[section]
 \theoremstyle{definition}
 \newtheorem{defn}{Definition}[section]
-\setcounter{section}{2}
+\setcounter{section}{3}
 
 \begin{document}
 
@@ -30,7 +30,7 @@ Induction is a powerful tool which is used to establish that a statement holds  
 
 Suppose we wish to prove the statement: For all natural numbers $n$, $0+1+2+3+\cdots+n$ $=\frac{n(n+1)}{2}$. More formally, we can write this as
 
-\begin{equation}
+\begin{equation}\label{eq1}
 \forall n\in\mathbb{N}, \sum_{i=0}^{n}i=\frac{n(n+1)}{2}.
 \end{equation}
 
@@ -44,9 +44,21 @@ Consider this statement that was shown in a previous note: $\forall n\in\mathbb{
 
 In mathematical induction, we instead make an interesting observation: Suppose the statement holds for some value $n=k$, i.e., $\sum_{i=0}^{k}i=\frac{k(k+1)}{2}$. (This is called the \textit{induction hypothesis.} Then:
 
-\begin{equation}
+\begin{equation}\label{eq2}
 \left(\sum_{i=0}^{k}i\right)+(k+1)=\frac{k(k+1)}{2}+(k+1)=\frac{(k+1)(k+2)}{2},
 \end{equation}
 
 i.e., the claim also holds for $n=k+1$! In other words, if the statement holds for some $k$, then it must also hold for $k+1$. Let us call the argument above the \textit{inductive step}. If we can show that the statement holds for $k$, then the inductive step allows us to conclude that it also holds for $k+1$; but that it holds for $k+1$, the inductive step implies that it holds for $k+2$; and so on.
+
+\bigbreak
+
+So have we proven Equation \eqref{eq1}? Not yet. The problem is that in order to apply the inductive step, we first have to establish that Equation \eqref{eq1} holds for some initial value of $k$. Since our aim is to prove the statement for all natural numbers, the obvious choice is $k=0.$ We call this choice of $k$ the \textit{base case}. Then, if the base case holds, the axiom of mathematical induction says that the inductive step allows us to conclude that Equation \eqref{eq1} indeed holds for all $n\in\mathbb{N}$.
+
+\bigbreak
+
+Let's formally rewrite this proof.
+
+\begin{theorem}
+
+\end{theorem}
 \end{document}
