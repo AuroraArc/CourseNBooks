@@ -1,0 +1,52 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\setcounter{section}{2}
+
+\begin{document}
+
+\raggedright
+
+\begin{center}
+\huge{Note 3}
+\end{center}
+
+\section*{Mathematical Induction}
+Induction is a powerful tool which is used to establish that a statement holds  for \textit{all} natural numbers. Of course, there are infinitely many natural numbers -- induction provides a way to reason about them by finite means.
+
+\bigbreak
+
+Suppose we wish to prove the statement: For all natural numbers $n$, $0+1+2+3+\cdots+n$ $=\frac{n(n+1)}{2}$. More formally, we can write this as
+
+\begin{equation}
+\forall n\in\mathbb{N}, \sum_{i=0}^{n}i=\frac{n(n+1)}{2}.
+\end{equation}
+
+How would you prove this? You could begin by checking that it holds for $n=0, 1, 2$, and so forth, but there's an infinite number of values of $n$ for which it needs to be checked. Moreover, checking just the first few values of $n$ does not suffice to conclude the statement holds for all $n\in\mathbb{N}$.
+
+\bigbreak
+
+Consider this statement that was shown in a previous note: $\forall n\in\mathbb{N}, n^2-n+41$ is a prime number. Check that it holds for the first few natural numbers. Now check the case for $n=41$.
+
+\bigbreak
+
+In mathematical induction, we instead make an interesting observation: Suppose the statement holds for some value $n=k$, i.e., $\sum_{i=0}^{k}i=\frac{k(k+1)}{2}$. (This is called the \textit{induction hypothesis.} Then:
+
+\begin{equation}
+\left(\sum_{i=0}^{k}i\right)+(k+1)=\frac{k(k+1)}{2}+(k+1)=\frac{(k+1)(k+2)}{2},
+\end{equation}
+
+i.e., the claim also holds for $n=k+1$! In other words, if the statement holds for some $k$, then it must also hold for $k+1$. Let us call the argument above the \textit{inductive step}. If we can show that the statement holds for $k$, then the inductive step allows us to conclude that it also holds for $k+1$; but that it holds for $k+1$, the inductive step implies that it holds for $k+2$; and so on.
+\end{document}
