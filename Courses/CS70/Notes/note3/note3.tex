@@ -59,6 +59,49 @@ So have we proven Equation \eqref{eq1}? Not yet. The problem is that in order to
 Let's formally rewrite this proof.
 
 \begin{theorem}
-
+$\displaystyle\forall n\in\mathbb{N},\sum_{i=0}^{n}i=\frac{n(n+1)}{2}.$
 \end{theorem}
+
+\begin{proof}[Proof of Theorem 3.1]
+We proceed by induction on the variable $n$.
+
+\bigbreak
+
+\textit{Base case (n=0)}: Here, we have $\displaystyle\sum_{i=0}^{0}i=0=\frac{0(0+1)}{2}.$ Thus, the base case is correct.
+
+\bigbreak
+
+\textit{Induction Hypothesis}: For arbitrary $n=k\geq0$, assume that $\displaystyle\sum_{i=0}^{k}i=\frac{k(k+1)}{2}$. In words, the induction hypothesis says ``let's assume we have proved the statement for an arbitrary value of $n=k\geq0.$''
+
+\bigbreak
+
+\textit{Inductive Step}: Prove the statement for $n=(k+1)$, i.e., show that $\displaystyle\sum_{i=0}^{k+1}i=\frac{(k+1)(k+2)}{2}$:
+
+\begin{equation}\label{eq3}
+\sum_{i=0}^{k+1}i=\left(\sum_{i=0}^{k}i\right)+(k+1)=\frac{k(k+1)}{2}+(k+1)=\frac{k(k+1)+2(k+1)}{2}=\frac{(k+1)(k+2)}{2},
+\end{equation}
+
+where the second equality follows from the induction hypothesis. By the principle of mathematical induction, the claim follows.
+\end{proof}
+
+\textbf{Recap.} \\
+\begin{enumerate}
+\item \textbf{Base Case}: Prove that $P(0)$ is true. \\
+\item \textbf{Induction Hypothesis}: For arbitrary $k\geq0$, assume that $P(k)$ is true. \\
+\item \textbf{Inductive Step}: With the assumption of the induction hypothesis in hand, show that $P(k+1)$ is true.
+\end{enumerate}
+
+\bigbreak
+
+Finally, a word about choosing a base case -- in general, the choice of base case will naturally depend on the claim you with to prove.
+
+\bigbreak
+
+Let us do another proof by induction. Recall that for integers $a$ and $b$, we say that $a$ divides $b$, denoted $a\mid b$, iff there exists an integer $q$ satisfying $b=aq$.
+
+\begin{theorem}
+For all $n\in\mathbb{N}, n^3-n$ is divisible by 3.
+\end{theorem}
+
+
 \end{document}
