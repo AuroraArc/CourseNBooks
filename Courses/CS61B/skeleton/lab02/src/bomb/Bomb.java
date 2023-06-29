@@ -11,9 +11,9 @@ public class Bomb {
 
     public String shufflePassword(String s) {
         String code = "" + s.hashCode();
-        StdRandom.setSeed(1337);
+        //StdRandom.setSeed(1337);
         char[] chars = code.toCharArray();
-        StdRandom.shuffle(chars);
+        //StdRandom.shuffle(chars);
 
         return String.valueOf(chars);
     }
