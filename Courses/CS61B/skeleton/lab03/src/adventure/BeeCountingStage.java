@@ -12,12 +12,11 @@ public class BeeCountingStage implements AdventureStage {
 
     private final In in;
     private final Map<String, AdventureStage> responses;
-    private List<String> input;
+    private List<String> input = new ArrayList<>(); // initialized input
 
     public BeeCountingStage(In in) {
         this.in = in;
         this.responses = Map.of("go", new SpeciesListStage(in));
-        this.input = new ArrayList<>();
     }
 
     /**
@@ -85,7 +84,7 @@ public class BeeCountingStage implements AdventureStage {
      */
     private int sumInput() {
         int sum = 0;
-        for (int i = 0; i < this.input.size(); i++) {
+        for (int i = 0; i < this.input.size(); i++) { // changed <= to <
             sum += Integer.parseInt(this.input.get(i));
         }
         return sum;
