@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{xcolor}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \begin{document}
 
@@ -16,6 +17,42 @@
 
 \section{Implication}
 
+Which of the following implications are always true, regardless of $P$? Give a counterexample for each false assertion (i.e. come up with a statement $P(x,y)$ that would make the implication false).
+
+\bigbreak
+
+(a) $\forall x\forall yP(x,y)\Rightarrow\forall y\forall xP(x,y)$
+
+\bigbreak
+
+\color{red}
+The implication is true because quantifiers of the same type can be switched around (i.e. they are commutative): 
+
+\begin{center}
+$\forall x\forall yP(x,y)\equiv \forall y\forall xP(x,y) \text{ and } \exists x\exists yP(x,y)\equiv \exists y\exists xP(x,y)$
+\end{center}
+
+\bigbreak
+
+\color{black}
+(b) $\forall x\exists yP(x,y) \Rightarrow \exists y\forall xP(x,y)$
+
+\bigbreak
+
+\color{red}
+The implication is false. Let $P(x,y)$ be $x=y$; then it is easy how the antecedent is true. For any $x$ chosen, there exists a $y$ that equals $x$, which is true. However, there does not exist one value of $y$ that can equal all values of $x$.
+
+\bigbreak
+
+\color{black}
+(c) $\exists x\forall yP(x,y)\Rightarrow\forall y\exists xP(x,y)$
+
+\bigbreak
+
+\color{red}
+The implication is true. The first statement says that there exists an $x$, where $x_1$ for every $y$, is true. Setting $x=x_1$ (the second $x$ in the implication) means that for every $y$, there is an $x$ that makes the second statement true.
+
+\color{black}
 \section{Equivalences with Quantifiers}
 
 \section{XOR}
