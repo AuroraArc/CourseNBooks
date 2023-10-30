@@ -309,5 +309,24 @@ To see a more complex example, fix some universe and propositional formula $P(x,
 	$\neg(\forall x\exists yP(x,y))\equiv\exists x\neg(\exists yP(x,y))\equiv\exists x\forall y\neg P(x,y)$
 \end{center}
 
-Notice that we broke the complex negation into a smaller, easier problem as the negation p
+Notice that we broke the complex negation into a smaller, easier problem as the negation propagated itself through the quantifiers. Note also that the quantifiers "flip" as we go.
+
+\newpage
+
+Write the sentence "there are at least three distinct integers $x$ that satisfy $P(x)$" as a proposition using quantifiers. One way to do it is
+\begin{center}
+	$\exists x\exists y\exists z(x\neq y\wedge y\neq z\wedge x\neq z\wedge P(x) \wedge P(y)\wedge P(z))$
+\end{center}
+
+Write the sentence "there are \textbf{at most} three distinct integers $x$ that satisfy $P(x)$" as a proposition using quantifiers. One way to do it is
+\begin{center}
+	$\exists x\exists y\exists z\forall d(P(d)\Rightarrow d=x\vee d=y\vee d=z)$
+\end{center}
+
+Here is an equivalent way to do it:
+\begin{center}
+	$\forall x\forall y\forall v\forall z((x\neq y\wedge y\neq v \wedge v\neq x\wedge x\neq z\wedge y\neq z \wedge v\neq z)\Rightarrow\neg(P(x)\wedge P(y)\wedge P(v)\wedge P(z)))$
+\end{center}
+
+What if we want to express the sentence "there are \textbf{exactly} three distinct integers $x$ that satisfy $P(x)$?" We can use the conjunction of the two propositions above.
 \end{document}
