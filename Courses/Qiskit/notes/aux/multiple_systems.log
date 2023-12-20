@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  20 DEC 2023 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  20 DEC 2023 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/home/Desktop/college/research/notes/multiple_systems.tex
-(/Users/home/Desktop/college/research/notes/multiple_systems.tex
+**/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/multiple_systems.tex
+(/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/multiple_systems.tex
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/report.cls
@@ -1112,7 +1112,7 @@ File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
 \ttl@leftsep=\dimen339
-)) (macros.tex) (letterfonts.tex) (/Users/home/Desktop/college/research/notes/aux/multiple_systems.aux)
+)) (macros.tex) (letterfonts.tex) (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/multiple_systems.aux)
 \openout1 = `multiple_systems.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 11.
@@ -1254,9 +1254,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(/Users/home/Desktop/college/research/notes/aux/multiple_systems.toc
-Missing character: There is no ; in font nullfont!
-)
+(/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/multiple_systems.toc)
 \tf@toc=\write5
 \openout5 = `multiple_systems.toc'.
 
@@ -1275,7 +1273,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 
 [2
 
-] [3] [4] [5] (/Users/home/Desktop/college/research/notes/aux/multiple_systems.aux)
+] [3] [4] [5] [6] (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/multiple_systems.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
@@ -1288,19 +1286,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  38794 strings out of 474491
- 792032 string characters out of 5735839
- 1945470 words of memory out of 5000000
- 60356 multiletter control sequences out of 15000+600000
- 587721 words of font info for 120 fonts, out of 8000000 for 9000
+ 792444 string characters out of 5735839
+ 1956470 words of memory out of 5000000
+ 60353 multiletter control sequences out of 15000+600000
+ 586782 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,10n,120p,596b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
-Output written on /Users/home/Desktop/college/research/notes/pdf/multiple_systems.pdf (6 pages, 175017 bytes).
+ 99i,14n,120p,619b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
+Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/multiple_systems.pdf (7 pages, 167964 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

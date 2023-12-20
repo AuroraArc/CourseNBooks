@@ -206,4 +206,168 @@ Equivalently, the vector $\ket{\phi}\otimes\ket{\psi}$ is defined by this condit
 
 \nt{In essense, this is the same operation for probabilistic states of a pair of independent bits; we are just giving a name to it now.}
 
+Following our convention for ordering the elements of Cartesian product sets, we obtain this specification for the tensor product of two column vectors:
+\begin{equation*}
+    \begin{pmatrix}
+        \alpha_1 \\
+        \vdots \\
+        \alpha_m
+    \end{pmatrix}
+    \otimes
+    \begin{pmatrix}
+        \beta_1 \\
+        \vdots \\
+        \beta_k
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        \alpha_1\beta_1 \\
+        \vdots \\
+        \alpha_1\beta_k \\
+        \alpha_2\beta_1 \\
+        \vdots \\
+        \alpha_2\beta_k \\
+        \vdots \\
+        \alpha_m\beta_1 \\
+        \vdots \\
+        \alpha_m\beta_k
+    \end{pmatrix}
+\end{equation*}
+
+\ex{Tensor product}{
+    \begin{center}
+        $\begin{pmatrix}
+            \alpha_1 \\
+            \alpha_2 \\
+            \alpha_3
+        \end{pmatrix}
+        \otimes
+        \begin{pmatrix}
+            \beta_1 \\
+            \beta_2 \\
+            \beta_3 \\
+            \beta_4
+        \end{pmatrix}
+        =$
+        $\begin{aligned}
+            \alpha_1
+            \begin{pmatrix}
+                \beta_1 \\
+                \beta_2 \\
+                \beta_3 \\
+                \beta_4
+            \end{pmatrix}
+            \\
+            \alpha_2
+            \begin{pmatrix}
+                \beta_1 \\
+                \beta_2 \\
+                \beta_3 \\
+                \beta_4
+            \end{pmatrix}
+            \\
+            \alpha_3
+            \begin{pmatrix}
+                \beta_1 \\
+                \beta_2 \\
+                \beta_3 \\
+                \beta_4
+            \end{pmatrix}
+        \end{aligned}$
+        $=$
+        $\begin{aligned}
+            \begin{pmatrix}
+                \alpha_1\beta_1 \\
+                \alpha_1\beta_2 \\
+                \alpha_1\beta_3 \\
+                \alpha_1\beta_4
+            \end{pmatrix}
+            \\
+            \begin{pmatrix}
+                \alpha_2\beta_1 \\
+                \alpha_2\beta_2 \\
+                \alpha_2\beta_3 \\
+                \alpha_2\beta_4
+            \end{pmatrix}
+            \\
+            \begin{pmatrix}
+                \alpha_3\beta_1 \\
+                \alpha_3\beta_2 \\
+                \alpha_3\beta_3 \\
+                \alpha_3\beta_4
+            \end{pmatrix}
+        \end{aligned}$
+        $=
+        \begin{pmatrix}
+            \alpha_1\beta_1 \\
+            \alpha_1\beta_2 \\
+            \alpha_1\beta_3 \\
+            \alpha_1\beta_4 \\
+            \alpha_2\beta_1 \\
+            \alpha_2\beta_2 \\
+            \alpha_2\beta_3 \\
+            \alpha_2\beta_4 \\
+            \alpha_3\beta_1 \\
+            \alpha_3\beta_2 \\
+            \alpha_3\beta_3 \\
+            \alpha_3\beta_4
+        \end{pmatrix}$
+    \end{center}
+}
+
+\newpage
+
+Observe the following expression for tensor products of standard basis vectors:
+\begin{equation*}
+    \ket{x}\otimes\ket{y}=\ket{x}\ket{y}=\ket{xy}
+\end{equation*}
+Alternatively, writing $(x,y)$ as an ordered pair rather than a string, we could written
+\begin{equation*}
+    \ket{x}\otimes\ket{y}=\ket{(x,y)}
+\end{equation*}
+but it is more common to write
+\begin{equation*}
+    \ket{x}\otimes\ket{y}=\ket{x,y}
+\end{equation*}
+
+\nt{
+    The tensor product of two vectors is \textbf{bilinear}.
+    \begin{enumerate}
+        \item Linearity in the first argument:
+        \begin{center}
+            $(\ket{\phi_1}+\ket{\phi_2})\otimes\ket{\psi}=\ket{\phi_1}\otimes\ket{\psi}+\ket{\phi_2}\otimes\ket{\psi}$\\[1em]
+            $(\alpha\ket{\phi})\otimes\ket{\psi}=\alpha(\ket{\phi}\otimes\ket{\psi})$
+        \end{center}
+        \item Linearity in the second argument:
+        \begin{center}
+            $\ket{\phi}\otimes(\ket{\psi_1}+\ket{\psi_2})=\ket{\phi}\otimes\ket{\psi_1}+\ket{\phi}\otimes\ket{\psi_2}$\\[1em]
+            $\ket{\phi}\otimes(\alpha\ket{\psi})=\alpha(\ket{\phi}\otimes\ket{\psi})$
+        \end{center}
+    \end{enumerate}
+    Notice that scalars "float freely" within tensor products:
+    \begin{equation*}
+        \alpha\ket{\phi}\otimes\ket{\psi}=\alpha(\ket{\phi}\otimes\ket{\psi})=\ket{\psi}\otimes\alpha\ket{\phi}
+    \end{equation*}
+    There's no difference multiplying the first argument by the scalar $\alpha$ or multiplying the second argument by the scalar $\alpha$.
+}
+
+Tensor products generalize to three or more systems.
+
+\bigbreak
+
+If $\ket{\phi_1},\cdots,\ket{\phi_n}$ are vectors, then the tensor product
+\begin{equation*}
+    \ket{\psi}=\ket{\phi_1}\otimes\cdots\otimes\ket{\phi_n}
+\end{equation*}
+is defined by the equation 
+\begin{equation*}
+    \braket{\alpha_1\cdots\alpha_n\mid\psi}=\braket{\alpha_1\mid\phi_1}\cdots\braket{\alpha_n\mid\phi_n}
+\end{equation*}
+Equivalently, the tensor product of three or more vectors can be defined recursively:
+\begin{equation*}
+    \ket{\phi_1}\otimes\cdots\otimes\ket{\phi_n}=(\ket{\phi_1}\otimes\cdots\otimes\ket{\phi_{n-1}})\otimes\ket{\phi_n}
+\end{equation*}
+We can think about the tensor product of $n$ vectors $\phi_1$ through $\phi_n$ as being the tensor product of the first $n-1$ vectors, followed by the tensor product of the result with the $n$-th vector.\\[1em]
+To find the tensor product of the first $n-1$ vectors, we can apply the same recursive definition, and so on until we reach the tensor product of the first two vectors.
+
 \end{document}
