@@ -1,0 +1,209 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}  
+\input{letterfonts}
+
+\title{\Huge{Multiple Systems}}
+\author{\huge{Henry Yu}}
+\date{}
+
+\begin{document}
+\raggedright
+
+\maketitle
+\newpage
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+
+\chapter{Multiple Systems}
+\section{Classical Information}
+\subsection{Classical states}
+Suppose that we have two systems:
+\begin{itemize}
+    \item $X$ is a system having classical state set $\Sigma$.
+    \item $Y$ is a system having classical state set $\Gamma$.
+\end{itemize}
+Imagine that $X$ and $Y$ are placed side-by-side, with $X$ on the left and $Y$ on the right, and viewed together as if they form a single system.
+
+\bigbreak
+
+We denote this new compound system by $(X,Y)$, or $XY$.
+
+\qs{}{What are the classical states of $(X,Y)$?}
+\sol{The classical state set of $(X,Y)$ is the \textbf{Cartesian product}:
+\begin{equation*}
+    \Sigma \times \Gamma = \{(x,y) \mid x \in \Sigma, y \in \Gamma\}
+\end{equation*}
+}
+\nt{It's not important that $X$ is on the left and $Y$ is on the right; we could have just as well placed $Y$ on the left and $X$ on the right. The important thing is that the two systems are distinguishable.}
+
+\ex{Card suits}{
+    If $\Sigma=\{0,1\}$ and $\Gamma=\{\clubsuit,\diamondsuit,\heartsuit,\spadesuit\}$, then:
+    \begin{equation*}
+        \Sigma \times \Gamma = \{(0,\clubsuit),(0,\diamondsuit),(0,\heartsuit),(0,\spadesuit),(1,\clubsuit),(1,\diamondsuit),(1,\heartsuit),(1,\spadesuit)\}
+    \end{equation*}
+}
+
+\raggedright
+This description generalizes to more than two systems in a natural way.
+
+\bigbreak
+
+Suppose $X_1,\cdots,X_n$ are systems having classical state sets $\Sigma_1,\cdots,\Sigma_n$, respectively. 
+
+\bigbreak
+
+The classical state set of the $n$-tuple ($X_1,\cdots,X_n$), viewed as a single compound system, is the Cartesian product:
+\begin{equation*}
+    \Sigma_1 \times \cdots \times \Sigma_n = \{(x_1,\cdots,x_n) \mid x_1 \in \Sigma_1, \cdots, x_n \in \Sigma_n\}
+\end{equation*}
+
+\newpage
+
+\ex{}{
+    If $\Sigma_1=\Sigma_2=\Sigma_3=\{0,1\}$, then the classical state set of ($X_1,X_2,X_3$) is:
+    \begin{equation*}
+        \Sigma_1 \times \Sigma_2 \times \Sigma_3 = \{(0,0,0),(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1),(1,1,0),(1,1,1)\}
+    \end{equation*}
+}
+
+An $n$-tuple $(x_1,\cdots,x_n)$ may also be written as a string $x_1\cdots x_n$.
+
+\ex{Binary alphabet}{
+    Suppose $X_1,\cdots,X_n$ are bits, so thei classical state sets are all the same:
+    \begin{equation*}
+        \Sigma_1=\Sigma_2=\cdots=\Sigma_{10}=\{0,1\}
+    \end{equation*}
+    The classical state set of ($X_1,\cdots,X_n$) is the Cartesian product:
+    \begin{equation*}
+        \Sigma_1\times\Sigma_2\times\cdots\times\Sigma_{10}=\{0,1\}^{10}
+    \end{equation*}
+
+    You can also think about this as a 10-bit register in a classical computer. Written as strings, these classical states look like this:
+    \begin{equation*}
+        \begin{matrix}
+            0000000000 \\
+            0000000001 \\
+            0000000010 \\
+            0000000011 \\
+            \vdots \\
+            1111111111
+        \end{matrix}
+    \end{equation*}
+}
+
+\nt{
+    Cartesian products of classical state sets are ordered lexicographically (i.e., in dictionary order):
+    \begin{itemize}
+        \item We assume the individual classical state sets are already ordered.
+        \item Significance decreases from left to right.
+    \end{itemize}
+}
+
+\ex{}{
+    The Cartesian product $\{1,2,3\}\times\{0,1\}$ is ordered like this:
+    \begin{equation*}
+        (1,0),(1,1),(2,0),(2,1),(3,0),(3,1)
+    \end{equation*}
+}
+
+When $n$-tuples are written as strings and ordered in this way, we observe familiar patterns, such as $\{0,1\}\times\{0,1\}$ being ordered as $00,01,10,11$.
+
+\subsection{Probabilistic states}
+Probabilistic states of compound systems associates probabilities with the Cartesian product of the classical state sets of individual systems.
+
+\ex{}{
+    This is a probabilistic state pair of bits $(X,Y)$:
+    \begin{center}
+        $Pr((X,Y)=(0,0))=\dfrac{1}{2}$\\[1em]
+        $Pr((X,Y)=(0,1))=0$\\[1em]
+        $Pr((X,Y)=(1,0))=0$\\*[1em]
+        $Pr((X,Y)=(1,1))=\dfrac{1}{2}$
+    \end{center}
+
+    An alternate notation using vector notation:
+    \begin{equation*}
+        \begin{pmatrix}
+            \dfrac{1}{2} \\[1em]
+            0 \\[1em]
+            0 \\[1em]
+            \dfrac{1}{2}
+            \end{pmatrix}
+            \qquad
+            \begin{aligned}
+            \leftarrow\text{ probability associated with state 00} \\[1em]
+            \leftarrow\text{ probability associated with state 01} \\[1em]
+            \leftarrow\text{ probability associated with state 10} \\[1em]
+            \leftarrow\text{ probability associated with state 11}
+            \end{aligned}
+    \end{equation*}
+}
+
+For a given probabilistic state of $(X,Y)$, we say that $X$ and $Y$ are \textbf{statistically independent} if
+\begin{equation*}
+    Pr((X,Y)=(x,y))=Pr(X=x)Pr(Y=y)
+\end{equation*}
+for all $x\in\Sigma$ and $y\in\Gamma$.
+
+\bigbreak
+
+Suppose that a probabilistic state of $(X,Y)$ is expressed as a vector:
+\begin{equation*}
+    \ket{\pi}=\sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{ab}\ket{xy}
+\end{equation*}
+The systems $X$ and $Y$ are independent if there exist probability vectors
+\begin{equation*}
+    \ket{\phi}=\sum\limits_{x\in\Sigma}q_x\ket{x} \quad \text{and} \quad \ket{\psi}=\sum\limits_{y\in\Gamma}r_y\ket{y}
+\end{equation*}
+such that $p_{xy}=q_xr_y$ for all $x\in\Sigma$ and $y\in\Gamma$.
+
+\ex{Independent bits}{
+    The probabilistic state of a pair of bits $(X,Y)$ represented by the vector
+    \begin{equation*}
+        \ket{\pi}=\dfrac{1}{6}\ket{00}+\dfrac{1}{12}\ket{01}+\dfrac{1}{2}\ket{10}+\dfrac{1}{4}\ket{11}
+    \end{equation*}
+    is one in which $X$ and $Y$ are independent. The required condition is true for these probability vectors:
+    \begin{equation*}
+        \ket{\phi}=\dfrac{1}{4}\ket{0}+\dfrac{3}{4}\ket{1} \quad \text{and} \quad \ket{\psi}=\dfrac{2}{3}\ket{0}+\dfrac{1}{3}\ket{1}
+    \end{equation*}
+}
+
+\ex{Dependent bits}{
+    For the probabilistic state
+    \begin{equation*}
+        \dfrac{1}{2}\ket{00}+\dfrac{1}{2}\ket{11}
+    \end{equation*}
+of two bits $(X,Y)$, we have that $X$ and $Y$ are not independent.
+
+\bigbreak
+
+If they were, we would have numbers $q_0,q_1,r_0,r_1$ such that
+\begin{center}
+    $q_0r_0=\dfrac{1}{2}$\\[1em]
+    $q_0r_1=0$\\[1em]
+    $q_1r_0=0$\\*[1em]
+    $q_1r_1=\dfrac{1}{2}$
+\end{center}
+But if $q_0r_1=0$, then either $q_0=0$ or $r_1=0$ (or both), contradicting either the first or last equality since any number multiplied by 0 is 0.
+}
+
+\subsection{Tensor products of vectors}
+The tensor product of two vectors
+\begin{equation*}
+    \ket{\phi}=\sum\limits_{x\in\Sigma}\alpha_x\ket{x} \quad \text{and} \quad \ket{\psi}=\sum\limits_{y\in\Gamma}\beta_y\ket{y}
+\end{equation*}
+is the vector
+\begin{equation*}
+    \ket{\phi}\otimes\ket{\psi}=\sum\limits_{(x,y)\in\Sigma\times\Gamma}\alpha_x\beta_y\ket{xy}
+\end{equation*}
+Equivalently, the vector $\ket{\phi}\otimes\ket{\psi}$ is defined by this condition:
+\begin{equation*}
+    \braket{xy\mid\pi}=\braket{x\mid\phi}\braket{y\mid\psi} \qquad \text{(for all } x\in\Sigma \text{ and } y\in\Gamma \text{)}
+\end{equation*}
+
+\nt{In essense, this is the same operation for probabilistic states of a pair of independent bits; we are just giving a name to it now.}
+
+\end{document}
