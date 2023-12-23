@@ -3,5 +3,6 @@
 \contentsline {subsection}{\numberline {1.1.1}Classical states}{2}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Probabilistic states}{3}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Tensor products of vectors}{5}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Measurements of probabilistic states}{6}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.4}Measurements of probabilistic states}{7}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Operations on probabilistic states}{8}{subsection.1.1.5}%
 \contentsfinish 

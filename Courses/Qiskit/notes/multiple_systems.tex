@@ -321,7 +321,7 @@ Observe the following expression for tensor products of standard basis vectors:
 \begin{equation*}
     \ket{x}\otimes\ket{y}=\ket{x}\ket{y}=\ket{xy}
 \end{equation*}
-Alternatively, writing $(x,y)$ as an ordered pair rather than a string, we could written
+Alternatively, writing $(x,y)$ as an ordered pair rather than a string, we could write
 \begin{equation*}
     \ket{x}\otimes\ket{y}=\ket{(x,y)}
 \end{equation*}
@@ -372,6 +372,86 @@ To find the tensor product of the first $n-1$ vectors, we can apply the same rec
 
 \nt{The tensor product of three or more vectors is \textbf{multilinear}.}
 
+\newpage
+
 \subsection{Measurements of probabilistic states}
+Measurements of compound systems work in the same way as measurements of single systems.
+
+\qs{}{
+    Suppose two systems $(X,Y)$ are together in some probabilistic state. What happens when we measure $X$ and do nothing to $Y$?
+}
+
+\sol{
+    \begin{enumerate}
+        \item The probability to observe a particular classical state $x\in\Sigma$ when just $X$ is measured is
+        \begin{equation*}
+            Pr(X=x)=\sum\limits_{y\in\Gamma}Pr((X,Y)=(x,y))
+        \end{equation*}
+        \item There still may exist uncertainty about the classical state of $Y$, depending on the outcome of the measurement:
+        \begin{equation*}
+            Pr(Y=y\mid X=x)=\dfrac{Pr((X,Y)=(x,y))}{Pr(X=x)}
+        \end{equation*}
+    \end{enumerate}
+}
+
+\raggedright
+These formulas can be expressed using the Dirac notation as follows. \\[1em]
+Suppose that $(X,Y)$ is in some arbitrary probabilistic state. We start by writing down the probabilistic $(X,Y)$ as a vector:
+\begin{equation*}
+    \sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{xy}\ket{xy}
+\end{equation*}
+The entries are denoted by $p_{xy}$ for $x\in\Sigma$ and $y\in\Gamma$.\\[1em]
+We can then express $\ket{xy}$ as a tensor product:
+\begin{equation*}
+    \sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{xy}\ket{xy}=\ket{x}\otimes\ket{y}
+\end{equation*}
+We can then use the biliearity of the tensor product, specifically the linearity in the second argument, to write this as:
+\begin{equation*}
+    \sum\limits_{x\in\Sigma}\ket{x}\otimes\left(\sum\limits_{y\in\Gamma}p_{xy}\ket{y}\right)
+\end{equation*}
+What is happening here is that we are isolating the standard basis vectors on the left hand side, and then grouping the remaining terms on the right hand side. This allows us to see what happens when we measure $X$ and do nothing to $Y$.
+\begin{enumerate}
+    \item The probability that a measurement of $X$ yields an outcome $x\in\Sigma$ is:
+    \begin{equation*}
+        Pr(X=x)=\sum\limits_{y\in\Gamma}p_{xy}
+    \end{equation*}
+    The probability to get a particular outcome $x$ is the sum of the probabilities of all the outcomes $(X,Y)$ for $y\in\Gamma$.
+    \item Conditioned on the outcome $x\in\Sigma$, the probabilistic state of $Y$ becomes:
+    \begin{equation*}
+        \dfrac{\sum\limits_{y\in\Gamma}p_{xy}\ket{y}}{\sum\limits_{c\in\Gamma}p_{xc}}
+    \end{equation*}
+    The probability vector that describes the uncertainty of $Y$ is the vector that was in the parentheses on the right hand side, except that it has to be normalized for it to be a probability vector.
+\end{enumerate}
+
+\newpage
+
+\ex{}{
+    Suppose $(X,Y)$ is in the probabilistic state
+    \begin{equation*}
+        \dfrac{1}{12}\ket{00}+\dfrac{1}{4}\ket{01}+\dfrac{1}{3}\ket{10}+\dfrac{1}{3}\ket{11}
+    \end{equation*}
+    We write this vector as follows:
+    \begin{equation*}
+        \ket{0}\otimes\left(\dfrac{1}{12}\ket{0}+\dfrac{1}{4}\ket{1}\right)+\ket{1}\otimes\left(\dfrac{1}{3}\ket{0}+\dfrac{1}{3}\ket{1}\right)
+    \end{equation*}
+    \textbf{Case 1:} the measurement of $X$ yields the outcome 0.
+    \begin{equation*}
+        Pr(\text{outcome is 0})=\dfrac{1}{12}+\dfrac{1}{4}=\dfrac{1}{3}
+    \end{equation*}
+    Conditioned on this outcome, the probabilistic state of $Y$ becomes
+    \begin{equation*}
+        \dfrac{\dfrac{1}{12}\ket{0}+\dfrac{1}{4}\ket{1}}{\dfrac{1}{3}}=\dfrac{1}{4}\ket{0}+\dfrac{2}{3}\ket{1}
+    \end{equation*}
+    \textbf{Case 2:} the measurement of $X$ yields the outcome 1.
+    \begin{equation*}
+        Pr(\text{outcome is 1})=\dfrac{1}{3}+\dfrac{1}{3}=\dfrac{2}{3}
+    \end{equation*}
+    Conditioned on this outcome, the probabilistic state of $Y$ becomes
+    \begin{equation*}
+        \dfrac{\dfrac{1}{3}\ket{0}+\dfrac{1}{3}\ket{1}}{\dfrac{2}{3}}=\dfrac{1}{2}\ket{0}+\dfrac{1}{2}\ket{1}
+    \end{equation*}
+}
+
+\subsection{Operations on probabilistic states}
 
 \end{document}
