@@ -23,22 +23,22 @@
 \subsection{Classical states}
 Suppose that we have two systems:
 \begin{itemize}
-    \item $X$ is a system having classical state set $\Sigma$.
-    \item $Y$ is a system having classical state set $\Gamma$.
+    \item $\mathsf{X}$ is a system having classical state set $\Sigma$.
+    \item $\mathsf{Y}$ is a system having classical state set $\Gamma$.
 \end{itemize}
-Imagine that $X$ and $Y$ are placed side-by-side, with $X$ on the left and $Y$ on the right, and viewed together as if they form a single system.
+Imagine that $\mathsf{X}$ and $\mathsf{Y}$ are placed side-by-side, with $\mathsf{X}$ on the left and $\mathsf{Y}$ on the right, and viewed together as if they form a single system.
 
 \bigbreak
 
-We denote this new compound system by $(X,Y)$, or $XY$.
+We denote this new compound system by $(\mathsf{X},\mathsf{Y})$, or $\mathsf{XY}$.
 
-\qs{}{What are the classical states of $(X,Y)$?}
-\sol{The classical state set of $(X,Y)$ is the \textbf{Cartesian product}:
+\qs{}{What are the classical states of $(\mathsf{X},\mathsf{Y})$?}
+\sol{The classical state set of $(\mathsf{X},\mathsf{Y})$ is the \textbf{Cartesian product}:
 \begin{equation*}
-    \Sigma \times \Gamma = \{(x,y) \mid x \in \Sigma, y \in \Gamma\}
+    \Sigma \times \Gamma = \{(\mathsf{x},\mathsf{y}) \mid \mathsf{x} \in \Sigma, \mathsf{y} \in \Gamma\}
 \end{equation*}
 }
-\nt{It's not important that $X$ is on the left and $Y$ is on the right; we could have just as well placed $Y$ on the left and $X$ on the right. The important thing is that the two systems are distinguishable.}
+\nt{It's not important that $\mathsf{X}$ is on the left and $\mathsf{Y}$ is on the right; we could have just as well placed $\mathsf{Y}$ on the left and $\mathsf{X}$ on the right. The important thing is that the two systems are distinguishable.}
 
 \ex{Card suits}{
     If $\Sigma=\{0,1\}$ and $\Gamma=\{\clubsuit,\diamondsuit,\heartsuit,\spadesuit\}$, then:
@@ -52,32 +52,32 @@ This description generalizes to more than two systems in a natural way.
 
 \bigbreak
 
-Suppose $X_1,\cdots,X_n$ are systems having classical state sets $\Sigma_1,\cdots,\Sigma_n$, respectively. 
+Suppose $\mathsf{X}_1,\cdots,\mathsf{X}_n$ are systems having classical state sets $\Sigma_1,\cdots,\Sigma_n$, respectively. 
 
 \bigbreak
 
-The classical state set of the $n$-tuple ($X_1,\cdots,X_n$), viewed as a single compound system, is the Cartesian product:
+The classical state set of the $n$-tuple ($\mathsf{X}_1,\cdots,\mathsf{X}_n$), viewed as a single compound system, is the Cartesian product:
 \begin{equation*}
-    \Sigma_1 \times \cdots \times \Sigma_n = \{(x_1,\cdots,x_n) \mid x_1 \in \Sigma_1, \cdots, x_n \in \Sigma_n\}
+    \Sigma_1 \times \cdots \times \Sigma_n = \{(\mathsf{x}_1,\cdots,\mathsf{x}_n) \mid \mathsf{x}_1 \in \Sigma_1, \cdots, \mathsf{x}_n \in \Sigma_n\}
 \end{equation*}
 
 \newpage
 
 \ex{}{
-    If $\Sigma_1=\Sigma_2=\Sigma_3=\{0,1\}$, then the classical state set of ($X_1,X_2,X_3$) is:
+    If $\Sigma_1=\Sigma_2=\Sigma_3=\{0,1\}$, then the classical state set of ($\mathsf{X}_1,\mathsf{X}_2,\mathsf{X}_3$) is:
     \begin{equation*}
         \Sigma_1 \times \Sigma_2 \times \Sigma_3 = \{(0,0,0),(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1),(1,1,0),(1,1,1)\}
     \end{equation*}
 }
 
-An $n$-tuple $(x_1,\cdots,x_n)$ may also be written as a string $x_1\cdots x_n$.
+An $n$-tuple $(\mathsf{x}_1,\cdots,\mathsf{x}_n)$ may also be written as a string $\mathsf{x}_1\cdots \mathsf{x}_n$.
 
 \ex{Binary alphabet}{
-    Suppose $X_1,\cdots,X_n$ are bits, so thei classical state sets are all the same:
+    Suppose $\mathsf{X}_1,\cdots,\mathsf{X}_n$ are bits, so thei classical state sets are all the same:
     \begin{equation*}
         \Sigma_1=\Sigma_2=\cdots=\Sigma_{10}=\{0,1\}
     \end{equation*}
-    The classical state set of ($X_1,\cdots,X_n$) is the Cartesian product:
+    The classical state set of ($\mathsf{X}_1,\cdots,\mathsf{X}_n$) is the Cartesian product:
     \begin{equation*}
         \Sigma_1\times\Sigma_2\times\cdots\times\Sigma_{10}=\{0,1\}^{10}
     \end{equation*}
@@ -116,12 +116,12 @@ When $n$-tuples are written as strings and ordered in this way, we observe famil
 Probabilistic states of compound systems associates probabilities with the Cartesian product of the classical state sets of individual systems.
 
 \ex{}{
-    This is a probabilistic state pair of bits $(X,Y)$:
+    This is a probabilistic state pair of bits $(\mathsf{X},\mathsf{Y})$:
     \begin{center}
-        $Pr((X,Y)=(0,0))=\dfrac{1}{2}$\\[1em]
-        $Pr((X,Y)=(0,1))=0$\\[1em]
-        $Pr((X,Y)=(1,0))=0$\\*[1em]
-        $Pr((X,Y)=(1,1))=\dfrac{1}{2}$
+        $Pr((\mathsf{X},\mathsf{Y})=(0,0))=\dfrac{1}{2}$\\[1em]
+        $Pr((\mathsf{X},\mathsf{Y})=(0,1))=0$\\[1em]
+        $Pr((\mathsf{X},\mathsf{Y})=(1,0))=0$\\*[1em]
+        $Pr((\mathsf{X},\mathsf{Y})=(1,1))=\dfrac{1}{2}$
     \end{center}
 
     An alternate notation using vector notation:
@@ -142,30 +142,30 @@ Probabilistic states of compound systems associates probabilities with the Carte
     \end{equation*}
 }
 
-For a given probabilistic state of $(X,Y)$, we say that $X$ and $Y$ are \textbf{statistically independent} if
+For a given probabilistic state of $(\mathsf{X},\mathsf{Y})$, we say that $\mathsf{X}$ and $\mathsf{Y}$ are \textbf{statistically independent} if
 \begin{equation*}
-    Pr((X,Y)=(x,y))=Pr(X=x)Pr(Y=y)
+    Pr((\mathsf{X},\mathsf{Y})=(\mathsf{x},\mathsf{y}))=Pr(\mathsf{X}=\mathsf{x})Pr(\mathsf{Y}=\mathsf{y})
 \end{equation*}
-for all $x\in\Sigma$ and $y\in\Gamma$.
+for all $\mathsf{x}\in\Sigma$ and $\mathsf{y}\in\Gamma$.
 
 \bigbreak
 
-Suppose that a probabilistic state of $(X,Y)$ is expressed as a vector:
+Suppose that a probabilistic state of $(\mathsf{X},\mathsf{Y})$ is expressed as a vector:
 \begin{equation*}
-    \ket{\pi}=\sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{ab}\ket{xy}
+    \ket{\pi}=\sum\limits_{(\mathsf{x},\mathsf{y})\in\Sigma\times\Gamma}p_{ab}\ket{\mathsf{xy}}
 \end{equation*}
-The systems $X$ and $Y$ are independent if there exist probability vectors
+The systems $\mathsf{X}$ and $\mathsf{Y}$ are independent if there exist probability vectors
 \begin{equation*}
-    \ket{\phi}=\sum\limits_{x\in\Sigma}q_x\ket{x} \quad \text{and} \quad \ket{\psi}=\sum\limits_{y\in\Gamma}r_y\ket{y}
+    \ket{\phi}=\sum\limits_{\mathsf{x}\in\Sigma}q_x\ket{\mathsf{x}} \quad \text{and} \quad \ket{\psi}=\sum\limits_{\mathsf{y}\in\Gamma}r_y\ket{\mathsf{y}}
 \end{equation*}
-such that $p_{xy}=q_xr_y$ for all $x\in\Sigma$ and $y\in\Gamma$.
+such that $p_{\mathsf{xy}}=q_xr_y$ for all $\mathsf{x}\in\Sigma$ and $\mathsf{y}\in\Gamma$.
 
 \ex{Independent bits}{
-    The probabilistic state of a pair of bits $(X,Y)$ represented by the vector
+    The probabilistic state of a pair of bits $(\mathsf{X},\mathsf{Y})$ represented by the vector
     \begin{equation*}
         \ket{\pi}=\dfrac{1}{6}\ket{00}+\dfrac{1}{12}\ket{01}+\dfrac{1}{2}\ket{10}+\dfrac{1}{4}\ket{11}
     \end{equation*}
-    is one in which $X$ and $Y$ are independent. The required condition is true for these probability vectors:
+    is one in which $\mathsf{X}$ and $\mathsf{Y}$ are independent. The required condition is true for these probability vectors:
     \begin{equation*}
         \ket{\phi}=\dfrac{1}{4}\ket{0}+\dfrac{3}{4}\ket{1} \quad \text{and} \quad \ket{\psi}=\dfrac{2}{3}\ket{0}+\dfrac{1}{3}\ket{1}
     \end{equation*}
@@ -176,7 +176,7 @@ such that $p_{xy}=q_xr_y$ for all $x\in\Sigma$ and $y\in\Gamma$.
     \begin{equation*}
         \dfrac{1}{2}\ket{00}+\dfrac{1}{2}\ket{11}
     \end{equation*}
-of two bits $(X,Y)$, we have that $X$ and $Y$ are not independent.
+of two bits $(\mathsf{X},\mathsf{Y})$, we have that $\mathsf{X}$ and $\mathsf{Y}$ are not independent.
 
 \bigbreak
 
@@ -193,15 +193,15 @@ But if $q_0r_1=0$, then either $q_0=0$ or $r_1=0$ (or both), contradicting eithe
 \subsection{Tensor products of vectors}
 The tensor product of two vectors
 \begin{equation*}
-    \ket{\phi}=\sum\limits_{x\in\Sigma}\alpha_x\ket{x} \quad \text{and} \quad \ket{\psi}=\sum\limits_{y\in\Gamma}\beta_y\ket{y}
+    \ket{\phi}=\sum\limits_{\mathsf{x}\in\Sigma}\alpha_x\ket{\mathsf{x}} \quad \text{and} \quad \ket{\psi}=\sum\limits_{\mathsf{y}\in\Gamma}\beta_y\ket{\mathsf{y}}
 \end{equation*}
 is the vector
 \begin{equation*}
-    \ket{\phi}\otimes\ket{\psi}=\sum\limits_{(x,y)\in\Sigma\times\Gamma}\alpha_x\beta_y\ket{xy}
+    \ket{\phi}\otimes\ket{\psi}=\sum\limits_{(\mathsf{x},\mathsf{y})\in\Sigma\times\Gamma}\alpha_x\beta_y\ket{\mathsf{xy}}
 \end{equation*}
 Equivalently, the vector $\ket{\phi}\otimes\ket{\psi}$ is defined by this condition:
 \begin{equation*}
-    \braket{xy\mid\pi}=\braket{x\mid\phi}\braket{y\mid\psi} \qquad \text{(for all } x\in\Sigma \text{ and } y\in\Gamma \text{)}
+    \braket{\mathsf{xy}\mid\pi}=\braket{\mathsf{x}\mid\phi}\braket{\mathsf{y}\mid\psi} \qquad \text{(for all } \mathsf{x}\in\Sigma \text{ and } \mathsf{y}\in\Gamma \text{)}
 \end{equation*}
 
 \nt{In essense, this is the same operation for probabilistic states of a pair of independent bits; we are just giving a name to it now.}
@@ -319,15 +319,15 @@ Following our convention for ordering the elements of Cartesian product sets, we
 
 Observe the following expression for tensor products of standard basis vectors:
 \begin{equation*}
-    \ket{x}\otimes\ket{y}=\ket{x}\ket{y}=\ket{xy}
+    \ket{\mathsf{x}}\otimes\ket{\mathsf{y}}=\ket{\mathsf{x}}\ket{\mathsf{y}}=\ket{\mathsf{xy}}
 \end{equation*}
-Alternatively, writing $(x,y)$ as an ordered pair rather than a string, we could write
+Alternatively, writing $(\mathsf{x},\mathsf{y})$ as an ordered pair rather than a string, we could write
 \begin{equation*}
-    \ket{x}\otimes\ket{y}=\ket{(x,y)}
+    \ket{\mathsf{x}}\otimes\ket{\mathsf{y}}=\ket{(\mathsf{x},\mathsf{y})}
 \end{equation*}
 but it is more common to write
 \begin{equation*}
-    \ket{x}\otimes\ket{y}=\ket{x,y}
+    \ket{\mathsf{x}}\otimes\ket{\mathsf{y}}=\ket{\mathsf{x},\mathsf{y}}
 \end{equation*}
 
 \nt{
@@ -378,55 +378,55 @@ To find the tensor product of the first $n-1$ vectors, we can apply the same rec
 Measurements of compound systems work in the same way as measurements of single systems.
 
 \qs{}{
-    Suppose two systems $(X,Y)$ are together in some probabilistic state. What happens when we measure $X$ and do nothing to $Y$?
+    Suppose two systems $(\mathsf{X},\mathsf{Y})$ are together in some probabilistic state. What happens when we measure $\mathsf{X}$ and do nothing to $\mathsf{Y}$?
 }
 
 \sol{
     \begin{enumerate}
-        \item The probability to observe a particular classical state $x\in\Sigma$ when just $X$ is measured is
+        \item The probability to observe a particular classical state $\mathsf{x}\in\Sigma$ when just $\mathsf{X}$ is measured is
         \begin{equation*}
-            Pr(X=x)=\sum\limits_{y\in\Gamma}Pr((X,Y)=(x,y))
+            Pr(\mathsf{X}=\mathsf{x})=\sum\limits_{\mathsf{y}\in\Gamma}Pr((\mathsf{X},\mathsf{Y})=(\mathsf{x},\mathsf{y}))
         \end{equation*}
-        \item There still may exist uncertainty about the classical state of $Y$, depending on the outcome of the measurement:
+        \item There still may exist uncertainty about the classical state of $\mathsf{Y}$, depending on the outcome of the measurement:
         \begin{equation*}
-            Pr(Y=y\mid X=x)=\dfrac{Pr((X,Y)=(x,y))}{Pr(X=x)}
+            Pr(\mathsf{Y}=\mathsf{y}\mid \mathsf{X}=\mathsf{x})=\dfrac{Pr((\mathsf{X},\mathsf{Y})=(\mathsf{x},\mathsf{y}))}{Pr(\mathsf{X}=\mathsf{x})}
         \end{equation*}
     \end{enumerate}
 }
 
 \raggedright
 These formulas can be expressed using the Dirac notation as follows. \\[1em]
-Suppose that $(X,Y)$ is in some arbitrary probabilistic state. We start by writing down the probabilistic $(X,Y)$ as a vector:
+Suppose that $(\mathsf{X},\mathsf{Y})$ is in some arbitrary probabilistic state. We start by writing down the probabilistic $(\mathsf{X},\mathsf{Y})$ as a vector:
 \begin{equation*}
-    \sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{xy}\ket{xy}
+    \sum\limits_{(\mathsf{x},\mathsf{y})\in\Sigma\times\Gamma}p_{\mathsf{xy}}\ket{\mathsf{xy}}
 \end{equation*}
-The entries are denoted by $p_{xy}$ for $x\in\Sigma$ and $y\in\Gamma$.\\[1em]
-We can then express $\ket{xy}$ as a tensor product:
+The entries are denoted by $p_{\mathsf{xy}}$ for $\mathsf{x}\in\Sigma$ and $\mathsf{y}\in\Gamma$.\\[1em]
+We can then express $\ket{\mathsf{xy}}$ as a tensor product:
 \begin{equation*}
-    \sum\limits_{(x,y)\in\Sigma\times\Gamma}p_{xy}\ket{xy}=\ket{x}\otimes\ket{y}
+    \sum\limits_{(\mathsf{x},\mathsf{y})\in\Sigma\times\Gamma}p_{\mathsf{xy}}\ket{\mathsf{xy}}=\ket{\mathsf{x}}\otimes\ket{\mathsf{y}}
 \end{equation*}
 We can then use the biliearity of the tensor product, specifically the linearity in the second argument, to write this as:
 \begin{equation*}
-    \sum\limits_{x\in\Sigma}\ket{x}\otimes\left(\sum\limits_{y\in\Gamma}p_{xy}\ket{y}\right)
+    \sum\limits_{\mathsf{x}\in\Sigma}\ket{\mathsf{x}}\otimes\left(\sum\limits_{\mathsf{y}\in\Gamma}p_{\mathsf{xy}}\ket{\mathsf{y}}\right)
 \end{equation*}
-What is happening here is that we are isolating the standard basis vectors on the left hand side, and then grouping the remaining terms on the right hand side. This allows us to see what happens when we measure $X$ and do nothing to $Y$.
+What is happening here is that we are isolating the standard basis vectors on the left hand side, and then grouping the remaining terms on the right hand side. This allows us to see what happens when we measure $\mathsf{X}$ and do nothing to $\mathsf{Y}$.
 \begin{enumerate}
-    \item The probability that a measurement of $X$ yields an outcome $x\in\Sigma$ is:
+    \item The probability that a measurement of $\mathsf{X}$ yields an outcome $\mathsf{x}\in\Sigma$ is:
     \begin{equation*}
-        Pr(X=x)=\sum\limits_{y\in\Gamma}p_{xy}
+        Pr(\mathsf{X}=\mathsf{x})=\sum\limits_{\mathsf{y}\in\Gamma}p_{\mathsf{xy}}
     \end{equation*}
-    The probability to get a particular outcome $x$ is the sum of the probabilities of all the outcomes $(X,Y)$ for $y\in\Gamma$.
-    \item Conditioned on the outcome $x\in\Sigma$, the probabilistic state of $Y$ becomes:
+    The probability to get a particular outcome $\mathsf{x}$ is the sum of the probabilities of all the outcomes $(\mathsf{X},\mathsf{Y})$ for $\mathsf{y}\in\Gamma$.
+    \item Conditioned on the outcome $\mathsf{x}\in\Sigma$, the probabilistic state of $\mathsf{Y}$ becomes:
     \begin{equation*}
-        \dfrac{\sum\limits_{y\in\Gamma}p_{xy}\ket{y}}{\sum\limits_{c\in\Gamma}p_{xc}}
+        \dfrac{\sum\limits_{\mathsf{y}\in\Gamma}p_{\mathsf{xy}}\ket{\mathsf{y}}}{\sum\limits_{c\in\Gamma}p_{xc}}
     \end{equation*}
-    The probability vector that describes the uncertainty of $Y$ is the vector that was in the parentheses on the right hand side, except that it has to be normalized for it to be a probability vector.
+    The probability vector that describes the uncertainty of $\mathsf{Y}$ is the vector that was in the parentheses on the right hand side, except that it has to be normalized for it to be a probability vector.
 \end{enumerate}
 
 \newpage
 
 \ex{}{
-    Suppose $(X,Y)$ is in the probabilistic state
+    Suppose $(\mathsf{X},\mathsf{Y})$ is in the probabilistic state
     \begin{equation*}
         \dfrac{1}{12}\ket{00}+\dfrac{1}{4}\ket{01}+\dfrac{1}{3}\ket{10}+\dfrac{1}{3}\ket{11}
     \end{equation*}
@@ -434,24 +434,93 @@ What is happening here is that we are isolating the standard basis vectors on th
     \begin{equation*}
         \ket{0}\otimes\left(\dfrac{1}{12}\ket{0}+\dfrac{1}{4}\ket{1}\right)+\ket{1}\otimes\left(\dfrac{1}{3}\ket{0}+\dfrac{1}{3}\ket{1}\right)
     \end{equation*}
-    \textbf{Case 1:} the measurement of $X$ yields the outcome 0.
+    \textbf{Case 1:} the measurement of $\mathsf{X}$ yields the outcome 0.
     \begin{equation*}
         Pr(\text{outcome is 0})=\dfrac{1}{12}+\dfrac{1}{4}=\dfrac{1}{3}
     \end{equation*}
-    Conditioned on this outcome, the probabilistic state of $Y$ becomes
+    Conditioned on this outcome, the probabilistic state of $\mathsf{Y}$ becomes
     \begin{equation*}
         \dfrac{\dfrac{1}{12}\ket{0}+\dfrac{1}{4}\ket{1}}{\dfrac{1}{3}}=\dfrac{1}{4}\ket{0}+\dfrac{2}{3}\ket{1}
     \end{equation*}
-    \textbf{Case 2:} the measurement of $X$ yields the outcome 1.
+    \textbf{Case 2:} the measurement of $\mathsf{X}$ yields the outcome 1.
     \begin{equation*}
         Pr(\text{outcome is 1})=\dfrac{1}{3}+\dfrac{1}{3}=\dfrac{2}{3}
     \end{equation*}
-    Conditioned on this outcome, the probabilistic state of $Y$ becomes
+    Conditioned on this outcome, the probabilistic state of $\mathsf{Y}$ becomes
     \begin{equation*}
         \dfrac{\dfrac{1}{3}\ket{0}+\dfrac{1}{3}\ket{1}}{\dfrac{2}{3}}=\dfrac{1}{2}\ket{0}+\dfrac{1}{2}\ket{1}
     \end{equation*}
 }
 
 \subsection{Operations on probabilistic states}
+Probabilistic operations on compound systems are represented by stochastic matrices having rows and columns that correspond to the Cartesian product of the individual systems' classical state sets.
+\ex{CNOT operation}{
+    A controlled-NOT (CNOT) operation on two bits $\mathsf{X}$ and $\mathsf{Y}$:\\[1em]
+    \hspace{2em} If $\mathsf{X}=1$, then perform a NOT operation on $\mathsf{Y}$, otherwise do nothing.\\[1em]
+    $\mathsf{X}$ is the \textbf{control bit} that determines whether a NOT operation is applied to the \textbf{target bit} $\mathsf{Y}$.\\[1em]
+    \begin{center}
+        Action on standard basis:
+        \begin{tabular}{c}
+            $\ket{00}\mapsto\ket{00}$ \\
+            $\ket{01}\mapsto\ket{01}$ \\
+            $\ket{10}\mapsto\ket{11}$ \\
+            $\ket{11}\mapsto\ket{10}$
+        \end{tabular}
+        \hspace{2em}
+        Matrix representation:
+        $\begin{pmatrix}
+            1 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 0 \\
+            0 & 0 & 0 & 1 \\
+            0 & 0 & 1 & 0
+        \end{pmatrix}$
+    \end{center}
+}
 
+\ex{}{
+    Here is a different operation on two bits ($\mathsf{X}$,$\mathsf{Y}$):\\[1em]
+    \hspace{2em} With probability 1/2, set $\mathsf{Y}$ equal to $\mathsf{X}$, otherwise set $\mathsf{X}$ equal to $\mathsf{Y}$.\\[1em]
+    The matrix representation of this operation is as follows:
+    \begin{equation*}
+        \begin{pmatrix}
+            1 & 1/2 & 1/2 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 1/2 & 1/2 & 1
+        \end{pmatrix}
+        =\dfrac{1}{2}
+        \begin{pmatrix}
+            1 & 1 & 0 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 1 & 1
+        \end{pmatrix}
+        +\dfrac{1}{2}
+        \begin{pmatrix}
+            1 & 0 & 1 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 1
+        \end{pmatrix}
+    \end{equation*}
+}
+
+\qs{}{
+    Suppose we have two probabilistic operations, each on its own system, described by stochastic matrices:
+    \begin{enumerate}
+        \item $\mathcal{M}$ is an operation on $\mathsf{X}$.
+        \item $\mathcal{N}$ is an operation on $\mathsf{Y}$.
+    \end{enumerate}
+    If we \textit{simultaneously} perform the two operations, how do we describe the effect on the compound system ($\mathsf{X}$,$\mathsf{Y}$)?\\[1em]
+    Hint: if we simultaneously perform the two operations on their own respective systems, then we are in fact performing an operation on the compound system.
+}
+\sol{
+    blah
+}
+
+\subsection{Tensor products of matrices}
+The \textbf{tensor product} of two matrices, which is analogous to the tensor product of vectors
+\begin{equation*}
+    \mathcal{M}=\sum\limits_{\textsf{x,y}\in\Sigma}\alpha_{\textsf{xy}}\ket{\textsf{x}}\bra{\textsf{y}} \quad \text{and} \quad \mathcal{N}=\sum\limits_{\textsf{c,d}\in\Gamma}\beta_{\textsf{cd}}\ket{\textsf{c}}\bra{\textsf{d}}
+\end{equation*}
 \end{document}
