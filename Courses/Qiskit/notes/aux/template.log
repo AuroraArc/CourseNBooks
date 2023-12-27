@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  26 DEC 2023 21:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  26 DEC 2023 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1097,8 +1097,8 @@ File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tcb@cnt@theorem=\count446
 \c@tcb@cnt@Corollary=\count447
 \c@tcb@cnt@corollary=\count448
-\c@tcb@cnt@Lemm=\count449
-\c@tcb@cnt@lemm=\count450
+\c@tcb@cnt@Lemma=\count449
+\c@tcb@cnt@lemma=\count450
 \c@tcb@cnt@Prop=\count451
 \c@tcb@cnt@prop=\count452
 \c@tcb@cnt@claim=\count453
@@ -1292,7 +1292,15 @@ LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
 
 ]
 \g__tikzsymbols_savebox_F_0 g 0 G_10_Laughey_1_none_none_box=\box147
- [3] [4] [5] (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/template.aux)
+
+
+LaTeX Warning: Reference `n:2' on page 3 undefined on input line 66.
+
+[3]
+
+LaTeX Warning: Reference `n:3' on page 4 undefined on input line 75.
+
+[4] [5] (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/template.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
@@ -1305,19 +1313,25 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  39153 strings out of 474491
- 798078 string characters out of 5735839
+ 798127 string characters out of 5735839
  1954470 words of memory out of 5000000
  60659 multiletter control sequences out of 15000+600000
  602842 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,120p,611b,1761s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk>{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/pxb-lms.enc}{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXBMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/template.pdf (6 pages, 303387 bytes).
+Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/template.pdf (6 pages, 301877 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
+ 283 PDF objects out of 1000 (max. 8388607)
  48 named destinations out of 1000 (max. 500000)
  227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
