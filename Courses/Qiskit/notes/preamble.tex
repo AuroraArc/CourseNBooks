@@ -20,7 +20,7 @@
 	bookmarksopen=true
 }
 \usepackage[most,many,breakable]{tcolorbox}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{varwidth}
 \usepackage{varwidth}
 \usepackage{etoolbox}
@@ -36,6 +36,7 @@
 \usepackage{transparent}
 \usepackage{float}
 \usepackage{bbm}
+\usepackage{thmtools}
 % for quantum use
 \usepackage{braket}
 \usepackage{caption}
@@ -154,7 +155,7 @@
 }
 
 %================================
-% Corollery
+% Corollary
 %================================
 \tcbuselibrary{theorems,skins,hooks}
 \newtcbtheorem[number within=section]{Corollary}{Corollary}
@@ -250,23 +251,47 @@
 {%
 	enhanced,
 	breakable,
-	colback = mypropbg,
+	colback = mylemmabg,
 	frame hidden,
 	boxrule = 0sp,
-	borderline west = {2pt}{0pt}{mypropfr},
+	borderline west = {2pt}{0pt}{mylemmafr},
 	sharp corners,
 	detach title,
 	before upper = \tcbtitle\par\smallskip,
-	coltitle = mypropfr,
+	coltitle = mylemmafr,
 	fonttitle = \bfseries\sffamily,
 	description font = \mdseries,
 	separator sign none,
-	segmentation style={solid, mypropfr},
+	segmentation style={solid, mylemmafr},
 }
 {th}
 
 \tcbuselibrary{theorems,skins,hooks}
 \newtcbtheorem[number within=chapter]{prop}{Proposition}
+{%
+	enhanced,
+	breakable,
+	colback = mylemmabg,
+	frame hidden,
+	boxrule = 0sp,
+	borderline west = {2pt}{0pt}{mylemmafr},
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	coltitle = mylemmafr,
+	fonttitle = \bfseries\sffamily,
+	description font = \mdseries,
+	separator sign none,
+	segmentation style={solid, mylemmafr},
+}
+{th}
+
+%================================
+% REMARK
+%================================
+
+\tcbuselibrary{theorems,skins,hooks}
+\newtcbtheorem{Remark}{Remark}
 {%
 	enhanced,
 	breakable,
@@ -284,7 +309,6 @@
 	segmentation style={solid, mypropfr},
 }
 {th}
-
 
 %================================
 % CLAIM
@@ -309,7 +333,6 @@
 	,segmentation style={solid, myg!85!black}
 }
 {th}
-
 
 
 %================================
@@ -370,7 +393,7 @@
 	,sharp corners
 	,detach title
 	,before upper=\tcbtitle\par\smallskip
-	,fonttitle = \bfseries
+	,fonttitle = \bfseries\sffamily
 	,description font = \mdseries
 	,separator sign none
 	,description delimiters parenthesis
@@ -387,7 +410,7 @@
 	,sharp corners
 	,detach title
 	,before upper=\tcbtitle\par\smallskip
-	,fonttitle = \bfseries
+	,fonttitle = \bfseries\sffamily
 	,description font = \mdseries
 	,separator sign none
 	,description delimiters parenthesis
@@ -398,78 +421,26 @@
 % DEFINITION BOX
 %================================
 
-\newtcbtheorem[number within=section]{Definition}{Definition}{enhanced,
-	before skip=2mm,after skip=2mm, colback=red!5,colframe=red!80!black,boxrule=0.5mm,
-	attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight}, varwidth boxed title*=-3cm,
-	boxed title style={frame code={
-					\path[fill=tcbcolback]
-					([yshift=-1mm,xshift=-1mm]frame.north west)
-					arc[start angle=0,end angle=180,radius=1mm]
-					([yshift=-1mm,xshift=1mm]frame.north east)
-					arc[start angle=180,end angle=0,radius=1mm];
-					\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
-						middle color=tcbcolback!80!black]
-					([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
-					[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
-					-- (frame.south east) -- (frame.south west)
-					-- ([xshift=-1mm,yshift=-1mm]frame.north west)
-					[sharp corners]-- cycle;
-				},interior engine=empty,
-		},
-	fonttitle=\bfseries,
-	title={#2},#1}{def}
-\newtcbtheorem[number within=chapter]{definition}{Definition}{enhanced,
-	before skip=2mm,after skip=2mm, colback=red!5,colframe=red!80!black,boxrule=0.5mm,
-	attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight}, varwidth boxed title*=-3cm,
-	boxed title style={frame code={
-					\path[fill=tcbcolback]
-					([yshift=-1mm,xshift=-1mm]frame.north west)
-					arc[start angle=0,end angle=180,radius=1mm]
-					([yshift=-1mm,xshift=1mm]frame.north east)
-					arc[start angle=180,end angle=0,radius=1mm];
-					\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
-						middle color=tcbcolback!80!black]
-					([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
-					[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
-					-- (frame.south east) -- (frame.south west)
-					-- ([xshift=-1mm,yshift=-1mm]frame.north west)
-					[sharp corners]-- cycle;
-				},interior engine=empty,
-		},
-	fonttitle=\bfseries,
-	title={#2},#1}{def}
-
-
-
-%================================
-% Solution BOX
-%================================
-
-\makeatletter
-\newtcbtheorem{question}{Question}{enhanced,
-	breakable,
-	colback=white,
-	colframe=myb!80!black,
-	attach boxed title to top left={yshift*=-\tcboxedtitleheight},
-	fonttitle=\bfseries,
-	title={#2},
-	boxed title size=title,
-	boxed title style={%
-			sharp corners,
-			rounded corners=northwest,
-			colback=tcbcolframe,
-			boxrule=0pt,
-		},
-	underlay boxed title={%
-			\path[fill=tcbcolframe] (title.south west)--(title.south east)
-			to[out=0, in=180] ([xshift=5mm]title.east)--
-			(title.center-|frame.east)
-			[rounded corners=\kvtcb@arc] |-
-			(frame.north) -| cycle;
-		},
-	#1
-}{def}
-\makeatother
+\tcbuselibrary{theorems,skins,hooks}
+\newtcbtheorem[number within=section]{Definition}{Definition}
+{%
+	enhanced
+	,breakable
+	,colback = myr!5
+	,frame hidden
+	,boxrule = 0sp
+	,borderline west = {2pt}{0pt}{myr}
+	,sharp corners
+	,detach title
+	,before upper = \tcbtitle\par\smallskip
+	,coltitle = myr
+	,fonttitle = \bfseries\sffamily
+	,description font = \mdseries
+	,separator sign none
+	,description delimiters parenthesis
+	,segmentation style={solid, myr!85!black}
+}
+{th}
 
 %================================
 % SOLUTION BOX
@@ -503,51 +474,47 @@
 % Question BOX
 %================================
 
-\makeatletter
-\newtcbtheorem{qstion}{Question}{enhanced,
-	breakable,
-	colback=white,
-	colframe=mygr,
-	attach boxed title to top left={yshift*=-\tcboxedtitleheight},
-	fonttitle=\bfseries,
-	title={#2},
-	boxed title size=title,
-	boxed title style={%
-			sharp corners,
-			rounded corners=northwest,
-			colback=tcbcolframe,
-			boxrule=0pt,
-		},
-	underlay boxed title={%
-			\path[fill=tcbcolframe] (title.south west)--(title.south east)
-			to[out=0, in=180] ([xshift=5mm]title.east)--
-			(title.center-|frame.east)
-			[rounded corners=\kvtcb@arc] |-
-			(frame.north) -| cycle;
-		},
-	#1
-}{def}
-\makeatother
+\tcbuselibrary{theorems,skins,hooks}
+\newtcbtheorem[number within=section]{question}{Question}
+{%
+	enhanced
+	,breakable
+	,colback = myr!5
+	,frame hidden
+	,boxrule = 0sp
+	,borderline west = {2pt}{0pt}{myr}
+	,sharp corners
+	,detach title
+	,before upper = \tcbtitle\par\smallskip
+	,coltitle = myr
+	,fonttitle = \bfseries\sffamily
+	,description font = \mdseries
+	,separator sign none
+	,description delimiters parenthesis
+	,segmentation style={solid, myr!85!black}
+}
+{th}
 
-\newtcbtheorem[number within=chapter]{wconc}{Wrong Concept}{
-	breakable,
-	enhanced,
-	colback=white,
-	colframe=myr,
-	arc=0pt,
-	outer arc=0pt,
-	fonttitle=\bfseries\sffamily\large,
-	colbacktitle=myr,
-	attach boxed title to top left={},
-	boxed title style={
-			enhanced,
-			skin=enhancedfirst jigsaw,
-			arc=3pt,
-			bottom=0pt,
-			interior style={fill=myr}
-		},
-	#1
-}{def}
+\tcbuselibrary{theorems,skins,hooks}
+\newtcbtheorem[number within=chapter]{Question}{Question}
+{%
+	enhanced
+	,breakable
+	,colback = myr!5
+	,frame hidden
+	,boxrule = 0sp
+	,borderline west = {2pt}{0pt}{myr}
+	,sharp corners
+	,detach title
+	,before upper = \tcbtitle\par\smallskip
+	,coltitle = myr
+	,fonttitle = \bfseries\sffamily
+	,description font = \mdseries
+	,separator sign none
+	,description delimiters parenthesis
+	,segmentation style={solid, myr!85!black}
+}
+{th}
 
 
 
@@ -591,6 +558,32 @@
 	#1,
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PROOF 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{mytheoremfr!70!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=mytheoremfr, backgroundcolor=mytheorembg!1,
+    },
+]{thmtheorembox}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{mylemmafr!70!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=mylemmafr, backgroundcolor=mylemmabg!1,
+    },
+    qed=\qedsymbol
+]{thmgenproofbox}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SELF MADE COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -600,14 +593,19 @@
 \newcommand{\cor}[2]{\begin{Corollary}{#1}{}#2\end{Corollary}}
 \newcommand{\lem}[2]{\begin{Lemma}{#1}{}#2\end{Lemma}}
 \newcommand{\mprop}[2]{\begin{Prop}{#1}{}#2\end{Prop}}
+\newcommand{\remark}[2]{\begin{Remark}{#1}{}#2\end{Remark}}
 \newcommand{\clm}[3]{\begin{claim}{#1}{#2}#3\end{claim}}
 \newcommand{\wc}[2]{\begin{wconc}{#1}{}\setlength{\parindent}{1cm}#2\end{wconc}}
 \newcommand{\thmcon}[1]{\begin{Theoremcon}{#1}\end{Theoremcon}}
 \newcommand{\ex}[2]{\begin{Example}{#1}{}#2\end{Example}}
 \newcommand{\dfn}[2]{\begin{Definition}[colbacktitle=red!75!black]{#1}{}#2\end{Definition}}
-\newcommand{\dfnc}[2]{\begin{definition}[colbacktitle=red!75!black]{#1}{}#2\end{definition}}
-\newcommand{\qs}[2]{\begin{question}{#1}{}#2\end{question}}
-\newcommand{\pf}[2]{\begin{myproof}[#1]#2\end{myproof}}
+\newcommand{\qss}[2]{\begin{question}{#1}{}#2\end{question}}
+\newcommand{\qsc}[2]{\begin{Question}{#1}{}#2\end{Question}}
+% proofs
+\declaretheorem[style=thmtheorembox, name=Proof]{thmproof}
+\newenvironment{thmpf}[1][]{\vspace{-10pt}\begin{thmproof}}{\end{thmproof}}
+\declaretheorem[style=thmgenproofbox, name=Proof]{genproof}
+\newenvironment{gpf}[1][]{\vspace{-10pt}\begin{genproof}}{\end{genproof}}
 \newcommand{\nt}[1]{\begin{note}#1\end{note}}
 
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
@@ -618,12 +616,6 @@
 	{\the\value{#1}}%
 }
 \newcommand{\getCurrentSectionNumber}{\getcurrentref{section}}
-\newenvironment{myproof}[1][\proofname]{%
-	\proof[\bfseries #1: ]%
-}{\endproof}
-
-\newcommand{\mclm}[2]{\begin{myclaim}[#1]#2\end{myclaim}}
-\newenvironment{myclaim}[1][\claimname]{\proof[\bfseries #1: ]}{}
 
 \newcounter{mylabelcounter}
 
