@@ -1,4 +1,3 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  26 DEC 2023 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,6 +1133,14 @@ File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tcb@cnt@Example=\count458
 \c@tcb@cnt@example=\count459
 \c@tcb@cnt@Definition=\count460
+Package thmtools Info: Key `numbered' (with value `no')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=solutionbox' on input line 461.
+Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=myg, backgroundcolor=myg!5!white, ')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=solutionbox' on input line 461.
 \c@tcb@cnt@question=\count461
 \c@tcb@cnt@Question=\count462
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
@@ -1146,24 +1153,28 @@ File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmtheorembox' on input line 574.
-Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=mytheoremfr, backgroundcolor=mytheorembg!1, ')
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
+Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=mytheoremfr, backgroundcolor=mytheorembg!25!white, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmtheorembox' on input line 574.
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
+Package thmtools Info: Key `qed' (with value `$\square $')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 585.
-Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=false, topline=false, bottomline=false, linecolor=mylemmafr, backgroundcolor=mylemmabg!1, ')
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
+Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=mylemmafr, backgroundcolor=mylemmabg!25!white, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 585.
-Package thmtools Info: Key `qed' (with value `\qedsymbol ')
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
+Package thmtools Info: Key `qed' (with value `$\square $')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 585.
-Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 606.
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
+Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 594.
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2023/05/04 v0.76
 ) (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdframed/mdframed.sty
@@ -1442,29 +1453,52 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 LaTeX Font Warning: Font shape `OT1/cmr/b/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 22.
 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 26.
+Package hyperref Info: bookmark level for unknown qsol defaults to 0 on input line 26.
 [2
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 39.
-Package hyperref Info: bookmark level for unknown thmproof defaults to 0 on input line 39.
+(mdframed)              on input line 41.
+Package hyperref Info: bookmark level for unknown thmproof defaults to 0 on input line 41.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 62.
+Package hyperref Info: bookmark level for unknown genproof defaults to 0 on input line 62.
 
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Definition.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 ...lambda=a+ib$, $|\lambda|=\sqrt{a^2+b^2}$ }
+l.73 ...lambda=a+ib$, $|\lambda|=\sqrt{a^2+b^2}$ }
                                                   
+
+LaTeX Warning: Reference `n:2' on page 3 undefined on input line 73.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 ...|x_m|^p\Big)^{\frac1p}$$(In school $p=2$)}
+l.76 ...|x_m|^p\Big)^{\frac1p}$$(In school $p=2$)}
                                                    [3]
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@question.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76 ... $p-$norms. (What goes wrong for $p<1$ ?)}
-                                                   [4] [5] (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/template.aux)
+l.81 ... $p-$norms. (What goes wrong for $p<1$ ?)}
+                                                  
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 83.
+
+
+LaTeX Warning: Reference `n:3' on page 4 undefined on input line 83.
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 105.
+[4] [5] (/Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/aux/template.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-08>
@@ -1477,19 +1511,25 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 40532 strings out of 474491
- 828165 string characters out of 5735839
- 1953470 words of memory out of 5000000
- 61981 multiletter control sequences out of 15000+600000
- 602842 words of font info for 161 fonts, out of 8000000 for 9000
+ 40558 strings out of 474491
+ 828711 string characters out of 5735839
+ 1962470 words of memory out of 5000000
+ 62005 multiletter control sequences out of 15000+600000
+ 602483 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,120p,611b,1761s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk>{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/pxb-lms.enc}{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXBMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
-Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/template.pdf (6 pages, 302988 bytes).
+ 99i,12n,120p,611b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk>{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/pxb-lms.enc}{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc}</Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXBMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmb10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxbsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb>
+Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/template.pdf (6 pages, 294227 bytes).
 PDF statistics:
- 287 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

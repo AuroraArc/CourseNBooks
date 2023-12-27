@@ -22,7 +22,9 @@
 \dfn{Limit of Sequence in $\bs{\bbR}$}{Let $\{s_n\}$ be a sequence in $\bbR$. We say $$\lim_{n\to\infty}s_n=s$$ where $s\in\bbR$ if $\forall$ real numbers $\eps>0$ $\exists$ natural number $N$ such that for $n>N$ $$s-\eps<s_n<s+\eps\text{ i.e. }|s-s_n|<\eps$$}
 \qss{}{Is the set ${x-}$axis${\setminus\{\text{Origin}\}}$ a closed set}
 \qsc{}{brug??}
-\sol We have to take its complement and check whether that set is a open set i.e. if it is a union of open balls
+\begin{sol}
+	We have to take its complement and check whether that set is a open set i.e. if it is a union of open balls
+\end{sol}
 \nt{We will do topology in Normed Linear Space  (Mainly $\bbR^n$ and occasionally $\bbC^n$)using the language of Metric Space}
 \remark{}{brug}
 \clm{Topology}{}{Topology is cool}
@@ -56,6 +58,9 @@
 
 \cor{}{By the result of the proof, we can then show...}
 \lem{}{Suppose $\vec{v_1}, \dots, \vec{v_n} \in \RR[n]$ is subspace of $\RR^n$.}
+\begin{gpf}
+	brug
+\end{gpf}
 \mprop{}{$1 + 1 = 2$.}
 
 \section{Random}
@@ -74,7 +79,8 @@
 For $m=1$ these $p-$norms are nothing but $|x|$.
 Now exercise
 \qss{}{\label{exs1}Prove that triangle inequality is true if $p\geq 1$ for $p-$norms. (What goes wrong for $p<1$ ?)}
-\sol{\textbf{For Property \ref{n:3} for norm-2}	\subsubsection*{\textbf{When field is $\bbR:$}} We have to show\begin{align*}
+\begin{sol}
+(\textbf{For Property \ref{n:3} for norm-2})	\subsubsection*{\textbf{When field is $\bbR:$}} We have to show\begin{align*}
 		         & \sum_i(x_i+y_i)^2\leq \left(\sqrt{\sum_ix_i^2} +\sqrt{\sum_iy_i^2}\right)^2                                       \\
 		\implies & \sum_i (x_i^2+2x_iy_i+y_i^2)\leq \sum_ix_i^2+2\sqrt{\left[\sum_ix_i^2\right]\left[\sum_iy_i^2\right]}+\sum_iy_i^2 \\
 		\implies & \left[\sum_ix_iy_i\right]^2\leq \left[\sum_ix_i^2\right]\left[\sum_iy_i^2\right]
@@ -95,7 +101,8 @@ Now exercise
 		                                       & =\langle x,x\rangle -2\lambda\langle x,y\rangle+\lambda^2\langle y,y\rangle
 	\end{align*}Now unless $x=\lambda y$ we have $\langle x-\lambda y,x-\lambda y\rangle>0$ Hence the quadratic equation has no root therefore the discriminant is greater than zero.
 
-	\subsubsection*{\textbf{When field is $\bbC:$}}Modify the definition by $$\langle x,y\rangle=\sum_i\overline{x_i}y_i$$Then we still have $\langle x,x\rangle\geq 0$}
+	\subsubsection*{\textbf{When field is $\bbC:$}}Modify the definition by $$\langle x,y\rangle=\sum_i\overline{x_i}y_i$$Then we still have $\langle x,x\rangle\geq 0$
+\end{sol}
 
 \section{Algorithms}
 \begin{algorithm}[H]

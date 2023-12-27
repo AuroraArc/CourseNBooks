@@ -157,44 +157,47 @@
 %================================
 % Corollary
 %================================
+
 \tcbuselibrary{theorems,skins,hooks}
 \newtcbtheorem[number within=section]{Corollary}{Corollary}
 {%
-	enhanced
-	,breakable
-	,colback = myp!10
-	,frame hidden
-	,boxrule = 0sp
-	,borderline west = {2pt}{0pt}{myp!85!black}
-	,sharp corners
-	,detach title
-	,before upper = \tcbtitle\par\smallskip
-	,coltitle = myp!85!black
-	,fonttitle = \bfseries\sffamily
-	,description font = \mdseries
-	,separator sign none
-	,segmentation style={solid, myp!85!black}
+	enhanced,
+	breakable,
+	colback = mylemmabg,
+	frame hidden,
+	boxrule = 0sp,
+	borderline west = {2pt}{0pt}{mylemmafr},
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	coltitle = mylemmafr,
+	fonttitle = \bfseries\sffamily,
+	description font = \mdseries,
+	separator sign none,
+	segmentation style={solid, mylemmafr},
 }
 {th}
+
 \tcbuselibrary{theorems,skins,hooks}
 \newtcbtheorem[number within=chapter]{corollary}{Corollary}
 {%
-	enhanced
-	,breakable
-	,colback = myp!10
-	,frame hidden
-	,boxrule = 0sp
-	,borderline west = {2pt}{0pt}{myp!85!black}
-	,sharp corners
-	,detach title
-	,before upper = \tcbtitle\par\smallskip
-	,coltitle = myp!85!black
-	,fonttitle = \bfseries\sffamily
-	,description font = \mdseries
-	,separator sign none
-	,segmentation style={solid, myp!85!black}
+	enhanced,
+	breakable,
+	colback = mylemmabg,
+	frame hidden,
+	boxrule = 0sp,
+	borderline west = {2pt}{0pt}{mylemmafr},
+	sharp corners,
+	detach title,
+	before upper = \tcbtitle\par\smallskip,
+	coltitle = mylemmafr,
+	fonttitle = \bfseries\sffamily,
+	description font = \mdseries,
+	separator sign none,
+	segmentation style={solid, mylemmafr},
 }
 {th}
+
 
 
 %================================
@@ -294,6 +297,7 @@
 \newtcbtheorem{Remark}{Remark}
 {%
 	enhanced,
+	theorem name,
 	breakable,
 	colback = mypropbg,
 	frame hidden,
@@ -319,18 +323,18 @@
 {%
 	enhanced
 	,breakable
-	,colback = myg!10
+	,colback = mylemmabg
 	,frame hidden
 	,boxrule = 0sp
-	,borderline west = {2pt}{0pt}{myg}
+	,borderline west = {2pt}{0pt}{mylemmafr}
 	,sharp corners
 	,detach title
 	,before upper = \tcbtitle\par\smallskip
-	,coltitle = myg!85!black
+	,coltitle = mylemmafr
 	,fonttitle = \bfseries\sffamily
 	,description font = \mdseries
 	,separator sign none
-	,segmentation style={solid, myg!85!black}
+	,segmentation style={solid, mylemmafr}
 }
 {th}
 
@@ -446,29 +450,15 @@
 % SOLUTION BOX
 %================================
 
-\makeatletter
-\newtcolorbox{solution}{enhanced,
-	breakable,
-	colback=white,
-	colframe=myg!80!black,
-	attach boxed title to top left={yshift*=-\tcboxedtitleheight},
-	title=Solution,
-	boxed title size=title,
-	boxed title style={%
-			sharp corners,
-			rounded corners=northwest,
-			colback=tcbcolframe,
-			boxrule=0pt,
-		},
-	underlay boxed title={%
-			\path[fill=tcbcolframe] (title.south west)--(title.south east)
-			to[out=0, in=180] ([xshift=5mm]title.east)--
-			(title.center-|frame.east)
-			[rounded corners=\kvtcb@arc] |-
-			(frame.north) -| cycle;
-		},
-}
-\makeatother
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{myg!85!black}, bodyfont=\normalfont,
+    numbered=no,
+    mdframed={
+        linewidth=2.05pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=myg, backgroundcolor=myg!5!white,
+    }
+]{solutionbox}
 
 %================================
 % Question BOX
@@ -479,19 +469,19 @@
 {%
 	enhanced
 	,breakable
-	,colback = myr!5
+	,colback = myg!10
 	,frame hidden
 	,boxrule = 0sp
-	,borderline west = {2pt}{0pt}{myr}
+	,borderline west = {2pt}{0pt}{myg}
 	,sharp corners
 	,detach title
 	,before upper = \tcbtitle\par\smallskip
-	,coltitle = myr
+	,coltitle = myg!85!black
 	,fonttitle = \bfseries\sffamily
 	,description font = \mdseries
 	,separator sign none
 	,description delimiters parenthesis
-	,segmentation style={solid, myr!85!black}
+	,segmentation style={solid, myg!85!black}
 }
 {th}
 
@@ -500,19 +490,19 @@
 {%
 	enhanced
 	,breakable
-	,colback = myr!5
+	,colback = myg!10
 	,frame hidden
 	,boxrule = 0sp
-	,borderline west = {2pt}{0pt}{myr}
+	,borderline west = {2pt}{0pt}{myg}
 	,sharp corners
 	,detach title
 	,before upper = \tcbtitle\par\smallskip
-	,coltitle = myr
+	,coltitle = myg!85!black
 	,fonttitle = \bfseries\sffamily
 	,description font = \mdseries
 	,separator sign none
 	,description delimiters parenthesis
-	,segmentation style={solid, myr!85!black}
+	,segmentation style={solid, myg!85!black}
 }
 {th}
 
@@ -567,27 +557,28 @@
     headfont=\bfseries\sffamily\color{mytheoremfr!70!black}, bodyfont=\normalfont,
     numbered=no,
     mdframed={
-        linewidth=2pt,
+        linewidth=2.05pt,
         rightline=false, topline=false, bottomline=false,
-        linecolor=mytheoremfr, backgroundcolor=mytheorembg!1,
+        linecolor=mytheoremfr, backgroundcolor=mytheorembg!25!white,
     },
+	qed=$\square$
 ]{thmtheorembox}
 
 \declaretheoremstyle[
     headfont=\bfseries\sffamily\color{mylemmafr!70!black}, bodyfont=\normalfont,
     numbered=no,
     mdframed={
-        linewidth=2pt,
+        linewidth=2.05pt,
         rightline=false, topline=false, bottomline=false,
-        linecolor=mylemmafr, backgroundcolor=mylemmabg!1,
+        linecolor=mylemmafr, backgroundcolor=mylemmabg!25!white,
     },
-    qed=\qedsymbol
+    qed=$\square$
 ]{thmgenproofbox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SELF MADE COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% two types of commands: within section and within chapter
 
 \newcommand{\thm}[2]{\begin{Theorem}{#1}{}#2\end{Theorem}}
 \newcommand{\cor}[2]{\begin{Corollary}{#1}{}#2\end{Corollary}}
@@ -599,13 +590,15 @@
 \newcommand{\thmcon}[1]{\begin{Theoremcon}{#1}\end{Theoremcon}}
 \newcommand{\ex}[2]{\begin{Example}{#1}{}#2\end{Example}}
 \newcommand{\dfn}[2]{\begin{Definition}[colbacktitle=red!75!black]{#1}{}#2\end{Definition}}
+\declaretheorem[style=solutionbox, name=Solution]{qsol}
+\newenvironment{sol}[1][]{\vspace{-15pt}\begin{qsol}}{\end{qsol}}
 \newcommand{\qss}[2]{\begin{question}{#1}{}#2\end{question}}
 \newcommand{\qsc}[2]{\begin{Question}{#1}{}#2\end{Question}}
 % proofs
 \declaretheorem[style=thmtheorembox, name=Proof]{thmproof}
-\newenvironment{thmpf}[1][]{\vspace{-10pt}\begin{thmproof}}{\end{thmproof}}
+\newenvironment{thmpf}[1][]{\vspace{-15pt}\begin{thmproof}}{\end{thmproof}}
 \declaretheorem[style=thmgenproofbox, name=Proof]{genproof}
-\newenvironment{gpf}[1][]{\vspace{-10pt}\begin{genproof}}{\end{genproof}}
+\newenvironment{gpf}[1][]{\vspace{-15pt}\begin{genproof}}{\end{genproof}}
 \newcommand{\nt}[1]{\begin{note}#1\end{note}}
 
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
