@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  26 DEC 2023 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2023.12.17)  27 DEC 2023 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1134,41 +1134,48 @@ File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \c@tcb@cnt@Example=\count458
 \c@tcb@cnt@example=\count459
 \c@tcb@cnt@Definition=\count460
-\c@tcb@cnt@Solution=\count461
-\c@tcb@cnt@question=\count462
-\c@tcb@cnt@Question=\count463
+Package thmtools Info: Key `numbered' (with value `no')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=solutionbox' on input line 461.
+Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=myg, backgroundcolor=myg!5!white, ')
+(thmtools)             is not a known style key.
+(thmtools)             Will pass this to every \declaretheorem
+(thmtools)             that uses `style=solutionbox' on input line 461.
+\c@tcb@cnt@question=\count461
+\c@tcb@cnt@Question=\count462
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfbs@fading@count=\count464
+\pgfbs@fading@count=\count463
 )
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmtheorembox' on input line 576.
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=mytheoremfr, backgroundcolor=mytheorembg!25!white, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmtheorembox' on input line 576.
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
 Package thmtools Info: Key `qed' (with value `$\square $')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmtheorembox' on input line 576.
+(thmtools)             that uses `style=thmtheorembox' on input line 565.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 587.
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2.05pt, rightline=false, topline=false, bottomline=false, linecolor=mylemmafr, backgroundcolor=mylemmabg!25!white, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 587.
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
 Package thmtools Info: Key `qed' (with value `$\square $')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgenproofbox' on input line 587.
-Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 609.
+(thmtools)             that uses `style=thmgenproofbox' on input line 576.
+Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line 594.
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/thmtools/thmdef-mdframed.sty
 Package: thmdef-mdframed 2023/05/04 v0.76
 ) (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mdframed/mdframed.sty
@@ -1184,13 +1191,13 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count465
+\c@abspage=\count464
 Package zref Info: New property: abspage on input line 67.
 ) (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip95
-\c@mdf@globalstyle@cnt=\count466
+\c@mdf@globalstyle@cnt=\count465
 \mdf@skipabove@length=\skip96
 \mdf@skipbelow@length=\skip97
 \mdf@leftmargin@length=\skip98
@@ -1265,19 +1272,19 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip159
 \mdfsubtitleheight=\skip160
 \mdfsubsubtitleheight=\skip161
-\c@mdfcountframes=\count467
+\c@mdfcountframes=\count466
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count468
-\c@mdf@env@i=\count469
-\c@mdf@env@ii=\count470
-\c@mdf@zref@counter=\count471
+\mdf@envdepth=\count467
+\c@mdf@env@i=\count468
+\c@mdf@env@ii=\count469
+\c@mdf@zref@counter=\count470
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-\c@mylabelcounter=\count472
+\c@mylabelcounter=\count471
 \diffdbox=\box150
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2023/10/27 v2.16 TOC entries
@@ -1362,16 +1369,16 @@ LaTeX Info: Command `\dddot' is already robust on input line 11.
 LaTeX Info: Command `\ddddot' is already robust on input line 11.
 (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count473
+\scratchcounter=\count472
 \scratchdimen=\dimen340
 \scratchbox=\box151
-\nofMPsegments=\count474
-\nofMParguments=\count475
+\nofMPsegments=\count473
+\nofMParguments=\count474
 \everyMPshowfont=\toks60
-\MPscratchCnt=\count476
+\MPscratchCnt=\count475
 \MPscratchDim=\dimen341
-\MPnumerator=\count477
-\makeMPintoPDFobject=\count478
+\MPnumerator=\count476
+\makeMPintoPDFobject=\count477
 \everyMPtoPDFconversion=\toks61
 ) (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1380,7 +1387,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count479
+\c@lstlisting=\count478
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks62
@@ -1461,46 +1468,46 @@ l.143     \end{equation*}}
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 }
+l.400 }
        
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.411 }
+l.409 }
        
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.426 }
+l.424 }
         [6]
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.448 }
+l.446 }
        
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.454 }
+l.452 }
        
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 462.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 460.
  (/Users/home/Library/Application Support/MiKTeX/texmfs/install/tex/latex/bbm/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 
 LaTeX Font Warning: Font shape `U/bbm/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 462.
+(Font)              size <5> substituted on input line 460.
 
 [7]
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.529 }
+l.527 }
        
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@Example.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.566 }
+l.564 }
         [8]
 Chapter 2.
 [9
@@ -1544,17 +1551,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 40534 strings out of 474491
- 828446 string characters out of 5735839
+ 40523 strings out of 474491
+ 828107 string characters out of 5735839
  1952470 words of memory out of 5000000
- 61990 multiletter control sequences out of 15000+600000
+ 61977 multiletter control sequences out of 15000+600000
  590571 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,120p,620b,1730s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk>{/Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newpx/px-lms.enc} </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users/home/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></Users/home/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb>
-Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/quantum_notes.pdf (16 pages, 258347 bytes).
+Output written on /Users/home/Desktop/Programming/CourseNBooks/Courses/Qiskit/notes/pdf/quantum_notes.pdf (16 pages, 256415 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 

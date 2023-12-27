@@ -32,13 +32,14 @@ Imagine that $\mathsf{X}$ and $\mathsf{Y}$ are placed side-by-side, with $\maths
 
 We denote this new compound system by $(\mathsf{X},\mathsf{Y})$, or $\mathsf{XY}$.
 
-\qs{}{What are the classical states of $(\mathsf{X},\mathsf{Y})$?}
-\sol{The classical state set of $(\mathsf{X},\mathsf{Y})$ is the \textbf{Cartesian product}:
-\begin{equation*}
-    \Sigma \times \Gamma = \{(\mathsf{x},\mathsf{y}) \mid \mathsf{x} \in \Sigma, \mathsf{y} \in \Gamma\}
-\end{equation*}
-}
-\nt{It's not important that $\mathsf{X}$ is on the left and $\mathsf{Y}$ is on the right; we could have just as well placed $\mathsf{Y}$ on the left and $\mathsf{X}$ on the right. The important thing is that the two systems are distinguishable.}
+\qss{}{What are the classical states of $(\mathsf{X},\mathsf{Y})$?}
+\begin{sol}
+    The classical state set of $(\mathsf{X},\mathsf{Y})$ is the \textbf{Cartesian product}:
+    \begin{equation*}
+        \Sigma \times \Gamma = \{(\mathsf{x},\mathsf{y}) \mid \mathsf{x} \in \Sigma, \mathsf{y} \in \Gamma\}
+    \end{equation*}
+\end{sol}
+\remark{It's not important that $\mathsf{X}$ is on the left and $\mathsf{Y}$ is on the right; we could have just as well placed $\mathsf{Y}$ on the left and $\mathsf{X}$ on the right. The important thing is that the two systems are distinguishable.}
 
 \ex{Card suits}{
     If $\Sigma=\{0,1\}$ and $\Gamma=\{\clubsuit,\diamondsuit,\heartsuit,\spadesuit\}$, then:
@@ -204,7 +205,7 @@ Equivalently, the vector $\ket{\phi}\otimes\ket{\psi}$ is defined by this condit
     \braket{\mathsf{xy}\mid\pi}=\braket{\mathsf{x}\mid\phi}\braket{\mathsf{y}\mid\psi} \qquad \text{(for all } \mathsf{x}\in\Sigma \text{ and } \mathsf{y}\in\Gamma \text{)}
 \end{equation*}
 
-\nt{In essense, this is the same operation for probabilistic states of a pair of independent bits; we are just giving a name to it now.}
+\remark{In essense, this is the same operation for probabilistic states of a pair of independent bits; we are just giving a name to it now.}
 
 Following our convention for ordering the elements of Cartesian product sets, we obtain this specification for the tensor product of two column vectors:
 \begin{equation*}
@@ -370,19 +371,20 @@ Equivalently, the tensor product of three or more vectors can be defined recursi
 We can think about the tensor product of $n$ vectors $\phi_1$ through $\phi_n$ as being the tensor product of the first $n-1$ vectors, followed by the tensor product of the result with the $n$-th vector.\\[1em]
 To find the tensor product of the first $n-1$ vectors, we can apply the same recursive definition, and so on until we reach the tensor product of the first two vectors.
 
-\nt{The tensor product of three or more vectors is \textbf{multilinear}.}
+\remark{The tensor product of three or more vectors is \textbf{multilinear}.}
 
 \newpage
 
 \subsection{Measurements of probabilistic states}
 Measurements of compound systems work in the same way as measurements of single systems.
 
-\qs{}{
+\qss{}{
     Suppose two systems $(\mathsf{X},\mathsf{Y})$ are together in some probabilistic state. What happens when we measure $\mathsf{X}$ and do nothing to $\mathsf{Y}$?
 }
 
-\sol{
+\begin{sol}
     \begin{enumerate}
+        \item[]
         \item The probability to observe a particular classical state $\mathsf{x}\in\Sigma$ when just $\mathsf{X}$ is measured is
         \begin{equation*}
             Pr(\mathsf{X}=\mathsf{x})=\sum\limits_{\mathsf{y}\in\Gamma}Pr((\mathsf{X},\mathsf{Y})=(\mathsf{x},\mathsf{y}))
@@ -392,7 +394,7 @@ Measurements of compound systems work in the same way as measurements of single 
             Pr(\mathsf{Y}=\mathsf{y}\mid \mathsf{X}=\mathsf{x})=\dfrac{Pr((\mathsf{X},\mathsf{Y})=(\mathsf{x},\mathsf{y}))}{Pr(\mathsf{X}=\mathsf{x})}
         \end{equation*}
     \end{enumerate}
-}
+\end{sol}
 
 \raggedright
 These formulas can be expressed using the Dirac notation as follows. \\[1em]
@@ -505,7 +507,7 @@ Probabilistic operations on compound systems are represented by stochastic matri
     \end{equation*}
 }
 
-\qs{}{
+\qss{}{
     Suppose we have two probabilistic operations, each on its own system, described by stochastic matrices:
     \begin{enumerate}
         \item $\mathcal{M}$ is an operation on $\mathsf{X}$.
@@ -514,9 +516,9 @@ Probabilistic operations on compound systems are represented by stochastic matri
     If we \textit{simultaneously} perform the two operations, how do we describe the effect on the compound system ($\mathsf{X}$,$\mathsf{Y}$)?\\[1em]
     Hint: if we simultaneously perform the two operations on their own respective systems, then we are in fact performing an operation on the compound system.
 }
-\sol{
+\begin{sol}
     blah
-}
+\end{sol}
 
 \subsection{Tensor products of matrices}
 The \textbf{tensor product} of two matrices, which is analogous to the tensor product of vectors
