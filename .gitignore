@@ -3,6 +3,5 @@
 *.pom
 .DS_Store
 Courses/CS61B/library-sp23/
-Courses/Qiskit/notes/chapters/
 Courses/Qiskit/notes/template.tex
 Courses/Qiskit/notes/aux/
