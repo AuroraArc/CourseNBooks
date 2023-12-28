@@ -494,11 +494,8 @@ Probabilistic operations on compound systems are represented by stochastic matri
         \item $\mathcal{N}$ is an operation on $\mathsf{Y}$.
     \end{enumerate}
     If we \textit{simultaneously} perform the two operations, how do we describe the effect on the compound system ($\mathsf{X}$,$\mathsf{Y}$)?\\[1em]
-    Hint: if we simultaneously perform the two operations on their own respective systems, then we are in fact performing an operation on the compound system.
+    We will return to this question after the next section.
 }
-\begin{sol}
-    placeholder
-\end{sol}
 
 \subsection{Tensor products of matrices}
 The \textbf{tensor product} of two matrices, which is analogous to the tensor product of vectors
@@ -540,3 +537,93 @@ We can define the tensor product in terms of matrices written out:
         \alpha_{m1}\beta_{k1} & \cdots & \alpha_{m1}\beta_{kk} &  & \alpha_{mm}\beta_{k1} & \cdots & \alpha_{mm}\beta_{kk}
     \end{pmatrix}$
 \end{center}
+
+\newpage
+
+\ex{Tensor product of 2x2 matrices}{
+    Here's a simple example involving the tensor product of two 2x2 matrices:
+    \begin{center}
+        $\begin{pmatrix}
+            \alpha_{00} & \alpha_{01} \\
+            \alpha_{10} & \alpha_{11}
+        \end{pmatrix}
+        \otimes
+        \begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}$
+    \end{center}
+    We first write down four copies of the second matrix:
+    \begin{center}
+        $\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}\hspace{1em}
+        \begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}$\\
+        $\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}\hspace{1em}
+        \begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}$
+    \end{center}
+    Then we multiply each entry of the first matrix by each of the four matrices:
+    \begin{center}
+        $\alpha_{00}\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}
+        \alpha_{01}\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}$\\
+        $\alpha_{10}\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}
+        \alpha_{11}\begin{pmatrix}
+            \beta_{00} & \beta_{01} \\
+            \beta_{10} & \beta_{11}
+        \end{pmatrix}$\\
+        $=
+        \begin{pmatrix}
+            \alpha_{00}\beta_{00} & \alpha_{00}\beta_{01} & \alpha_{01}\beta_{00} & \alpha_{01}\beta_{01} \\
+            \alpha_{00}\beta_{10} & \alpha_{00}\beta_{11} & \alpha_{01}\beta_{10} & \alpha_{01}\beta_{11} \\
+            \alpha_{10}\beta_{00} & \alpha_{10}\beta_{01} & \alpha_{11}\beta_{00} & \alpha_{11}\beta_{01} \\
+            \alpha_{10}\beta_{10} & \alpha_{10}\beta_{11} & \alpha_{11}\beta_{10} & \alpha_{11}\beta_{11}
+        \end{pmatrix}$
+    \end{center}
+}
+In general, if $\mathcal{M}_1,\cdots,\mathcal{M}_n$ are matrices, then the tensor product $\mathcal{M}_1\otimes\cdots\otimes\mathcal{M}_n$ is the defined by the condition
+\begin{equation*}
+    \bra{\alpha_1\cdots\alpha_n}\mathcal{M}_1\otimes\cdots\otimes\mathcal{M}_n\ket{\beta_1\cdots\beta_n}=\bra{\alpha_1}\mathcal{M}_1\ket{\beta_1}\cdots\bra{\alpha_n}\mathcal{M}_n\ket{\beta_n}
+\end{equation*}
+Alternatively, the tensor product of three or more matrices can be defined recursively.
+\remark{The tensor product of matrices is \textbf{multiplicative}:
+    \begin{equation*}
+        (\mathcal{M}_1\otimes\cdots\otimes\mathcal{M}_n)(\mathcal{N}_1\otimes\cdots\otimes\mathcal{N}_n)=(\mathcal{M}_1\mathcal{N}_1)\otimes\cdots\otimes(\mathcal{M}_n\mathcal{N}_n)
+    \end{equation*}
+    This means that product of tensor products is equal to the tensor products of the products.
+}
+
+\qss{}{
+    Suppose we have two probabilistic operations, each on its own system, described by stochastic matrices:
+    \begin{enumerate}
+        \item $\mathcal{M}$ is an operation on $\mathsf{X}$.
+        \item $\mathcal{N}$ is an operation on $\mathsf{Y}$.
+    \end{enumerate}
+    If we \textit{simultaneously} perform the two operations, how do we describe the effect on the compound system ($\mathsf{X}$,$\mathsf{Y}$)?\\[1em]
+    Hint: if we simultaneously perform the two operations on their own respective systems, then we are in fact performing an operation on the compound system.
+}
+\begin{sol}
+    The action is described by the tensor product $\mathcal{M}\otimes\mathcal{N}$.
+\end{sol}
+Tensor products represent \textbf{independence}---this time between operations.
+\ex{}{
+    Recall this operation from Chapter 1:
+}
