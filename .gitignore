@@ -3,7 +3,6 @@
 *.pom
 .DS_Store
 Courses/CS61B/library-sp23/
-Courses/Qiskit/preamble.tex
+Courses/Qiskit/notes/chapters/
 Courses/Qiskit/notes/template.tex
-Courses/Qiskit/notes/pdf/template.pdf
-Courses/Qiskit/notes/pdf/template.synctex.gz
+Courses/Qiskit/notes/aux/
