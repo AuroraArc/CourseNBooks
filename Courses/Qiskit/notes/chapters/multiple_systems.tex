@@ -497,11 +497,46 @@ Probabilistic operations on compound systems are represented by stochastic matri
     Hint: if we simultaneously perform the two operations on their own respective systems, then we are in fact performing an operation on the compound system.
 }
 \begin{sol}
-    blah
+    placeholder
 \end{sol}
 
 \subsection{Tensor products of matrices}
 The \textbf{tensor product} of two matrices, which is analogous to the tensor product of vectors
 \begin{equation*}
-    \mathcal{M}=\sum\limits_{\textsf{x,y}\in\Sigma}\alpha_{\textsf{xy}}\ket{\textsf{x}}\bra{\textsf{y}} \quad \text{and} \quad \mathcal{N}=\sum\limits_{\textsf{c,d}\in\Gamma}\beta_{\textsf{cd}}\ket{\textsf{c}}\bra{\textsf{d}}
+    \mathcal{M}=\sum\limits_{\textsf{a,b}\in\Sigma}\alpha_{\textsf{ab}}\ket{\textsf{a}}\bra{\textsf{b}} \quad \text{and} \quad \mathcal{N}=\sum\limits_{\textsf{c,d}\in\Gamma}\beta_{\textsf{cd}}\ket{\textsf{c}}\bra{\textsf{d}}
 \end{equation*}
+is the matrix
+\begin{equation*}
+    \mathcal{M}\otimes\mathcal{N}=\sum\limits_{\textsf{a,b}\in\Sigma}\sum\limits_{\textsf{c,d}\in\Gamma}\alpha_{\textsf{ab}}\beta_{\textsf{cd}}\ket{ac}\bra{bd}
+\end{equation*}
+An alternative, but equivalent, way to define $\mathcal{M}\otimes\mathcal{N}$ is that it is the unique matrix that satisfies the equation
+\begin{equation*}
+    (\mathcal{M}\otimes\mathcal{N})\ket{\phi\otimes\psi}=\mathcal{M}\ket{\phi}\otimes\mathcal{N}\ket{\psi}
+\end{equation*}
+for every choice of vectors $\ket{\phi}$ and $\ket{\psi}$.
+\remark{One way to think about this is that the tensor product of matrices works perfectly with the tensor product of vectors. This is, of course, an equation that you would hope is true.}
+
+We can define the tensor product in terms of matrices written out:
+\begin{center}
+    $\begin{pmatrix}
+        \alpha_{11} & \cdots & \alpha_{1m} \\
+        \vdots & \ddots & \vdots \\
+        \alpha_{m1} & \cdots & \alpha_{mm}
+    \end{pmatrix}
+    \otimes
+    \begin{pmatrix}
+        \beta_{11} & \cdots & \beta_{1k} \\
+        \vdots & \ddots & \vdots \\
+        \beta_{k1} & \cdots & \beta_{kk}
+    \end{pmatrix}$
+    $=
+    \begin{pmatrix}
+        \alpha_{11}\beta_{11} & \cdots & \alpha_{11}\beta_{1k} &  & \alpha_{1m}\beta_{11} & \cdots & \alpha_{1m}\beta_{1k} \\
+        \vdots & \ddots & \vdots & \cdots & \vdots & \ddots & \vdots \\
+        \alpha_{11}\beta_{k1} & \cdots & \alpha_{11}\beta_{kk} &  & \alpha_{1m}\beta_{k1} & \cdots & \alpha_{1m}\beta_{kk} \\
+        & \vdots &  & \ddots &  & \vdots &  \\
+        \alpha_{m1}\beta_{11} & \cdots & \alpha_{m1}\beta_{1k} &  & \alpha_{mm}\beta_{11} & \cdots & \alpha_{mm}\beta_{1k} \\
+        \vdots & \ddots & \vdots & \cdots & \vdots & \ddots & \vdots \\
+        \alpha_{m1}\beta_{k1} & \cdots & \alpha_{m1}\beta_{kk} &  & \alpha_{mm}\beta_{k1} & \cdots & \alpha_{mm}\beta_{kk}
+    \end{pmatrix}$
+\end{center}
