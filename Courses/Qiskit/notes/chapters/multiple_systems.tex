@@ -624,6 +624,67 @@ Alternatively, the tensor product of three or more matrices can be defined recur
     The action is described by the tensor product $\mathcal{M}\otimes\mathcal{N}$.
 \end{sol}
 Tensor products represent \textbf{independence}---this time between operations.
+
+\newpage
+
 \ex{}{
     Recall this operation from Chapter 1:
+    \begin{equation*}
+        \begin{pmatrix}
+            1 & 1/2 \\
+            0 & 1/2
+        \end{pmatrix}
+    \end{equation*}
+    Suppose this operation is performed on bit \textsf{X}, and a NOT operation is (independently) performed on a second bit \textsf{Y}.
+    \bigbreak
+    The combined operation on the compound system (\textsf{X},\textsf{Y}) is represented by the tensor product:
+    \begin{center}
+        $\begin{pmatrix}
+            1 & 1/2 \\
+            0 & 1/2
+        \end{pmatrix}
+        \otimes
+        \begin{pmatrix}
+            0 & 1 \\
+            1 & 0
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            0 & 1 & 0 & 1/2 \\
+            1 & 0 & 1/2 & 0 \\
+            0 & 0 & 0 & 1/2 \\
+            0 & 0 & 1/2 & 0
+        \end{pmatrix}$
+    \end{center}
 }
+A common situation that we encounter is one in which one operation is performed on one system and \textbf{nothing} is done to the other system.
+\bigbreak
+The matrix representation of this operation is the tensor product of the matrix representation of the first operation with the ``doing nothing'' being represented by the identity matrix.
+
+\ex{}{
+    If we have two bits \textsf{X} and \textsf{Y} and we reset the \textsf{X} bit to 0 and do nothing to bit \textsf{Y}, then the matrix representation of this operation on the pair (\textsf{X}, \textsf{Y}) is:
+    \begin{equation*}
+        \begin{pmatrix}
+            1 & 1 \\
+            0 & 0
+        \end{pmatrix}
+        \otimes
+        \begin{pmatrix}
+            1 & 0 \\
+            0 & 1
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            1 & 0 & 1 & 0 \\
+            0 & 1 & 0 & 1 \\
+            0 & 0 & 0 & 0 \\
+            0 & 0 & 0 & 0
+        \end{pmatrix}
+    \end{equation*}
+}
+
+\section{Quantum Information}
+We can view multiple quantum systems as single compound systems.
+
+\subsection{Quantum states}
+Quantum state vectors of multiple systems are represented by column vectors whose indices correspond to the Cartesian product of the individual systems' classical state sets.
